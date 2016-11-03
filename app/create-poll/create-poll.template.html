@@ -1,0 +1,31 @@
+<div class="text-center">
+    <h3>create a poll</h3>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading poll-topic">
+        <input class="form-control" id="topic" type="text" [(ngModel)]="poll.topic" placeholder="Poll topic goes here..." autofocus>
+    </div>
+    <div class="panel-body">
+        <div class="form-group" *ngFor="let option of poll.options; let i = index;">
+            <input *ngIf="i <= 1" class="form-control" [(ngModel)]="option.name" type="text" placeholder="Poll option {{i+1}}...">
+            <div class="input-group" *ngIf="i > 1">
+                <input class="form-control" [(ngModel)]="option.name" type="text" placeholder="Poll option {{i+1}}..." (keypress)="keyPress(i)">
+                <span class="input-group-addon input-group-background clickable" (click)="poll.options.splice(i, 1);">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </span>
+            </div>
+        </div>
+        <div *ngIf="poll.options.length < maxOptions" class="text-center">
+            <span class="clickable" (click)="addOption()">
+                <i class="glyphicon glyphicon-plus"></i> Add option
+            </span>
+        </div>
+    </div>
+</div>  
+<div class="text-center">
+    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissable">
+        <button type="button" class="close" (click)="errorMessage = null"><i class="glyphicon glyphicon-remove"></i></button>
+        {{errorMessage}}
+    </div>	
+	<button type="button" class="btn btn-primary" (click)="createPoll()">create poll</button>
+</div>

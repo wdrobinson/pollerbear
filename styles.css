@@ -1,0 +1,18 @@
+
+.logo {
+    margin-top: 30px;  
+    margin-bottom: 30px;   
+}
+
+.panel-default > .poll-topic {
+    background-color: #303030;
+}
+
+.input-group-background {
+    background-color: #5E5E5E;
+}
+
+.clickable {
+	cursor: pointer;
+}
+

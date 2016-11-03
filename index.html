@@ -1,9 +1,10 @@
 <html>
   <head>
-    <title>Angular QuickStart</title>
+    <title>PollerBear</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/bootswatch/darkly/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- 1. Load libraries -->
      <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -18,6 +19,21 @@
   </head>
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <div class="container">
+      <div class="row">
+        <div class="text-center logo">
+            <a href="/">
+                <img src="Images/logo.png" alt="logo"/>
+            </a>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="panel panel-primary col-md-6 col-md-offset-3">
+          <div class="panel-body">
+            <create-poll>Loading...</create-poll>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
