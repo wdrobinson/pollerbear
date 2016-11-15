@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">	
+		<div class="panel panel-primary poll-panel">
+			<div class="panel-body">
+				<router-outlet></router-outlet>
+			</div>
+		</div>
+		<p class="footer-text">
+			<span *ngIf="router.url !== '/'"><a routerLink="/">Home</a></span>
+			<span *ngIf="router.url !== '/'"> | </span>
+			<span *ngIf="router.url !== '/about'"><a routerLink="/about">About</a></span>
+			<span *ngIf="router.url !== '/about' && router.url !== '/privacy'"> | </span>
+			<span *ngIf="router.url !== '/privacy'"><a routerLink="/privacy">Privacy</a></span>
+		</p>	
+	</div>
+</div>

@@ -4,7 +4,6 @@ import { Option } from '../models/option.model';
 
 @Component({
 	moduleId: module.id,
-	selector: 'create-poll',
 	templateUrl: 'create-poll.template.html'
 })
 
@@ -27,7 +26,7 @@ export class CreatePollComponent {
 	}
 
 	createPoll(): void {
-		this.errorMessage = '';
+		this.errorMessage = null;
 		if(!this.poll.topic || this.poll.topic.trim() === '') {
 			this.errorMessage = 'please provide a poll topic';
 			return;
