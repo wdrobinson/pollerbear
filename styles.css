@@ -35,3 +35,27 @@ h3 {
 .panel.poll-panel {
 	margin-bottom: 3px;
 }
+
+.item-sort {
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 2px solid #444;
+	border-radius: 5px;
+
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	cursor: move;
+}
+
+.list-group-item {
+	background-color: #375a7f;
+	color: white;
+    margin: 3px 0;
+}
+
+.dnd-sortable-drag {
+  opacity:0.7;
+  border: 1px dashed #000;
+  user-drag: none;
+}
