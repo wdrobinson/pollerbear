@@ -1,7 +1,7 @@
 <h1>About</h1>
 <p>PollerBear is a simple preference based polling app that helps groups make decisions fairly and efficiently.</p>
 
-<p>Try our <a ng-href="/example" target="_blank">rank&nbsp;example</a> or our <a href="/example2" target="_blank">majority&nbsp;rules&nbsp;example</a> to see how it works.</p>
+<p>Try our <a routerLink="/example">rank&nbsp;example</a> or our <a routerLink="/example2">majority&nbsp;rules&nbsp;example</a> to see how it works.</p>
 
 <h2>FAQs</h2>
 <p>
@@ -11,10 +11,10 @@
 <h3>Why should I use the rank poll type?</h3>
 <p>
     This allows your voters to rank the poll options instead of picking a single winner. 
-    We take those rankings and use the <a href="http://en.wikipedia.org/wiki/Borda_count">Borda count</a> voting method to find the winner. 
+    We take those rankings and use the <a href="http://en.wikipedia.org/wiki/Borda_count" target="_blank">Borda count</a> voting method to find the winner. 
     Each candidate, or option, is given points based on the position each voter ranks it. 
     The option with the largest number of aggregated points, therefore the option that satisfies the most people, is the winner. 
-    This is a <a href="http://en.wikipedia.org/wiki/Consensus_decision-making">consensus based</a> voting method, unlike simple majority rules.
+    This is a <a href="http://en.wikipedia.org/wiki/Consensus_decision-making" target="_blank">consensus based</a> voting method, unlike simple majority rules.
 </p>
 
 <h3>How are points calculated in a rank poll?</h3>
@@ -24,9 +24,9 @@
     Second place would get four points and last place would get one point.
 </p>
 
-<!--<h3 class="subSubHeader">Why not use majority rules?</h3>
+<h3>Why not just use majority rules?</h3>
 <p>
     Your order of preference when voting is important. 
     Our voting method finds broadly accepted winners instead of a winner that simply satisfies a majority.
-    If you still want to use majority rules you can do so by selecting majority as your poll type under settings.
-</p>-->
+    If you still want to use majority rules you can do so by selecting 'pick one' as your poll type under settings.
+</p>

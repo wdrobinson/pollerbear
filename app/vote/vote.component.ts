@@ -14,6 +14,7 @@ import { PollService } 				from '../services/poll.service';
 
 export class VoteComponent implements OnInit {
 	poll = new Poll();
+	winner: number;
 
 	constructor(
 	  private pollService: PollService,
@@ -29,6 +30,23 @@ export class VoteComponent implements OnInit {
 
 	loadPoll(poll: Poll): void {
 		this.poll = poll;
+		this.poll.options = this.shuffleArray(this.poll.options);
+	}
+
+	onDragStart(event: DragEvent): void {
+		var img = document.createElement('img'); 
+		img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+		event.dataTransfer.setDragImage(img, 0, 0);
+	}
+
+	shuffleArray(array: Array<any>): Array<any> {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }		
+		return array;
 	}
 
 }

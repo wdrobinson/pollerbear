@@ -1,10 +1,27 @@
 <h1 class="text-center">{{poll.topic}}</h1>
-<p class="text-center">drag and drop the options below (best at top)</p>
-<div class="row">
-    <div class="col-md-10 col-md-offset-1">    
-	    <ul class="list-group" dnd-sortable-container [sortableData]="poll.options">
-	        <li *ngFor="let option of poll.options; let i = index;" class="list-group-item item-sort" dnd-sortable [sortableIndex]="i">{{option.name}}</li>
-	    </ul>
+
+<div *ngIf="poll.type===1">
+	<p class="text-center">drag and drop the options below (best at top)</p>
+	<div class="row">
+	    <div class="col-md-10 col-md-offset-1">    
+		    <ul class="list-group" dnd-sortable-container [sortableData]="poll.options">
+		        <li *ngFor="let option of poll.options; let i = index;" class="list-group-item item-sort" dnd-sortable [sortableIndex]="i" (dragstart)="onDragStart($event)">{{option.name}}</li>
+		    </ul>	    
+	    </div>
+	</div>
+</div>
+
+<div *ngIf="poll.type===2" class=text-center>
+    <p>select one option below</p>
+    <div class="majority-poll-options">
+        <div class="radio" *ngFor="let option of poll.options; let i = index;">
+          <label>
+            <input type="radio" name="optionsRadios" value="{{i}}" [(ngModel)]="winner"> {{option.name}}
+          </label>
+        </div>
     </div>
 </div>
 
+<div class=text-center>
+	<button type="button" class="btn btn-success" (click)="vote()">save vote</button>
+</div>

@@ -56,6 +56,10 @@ h3 {
 
 .dnd-sortable-drag {
   opacity:0.7;
-  border: 1px dashed #000;
   user-drag: none;
+}
+
+.majority-poll-options {
+    display: inline-block;
+    text-align: left;	
 }
