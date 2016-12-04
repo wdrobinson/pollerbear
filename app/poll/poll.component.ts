@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } 		from '@angular/core';
 
 @Component({
 	moduleId: module.id,	
@@ -7,6 +6,4 @@ import { Router } from '@angular/router';
 	templateUrl: 'poll.template.html'
 })
 
-export class PollComponent { 
-	constructor(private router: Router) {}
-}
+export class PollComponent {}

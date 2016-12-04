@@ -28,10 +28,6 @@ h3 {
 	font-size: 20px;
 }
 
-.footer-text a {
-    color:white;
-}
-
 .panel.poll-panel {
 	margin-bottom: 3px;
 }
@@ -62,4 +58,33 @@ h3 {
 .majority-poll-options {
     display: inline-block;
     text-align: left;	
+}
+
+.brand-image {
+	height: 22px;
+}
+
+.user-image {
+	height: 40px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
 }

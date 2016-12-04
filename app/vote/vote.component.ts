@@ -33,7 +33,7 @@ export class VoteComponent implements OnInit {
 		this.poll.options = this.shuffleArray(this.poll.options);
 	}
 
-	onDragStart(event: DragEvent): void {
+	onDragStart(event: any): void {
 		var img = document.createElement('img'); 
 		img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 		event.dataTransfer.setDragImage(img, 0, 0);

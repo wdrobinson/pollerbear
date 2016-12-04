@@ -13,7 +13,7 @@ export class CreatePollComponent {
 	poll = new Poll();
 
 	addOption(): void {
-		if(this.poll.options.length >= this.maxOptions) {
+		if (this.poll.options.length >= this.maxOptions) {
 			return;
 		}
 		this.poll.options.push(new Option());

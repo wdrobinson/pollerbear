@@ -1,0 +1,941 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ef",
+				"dropEffect\tproperty"
+			],
+			[
+				"event",
+				"Event\tinterface"
+			],
+			[
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"count",
+				"countdownTimeout"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/create-poll/create-poll.component.ts",
+			"settings":
+			{
+				"buffer_size": 1383,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app.module.ts",
+			"settings":
+			{
+				"buffer_size": 1017,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "import { NgModule }      from '@angular/core';"
+			}
+		},
+		{
+			"file": "app/services/poll.service.ts",
+			"settings":
+			{
+				"buffer_size": 1157,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "poll.service.ts"
+			}
+		},
+		{
+			"file": "app/vote/vote.component.ts",
+			"settings":
+			{
+				"buffer_size": 1434,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/vote/vote.template.html",
+			"settings":
+			{
+				"buffer_size": 1021,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/about/about.template.html",
+			"settings":
+			{
+				"buffer_size": 1849,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tsconfig.json",
+			"settings":
+			{
+				"buffer_size": 324,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app-routing.module.ts",
+			"settings":
+			{
+				"buffer_size": 715,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "app-routing.module.ts"
+			}
+		},
+		{
+			"file": "app/privacy/privacy.template.html",
+			"settings":
+			{
+				"buffer_size": 2299,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "privacy.template.html"
+			}
+		},
+		{
+			"file": "app/create-poll/create-poll.template.html",
+			"settings":
+			{
+				"buffer_size": 1583,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1007,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "systemjs.config.js",
+			"settings":
+			{
+				"buffer_size": 1632,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/poll/poll.template.html",
+			"settings":
+			{
+				"buffer_size": 604,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "poll.template.html"
+			}
+		},
+		{
+			"file": "app/poll/poll.component.ts",
+			"settings":
+			{
+				"buffer_size": 251,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/about/about.component.ts",
+			"settings":
+			{
+				"buffer_size": 235,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles.css",
+			"settings":
+			{
+				"buffer_size": 774,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": ".logo-display {"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 191.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascrit",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 315.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)     ",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Will/Documents/Git/pollerbear-ui",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/about",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/create-poll",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/poll",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/services"
+	],
+	"file_history":
+	[
+		"/C/Users/Will/AppData/Roaming/Sublime Text 3/Packages/TypeScript/tsserver/lib.d.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/package.json",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models/option.model.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models/poll.model.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/poll/poll.component.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/privacy/privacy.component.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models/poll.model.js",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/.gitignore",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/about/about.component.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/main.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/tsconfig.json",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/systemjs.config.js",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/about/about.tpl.html",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/app.routes.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/poll.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models/option.model.js",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models/option.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/app.component.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/app.module.js",
+		"/C/Users/Will/Source/Repos/angular-quickstart/app/index.html",
+		"/C/Users/Will/Source/Repos/angular-quickstart/systemjs.config.js",
+		"/C/Users/Will/Source/Repos/angular-quickstart/tsconfig.json",
+		"/C/Users/Will/Source/Repos/angular-quickstart/package.json",
+		"/D/index.html",
+		"/C/Users/Will/Source/Repos/busmapper/app/BusMapper/busMapper.js",
+		"/C/Users/Will/Source/ngGeolocation/ngGeolocation.test.js",
+		"/C/Users/Will/Source/ngGeolocation/ngGeolocation.js",
+		"/C/Users/Will/Source/Repos/busmapper/app/dist/js/main.js",
+		"/C/Users/Will/Source/Repos/busmapper/app/dist/css/main.css",
+		"/C/Users/Will/Source/Repos/busmapper/.travis.yml",
+		"/C/Users/Will/Source/Repos/busmapper/app/app.css",
+		"/C/Users/Will/Source/Repos/busmapper/app/BusMapper/busFactory.js",
+		"/C/Users/Will/Source/Repos/busmapper/app/index.html",
+		"/C/Users/Will/Source/Repos/busmapper/bower.json",
+		"/C/Users/Will/Source/Repos/busmapper/package.json",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapControls/mapRefresh/mapRefresh.tpl.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapControls/mapRefresh/mapRefresh.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/BusMapper/busMapper.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/app.css",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/app.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/BusMapper/busMapper.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/js/MarkerLabel.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/package.json",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/README.md",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/index.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapControls/mapTitle/mapTitle.tpl.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapControls/mapTitle/mapTitle.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapControls/mapControls.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapTitle/mapTitle.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapRefresh/mapRefresh.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapRefresh/mapRefresh.tpl.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/components/mapTitle/mapTitle.tpl.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/js/SimpleMarker.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/view1/busFactory.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/BusMapper/busMapper_test.js",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/view1/view1.html",
+		"/C/Users/Will/Source/Repos/willdrob.github.io/app/view1/view1.js",
+		"/C/Users/Will/Source/Repos/busmapper/.gitignore",
+		"/C/Users/Will/Desktop/test (3).html",
+		"/C/Users/Will/Desktop/test (2).html",
+		"/C/Users/Will/Desktop/test.html",
+		"/C/Users/Will/Desktop/test_maps.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"countdown",
+			"countdownInterval",
+			"sce",
+			"$geolocation",
+			"navigator",
+			"console",
+			"this.map.getZoom()>=15",
+			"mapTitleCtrl",
+			"mapControls",
+			"mapcontrols",
+			"myapp",
+			"marker",
+			"#",
+			"getTripInfo",
+			"getRoutes",
+			"resetCountdownTime",
+			"blueCircle"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/create-poll/create-poll.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								612,
+								612
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import { NgModule }      from '@angular/core';",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/services/poll.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								676,
+								676
+							]
+						],
+						"settings":
+						{
+							"auto_name": "poll.service.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/vote/vote.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								855,
+								855
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/vote/vote.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1001,
+								1001
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/about/about.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1849,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1849,
+								1849
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "tsconfig.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								324,
+								324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/app-routing.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"auto_name": "app-routing.module.ts",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/privacy/privacy.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1612,
+								1613
+							]
+						],
+						"settings":
+						{
+							"auto_name": "privacy.template.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/create-poll/create-poll.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								560,
+								560
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "systemjs.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1609,
+								1609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/poll/poll.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								561
+							]
+						],
+						"settings":
+						{
+							"auto_name": "poll.template.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/poll/poll.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/about/about.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								771,
+								771
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".logo-display {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 348.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pollerbear.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 302.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

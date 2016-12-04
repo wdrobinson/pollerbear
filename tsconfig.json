@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+    "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -8,5 +8,8 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false
-  }
+    },
+    "exclude": [
+        "node_modules"
+    ]   
 }
