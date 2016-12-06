@@ -1,34 +1,36 @@
 import { Component, OnInit } 		from '@angular/core';
 import { Router, ActivatedRoute, Params }   from '@angular/router';
+import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 import 'rxjs/add/operator/switchMap';
+import { Subscription } from 'rxjs';
 
 import { Poll } 					from '../models/poll.model';
 import { Option } 					from '../models/option.model';
-import { PollService } 				from '../services/poll.service';
 
 @Component({
 	moduleId: module.id,
-	templateUrl: 'vote.template.html',
-	providers: [PollService]
+	templateUrl: 'vote.template.html'
 })
 
 export class VoteComponent implements OnInit {
+	pollSubscription: Subscription;
 	poll = new Poll();
 	winner: number;
 
 	constructor(
-	  private pollService: PollService,
+	  private af: AngularFire,
 	  private route: ActivatedRoute,
 	  private router: Router
 	) {}
 
 	ngOnInit(): void {
-	  	this.route.params
-	    .switchMap((params: Params) => this.pollService.getPoll(params['url']))
+		this.pollSubscription = 
+		this.route.params.switchMap((params: Params) => this.af.database.object(`/polls/${params['url']}`))
 	    .subscribe((poll: Poll) => this.loadPoll(poll));
 	}
 
-	loadPoll(poll: Poll): void {
+	loadPoll(poll: Poll): void {		
+		this.pollSubscription.unsubscribe();
 		this.poll = poll;
 		this.poll.options = this.shuffleArray(this.poll.options);
 	}

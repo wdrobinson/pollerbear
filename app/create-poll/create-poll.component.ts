@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
 import { Poll } from '../models/poll.model';
 import { Option } from '../models/option.model';
+import { AuthService } 		from '../services/auth.service';
 
 @Component({
 	moduleId: module.id,
-	templateUrl: 'create-poll.template.html'
+	templateUrl: 'create-poll.template.html',
+	providers: [AuthService]
 })
 
 export class CreatePollComponent {
 	maxOptions = 20; 
 	errorMessage: string;
 	poll = new Poll();
+	polls: FirebaseListObservable<any>;
+
+	constructor(private af: AngularFire, private authService: AuthService) {
+		this.polls = af.database.list('/polls');
+	}
 
 	addOption(): void {
 		if (this.poll.options.length >= this.maxOptions) {
@@ -37,6 +46,10 @@ export class CreatePollComponent {
 			return;
 		}
 		this.poll.options = validOptions;
+		if(this.authService.user) {
+			this.poll.uid = this.authService.user.uid;
+		}		
+		this.polls.push(this.poll).then((item) => {this.poll.id = item.key;})
 	}
 
 	private getValidOptions(): Array<Option> {

@@ -1,8 +1,6 @@
 import { Injectable }     from '@angular/core';
-import { Http, Response } from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
-import 'rxjs/add/operator/map'
-import 'rxjs/add/operator/catch'
+import { AngularFire, FirebaseListObservable  }	from 'angularfire2';
 
 import { Poll } from '../models/poll.model';
 import { Option } from '../models/option.model';
@@ -10,11 +8,15 @@ import { Option } from '../models/option.model';
 @Injectable()
 export class PollService {
 
-  private apiUrl = 'http://localhost:2119/api/PollAPI';
+	private polls: FirebaseListObservable<Poll[]>;
 
-  constructor (private http: Http) {}
+  constructor (private af: AngularFire) {  	
+  	this.polls = af.database.list('/polls');
+  }
 
-  getPoll (url: string): Observable<Poll> {
+
+
+  /*getPoll (url: string): Observable<Poll> {
     return this.http.get(this.apiUrl + '/?url=' + url)
                     .map(this.extractData)
                     .catch(this.handleError);
@@ -36,6 +38,6 @@ export class PollService {
     }
     console.error(errMsg);
     return Observable.throw(errMsg);
-  }
+  }*/
 
 }

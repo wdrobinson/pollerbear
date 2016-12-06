@@ -11,7 +11,6 @@ export class AuthService {
   constructor (private af: AngularFire) {
     this.af.auth.subscribe(auth => {
     	if (auth) {
-  			console.log(auth);
     		this.user = auth.auth;
     	} else {
     		this.user = null;

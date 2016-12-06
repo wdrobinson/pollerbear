@@ -1,11 +1,12 @@
 import { Option } from './option.model';
 
 export class Poll {
-  id: number;
+  id: string;
   url: string;
   topic: string;
   votes: number;
-  type: number;
+  type = 1;
+  uid: string;
   options: Array<Option>;
 
   constructor() {
