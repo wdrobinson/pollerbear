@@ -1,31 +1,75 @@
-<div class="text-center">
-    <h1>create a poll</h1>
+<div *ngIf="!poll.id">
+	<div class="text-center">
+	    <h1>create a poll</h1>
+	</div>
+	<div class="panel panel-default">
+	    <div class="panel-heading poll-topic">
+	        <input class="form-control" type="text" [(ngModel)]="poll.topic" placeholder="Poll topic goes here..." autofocus>
+	    </div>
+	    <div class="panel-body">
+	        <div class="form-group" *ngFor="let option of poll.options; let i = index;">
+	            <input *ngIf="i <= 1" class="form-control" [(ngModel)]="option.name" type="text" placeholder="Poll option {{i+1}}...">
+	            <div class="input-group" *ngIf="i > 1">
+	                <input class="form-control" [(ngModel)]="option.name" type="text" placeholder="Poll option {{i+1}}..." (keypress)="keyPress(i)">
+	                <span class="input-group-addon input-group-background clickable" (click)="poll.options.splice(i, 1);">
+	                    <i class="glyphicon glyphicon-remove"></i>
+	                </span>
+	            </div>
+	        </div>
+	        <div *ngIf="poll.options.length < maxOptions" class="text-center">
+	            <span class="clickable" (click)="addOption()">
+	                <i class="glyphicon glyphicon-plus"></i> option
+	            </span>
+	        </div>
+	    </div>
+	</div>  
+
+	<div class="text-center">
+	    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissable">
+	        <button type="button" class="close" (click)="errorMessage = null"><i class="glyphicon glyphicon-remove"></i></button>
+	        <span class="glyphicon glyphicon-exclamation-sign"></span>
+	        {{errorMessage}}
+	    </div>	
+		<button *ngIf="!saving" type="button" class="btn btn-primary" (click)="createPoll()">create poll</button>
+		<button *ngIf="saving" class="btn btn-primary" disabled><i class="fa fa-circle-o-notch fa-spin"></i></button>
+	</div>
+
+	<div class="text-center top-buffer-large">
+		<span class="clickable" (click)="settingsCollapsed = !settingsCollapsed">
+			settings 
+			<span [ngClass]="{'dropup': settingsCollapsed}">
+				<span class="caret"></span>
+			</span>
+		</span>
+		<div [ngbCollapse]="settingsCollapsed" class="top-buffer">
+			<div>
+				<label class="radio-inline">
+					type: 
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="pollType" [value]="1" [(ngModel)]="poll.type"> rank
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="pollType" [value]="2" [(ngModel)]="poll.type"> pick one
+				</label>
+			</div>
+			<div class="top-buffer">				
+				  <div class="form-group">
+				    <div class="input-group">
+				      <div class="input-group-addon">pollerbear.net/</div>
+				      <input type="text" [formControl]="urlControl" class="form-control" placeholder="Pick a custom url">
+				      <div *ngIf="!urlControl.pristine" class="input-group-addon">
+				      	<span [ngClass]="{'glyphicon glyphicon-ok': customUrlValid && !customUrlLoading, 'glyphicon glyphicon-remove': !customUrlValid && !customUrlLoading, 'fa fa-circle-o-notch fa-spin': customUrlLoading}"></span>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+
 </div>
-<div class="panel panel-default">
-    <div class="panel-heading poll-topic">
-        <input class="form-control" id="topic" type="text" [(ngModel)]="poll.topic" placeholder="Poll topic goes here..." autofocus>
-    </div>
-    <div class="panel-body">
-        <div class="form-group" *ngFor="let option of poll.options; let i = index;">
-            <input *ngIf="i <= 1" class="form-control" [(ngModel)]="option.name" type="text" placeholder="Poll option {{i+1}}...">
-            <div class="input-group" *ngIf="i > 1">
-                <input class="form-control" [(ngModel)]="option.name" type="text" placeholder="Poll option {{i+1}}..." (keypress)="keyPress(i)">
-                <span class="input-group-addon input-group-background clickable" (click)="poll.options.splice(i, 1);">
-                    <i class="glyphicon glyphicon-remove"></i>
-                </span>
-            </div>
-        </div>
-        <div *ngIf="poll.options.length < maxOptions" class="text-center">
-            <span class="clickable" (click)="addOption()">
-                <i class="glyphicon glyphicon-plus"></i> Add option
-            </span>
-        </div>
-    </div>
-</div>  
-<div class="text-center">
-    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissable">
-        <button type="button" class="close" (click)="errorMessage = null"><i class="glyphicon glyphicon-remove"></i></button>
-        {{errorMessage}}
-    </div>	
-	<button type="button" class="btn btn-primary" (click)="createPoll()">create poll</button>
+
+<div *ngIf="poll.id" class="text-center">
+    <h2>your poll is ready and is available at</h2>
+    <p style="word-wrap:break-word;"><a routerLink="/{{poll.id}}">{{poll.id}}</a></p>
 </div>

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/throttleTime';
+import 'rxjs/add/observable/fromEvent';
+import {FormControl} from '@angular/forms';
 
 import { Poll } from '../models/poll.model';
 import { Option } from '../models/option.model';
@@ -16,9 +20,24 @@ export class CreatePollComponent {
 	errorMessage: string;
 	poll = new Poll();
 	polls: FirebaseListObservable<any>;
+	urlControl = new FormControl();
+	pollSubscription: Subscription;
+	customUrlValid = false;
+	customUrlLoading = true;
+	saving = false;
 
 	constructor(private af: AngularFire, private authService: AuthService) {
 		this.polls = af.database.list('/polls');
+	}
+
+	ngOnInit() {
+		// debounce keystroke events
+		this.urlControl.valueChanges
+		  .debounceTime(1000)
+		  .subscribe(newValue => {
+		  	this.poll.url = newValue;
+		  	this.checkUrl();
+		  });
 	}
 
 	addOption(): void {
@@ -37,19 +56,36 @@ export class CreatePollComponent {
 	createPoll(): void {
 		this.errorMessage = null;
 		if(!this.poll.topic || this.poll.topic.trim() === '') {
-			this.errorMessage = 'please provide a poll topic';
+			this.errorMessage = 'provide a poll topic';
 			return;
 		}
 		var validOptions = this.getValidOptions();
 		if (validOptions.length < 2) {
-			this.errorMessage = 'please provide at least two unique options';
+			this.errorMessage = 'provide at least two unique options';
 			return;
 		}
 		this.poll.options = validOptions;
 		if(this.authService.user) {
 			this.poll.uid = this.authService.user.uid;
 		}		
-		this.polls.push(this.poll).then((item) => {this.poll.id = item.key;})
+		this.saving = true;
+		this.polls.push(this.poll).then((item) => {
+			this.poll.id = item.key;
+			this.saving = false;
+		})
+	}
+
+	checkUrl(): void {
+		this.customUrlLoading = true;
+		this.pollSubscription = 
+		this.af.database.object(`/polls/${this.poll.url}`)
+	    .subscribe((poll: Poll) => {
+	    	this.pollSubscription.unsubscribe();
+    		console.log(poll);
+	    	console.log(poll.$value == null);
+	    	this.customUrlValid = !poll.$exists();
+	    	this.customUrlLoading = false;
+	    });
 	}
 
 	private getValidOptions(): Array<Option> {

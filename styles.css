@@ -14,6 +14,13 @@
 
 .clickable {
 	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;	
 }
 
 h1 {
@@ -100,4 +107,13 @@ h3 {
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
 	background-color: transparent;
+}
+
+.top-buffer-large {
+	margin-top: 20px;
+}
+
+
+.top-buffer {
+	margin-top: 10px;
 }
