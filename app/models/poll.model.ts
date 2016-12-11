@@ -2,7 +2,6 @@ import { Option } from './option.model';
 
 export class Poll {
   id: string;
-  url: string;
   topic: string;
   votes: number;
   type = 1;

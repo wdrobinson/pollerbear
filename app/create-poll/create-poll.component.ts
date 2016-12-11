@@ -16,14 +16,18 @@ import { AuthService } 		from '../services/auth.service';
 })
 
 export class CreatePollComponent {
+	appUrl = 'pollerbear.net';
 	maxOptions = 20; 
 	errorMessage: string;
 	poll = new Poll();
 	polls: FirebaseListObservable<any>;
 	urlControl = new FormControl();
 	pollSubscription: Subscription;
-	customUrlValid = false;
-	customUrlLoading = true;
+	customUrl: string;
+	customUrlClean: string;
+	customUrlValid: null;
+	customUrlLoading = false;
+	settingsCollapsed = true;
 	saving = false;
 
 	constructor(private af: AngularFire, private authService: AuthService) {
@@ -35,7 +39,7 @@ export class CreatePollComponent {
 		this.urlControl.valueChanges
 		  .debounceTime(1000)
 		  .subscribe(newValue => {
-		  	this.poll.url = newValue;
+		  	this.customUrl = newValue;
 		  	this.checkUrl();
 		  });
 	}
@@ -69,23 +73,48 @@ export class CreatePollComponent {
 			this.poll.uid = this.authService.user.uid;
 		}		
 		this.saving = true;
-		this.polls.push(this.poll).then((item) => {
-			this.poll.id = item.key;
-			this.saving = false;
-		})
+		if (this.customUrlValid && this.customUrlClean) {
+			var newPoll = this.af.database.object(`/polls/${this.customUrlClean}`);
+			newPoll.set(this.poll).then(() => {
+				this.poll.id = this.customUrlClean;
+				this.saving = false;			
+			});
+		} else {
+			this.polls.push(this.poll).then((item) => {
+				this.poll.id = item.key;
+				this.saving = false;
+			})
+		}
 	}
 
-	checkUrl(): void {
+	urlChange(value: string): void {
 		this.customUrlLoading = true;
+	}
+
+	checkUrl(): void {	
+		this.customUrlClean = this.customUrl.replace(/[^a-zA-Z0-9-_]/g, '')
+		if(this.customUrl == null || this.customUrl === '') {
+			this.resetCustomUrl();
+			return;	
+		}	
 		this.pollSubscription = 
-		this.af.database.object(`/polls/${this.poll.url}`)
+		this.af.database.object(`/polls/${this.customUrlClean}`)
 	    .subscribe((poll: Poll) => {
 	    	this.pollSubscription.unsubscribe();
-    		console.log(poll);
-	    	console.log(poll.$value == null);
 	    	this.customUrlValid = !poll.$exists();
 	    	this.customUrlLoading = false;
+	    	if (!this.customUrlValid) {
+	    		this.customUrlClean = null;
+	    	}
 	    });
+	}
+
+	resetCustomUrl(): void {
+		this.customUrlLoading = false;
+		this.customUrlValid = null;
+		this.urlControl.markAsPristine();
+		this.customUrl = null;	
+		this.customUrlClean = null;	
 	}
 
 	private getValidOptions(): Array<Option> {

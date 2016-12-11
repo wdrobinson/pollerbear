@@ -6,14 +6,15 @@ import { AngularFire, AuthProviders, AuthMethods }	from 'angularfire2';
 @Injectable()
 export class AuthService {
 
-	public user: firebase.User;	
+	public auth: FirebaseAuthState;	
 
   constructor (private af: AngularFire) {
     this.af.auth.subscribe(auth => {
     	if (auth) {
-    		this.user = auth.auth;
+    		this.auth = auth;
     	} else {
-    		this.user = null;
+    		this.auth = null;
+    		this.loginAnonymous();    		
     	}    	
     });
   }
@@ -24,6 +25,13 @@ export class AuthService {
    
   logout() {
     this.af.auth.logout();
+  }
+
+  loginAnonymous() {
+    this.af.auth.login({
+      provider: AuthProviders.Anonymous,
+      method: AuthMethods.Anonymous,
+    });
   }
 
 }
