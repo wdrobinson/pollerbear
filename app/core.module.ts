@@ -5,7 +5,7 @@ import { FormsModule } from       '@angular/forms';
 import { 
   AngularFireModule, 
   AuthMethods, 
-  AuthProviders 
+  AuthProviders
 } from "angularfire2";
 
 const myFirebaseConfig = {

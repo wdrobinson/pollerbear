@@ -1,4 +1,5 @@
 import { Component } 		from '@angular/core';
+import { ToasterConfig } from 'angular2-toaster/angular2-toaster';
 
 @Component({
 	moduleId: module.id,	
@@ -6,4 +7,9 @@ import { Component } 		from '@angular/core';
 	templateUrl: 'poll.template.html'
 })
 
-export class PollComponent {}
+export class PollComponent {
+    public toasterconfig : ToasterConfig = 
+	    new ToasterConfig({
+	        timeout: 3000
+	    });
+}

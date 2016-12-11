@@ -121,3 +121,7 @@ h3 {
 .top-buffer-small {
 	margin-top: 5px;
 }
+
+.left-buffer-small {
+	margin-left: 5px;
+}

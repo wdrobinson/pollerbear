@@ -3,7 +3,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/throttleTime';
 import 'rxjs/add/observable/fromEvent';
-import {FormControl} from '@angular/forms';
+import { FormControl } from '@angular/forms';
+import { Subscription } from 'rxjs';
+import { ToasterService } from 'angular2-toaster/angular2-toaster';
 
 import { Poll } from '../models/poll.model';
 import { Option } from '../models/option.model';
@@ -11,8 +13,7 @@ import { AuthService } 		from '../services/auth.service';
 
 @Component({
 	moduleId: module.id,
-	templateUrl: 'create-poll.template.html',
-	providers: [AuthService]
+	templateUrl: 'create-poll.template.html'
 })
 
 export class CreatePollComponent {
@@ -25,12 +26,13 @@ export class CreatePollComponent {
 	pollSubscription: Subscription;
 	customUrl: string;
 	customUrlClean: string;
-	customUrlValid: null;
+	customUrlValid: boolean;
 	customUrlLoading = false;
 	settingsCollapsed = true;
 	saving = false;
+	finalUrl: string;
 
-	constructor(private af: AngularFire, private authService: AuthService) {
+	constructor(private af: AngularFire, private authService: AuthService, private toasterService: ToasterService) {
 		this.polls = af.database.list('/polls');
 	}
 
@@ -69,8 +71,8 @@ export class CreatePollComponent {
 			return;
 		}
 		this.poll.options = validOptions;
-		if(this.authService.user) {
-			this.poll.uid = this.authService.user.uid;
+		if(this.authService.auth.auth) {
+			this.poll.uid = this.authService.auth.auth.uid;
 		}		
 		this.saving = true;
 		if (this.customUrlValid && this.customUrlClean) {
@@ -82,6 +84,7 @@ export class CreatePollComponent {
 		} else {
 			this.polls.push(this.poll).then((item) => {
 				this.poll.id = item.key;
+				this.finalUrl = `${this.appUrl}/${this.poll.id}`;
 				this.saving = false;
 			})
 		}
@@ -99,9 +102,9 @@ export class CreatePollComponent {
 		}	
 		this.pollSubscription = 
 		this.af.database.object(`/polls/${this.customUrlClean}`)
-	    .subscribe((poll: Poll) => {
+	    .subscribe((result: any) => {
 	    	this.pollSubscription.unsubscribe();
-	    	this.customUrlValid = !poll.$exists();
+	    	this.customUrlValid = !result.$exists();
 	    	this.customUrlLoading = false;
 	    	if (!this.customUrlValid) {
 	    		this.customUrlClean = null;
@@ -115,6 +118,10 @@ export class CreatePollComponent {
 		this.urlControl.markAsPristine();
 		this.customUrl = null;	
 		this.customUrlClean = null;	
+	}
+
+	urlCopy(): void {
+		this.toasterService.pop('success', null, 'URL copied to clipboard!');
 	}
 
 	private getValidOptions(): Array<Option> {

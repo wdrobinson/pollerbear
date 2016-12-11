@@ -1,7 +1,7 @@
 import { Injectable }	from '@angular/core';
 import { Http, Response }	from '@angular/http';
 import { Observable }	from 'rxjs/Observable';
-import { AngularFire, AuthProviders, AuthMethods }	from 'angularfire2';
+import { AngularFire, AuthProviders, AuthMethods, FirebaseAuthState }	from 'angularfire2';
 
 @Injectable()
 export class AuthService {
@@ -19,7 +19,13 @@ export class AuthService {
     });
   }
 
-  login() {
+  login() {  	
+  	/*if (this.auth && this.auth.anonymous) {
+  		var test = new firebase.auth.GoogleAuthProvider();
+  		console.log(test);
+  		this.auth.auth.linkWithRedirect(test);
+  		return;
+  	} */
     this.af.auth.login();
   }
    
@@ -31,7 +37,7 @@ export class AuthService {
     this.af.auth.login({
       provider: AuthProviders.Anonymous,
       method: AuthMethods.Anonymous,
-    });
+    });    
   }
 
 }

@@ -5,8 +5,7 @@ import { AuthService } 		from '../services/auth.service';
 @Component({
 	moduleId: module.id,
 	selector: 'navbar',
-	templateUrl: 'navbar.template.html',
-	providers: [AuthService]
+	templateUrl: 'navbar.template.html'
 })
 
 export class NavBarComponent {
