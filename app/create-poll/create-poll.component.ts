@@ -71,8 +71,8 @@ export class CreatePollComponent {
 			return;
 		}
 		this.poll.options = validOptions;
-		if(this.authService.auth.auth) {
-			this.poll.uid = this.authService.auth.auth.uid;
+		if(this.authService.user && this.authService.user.uid) {
+			this.poll.uid = this.authService.user.uid;
 		}		
 		this.saving = true;
 		if (this.customUrlValid && this.customUrlClean) {

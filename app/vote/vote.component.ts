@@ -13,7 +13,6 @@ import { Option } 					from '../models/option.model';
 })
 
 export class VoteComponent implements OnInit {
-	pollSubscription: Subscription;
 	poll = new Poll();
 	winner: number;
 
@@ -24,13 +23,11 @@ export class VoteComponent implements OnInit {
 	) {}
 
 	ngOnInit(): void {
-		this.pollSubscription = 
 		this.route.params.switchMap((params: Params) => this.af.database.object(`/polls/${params['url']}`))
 	    .subscribe((poll: Poll) => this.loadPoll(poll));
 	}
 
 	loadPoll(poll: Poll): void {		
-		this.pollSubscription.unsubscribe();
 		this.poll = poll;
 		this.poll.options = this.shuffleArray(this.poll.options);
 	}

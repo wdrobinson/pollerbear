@@ -1,32 +1,54 @@
-import { Injectable }	from '@angular/core';
+import { Injectable, Inject, NgZone }	from '@angular/core';
 import { Http, Response }	from '@angular/http';
 import { Observable }	from 'rxjs/Observable';
-import { AngularFire, AuthProviders, AuthMethods, FirebaseAuthState }	from 'angularfire2';
+import { FirebaseApp, AngularFire, AuthProviders, AuthMethods, FirebaseAuthState }	from 'angularfire2';
+import 'rxjs/add/operator/catch';
+import * as firebase from 'firebase';
 
 @Injectable()
 export class AuthService {
 
-	public auth: FirebaseAuthState;	
+	public user: firebase.User;	
+	public userInfo: firebase.UserInfo;	
 
-  constructor (private af: AngularFire) {
-    this.af.auth.subscribe(auth => {
+  constructor (private af: AngularFire, @Inject(FirebaseApp) private firebaseApp: firebase.app.App, @Inject(NgZone) private zone: NgZone) {
+		firebaseApp.auth().getRedirectResult().catch((error: any) => {
+			if (error.code !== 'auth/credential-already-in-use') {				
+				console.log(error);
+				return;
+			}
+			var prevUser = this.firebaseApp.auth().currentUser;
+			this.firebaseApp.auth().currentUser.delete().then( () => {
+				this.firebaseApp.auth().signInWithCredential(error.credential).then((user: firebase.User) => {
+				  var newUser = user;
+			   	zone.run( () => {
+				  	this.user = newUser;
+				  	this.userInfo = newUser.providerData[0];
+				  });
+				  this.mergeAccount(prevUser, newUser);
+				}, (error) => {
+				  console.log("Sign In Error", error);
+				});
+			});
+		});
+
+    this.af.auth.subscribe((auth) => {
     	if (auth) {
-    		this.auth = auth;
+    		this.user = auth.auth;
+    		this.userInfo = auth.google;
     	} else {
-    		this.auth = null;
+    		this.user = null;
+    		this.userInfo = null;
     		this.loginAnonymous();    		
-    	}    	
-    });
+    	}
+    }, (error) => {
+    		console.log(error);
+  	});
   }
 
-  login() {  	
-  	/*if (this.auth && this.auth.anonymous) {
-  		var test = new firebase.auth.GoogleAuthProvider();
-  		console.log(test);
-  		this.auth.auth.linkWithRedirect(test);
-  		return;
-  	} */
-    this.af.auth.login();
+  login() {  
+  	var provider = new firebase.auth.GoogleAuthProvider();
+		this.firebaseApp.auth().currentUser.linkWithRedirect(provider);
   }
    
   logout() {
@@ -39,5 +61,10 @@ export class AuthService {
       method: AuthMethods.Anonymous,
     });    
   }
+
+  mergeAccount(prevUser: firebase.User, newUser: firebase.User) {
+  		//TODO: map old UID to new UID anywhere it is used
+  }
+
 
 }

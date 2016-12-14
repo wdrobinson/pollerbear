@@ -11,20 +11,20 @@
     </div>
     <div class="navbar-collapse collapse" [ngbCollapse]="isCollapsed">
       <ul class="nav navbar-nav">
-        <li [class.active]="router.url === '/'"><a routerLink="/">Home</a></li>
-        <li [class.active]="router.url === '/about'"><a routerLink="/about">About</a></li>
-        <li [class.active]="router.url === '/privacy'"><a routerLink="/privacy">Privacy</a></li>
+        <li *ngIf="router.url !== '/'"><a routerLink="/">Home</a></li>
+        <li *ngIf="router.url !== '/about'"><a routerLink="/about">About</a></li>
+        <li *ngIf="router.url !== '/privacy'"><a routerLink="/privacy">Privacy</a></li>
       </ul>
-      <ul *ngIf="authService.auth && !authService.auth.anonymous" class="nav navbar-nav navbar-right">
+      <ul *ngIf="authService.user && !authService.user.isAnonymous" class="nav navbar-nav navbar-right">
         <li ngbDropdown ngbDropdownToggle>
           <a href="#">
-            <img class="user-image img-circle" [src]="authService.auth.auth.photoURL">
+            <img class="user-image img-circle" [src]="authService.userInfo.photoURL">
           </a>
           <ul class="dropdown-menu">
             <li>
               <div class="navbar-login">
-                <p class="text-left small">{{authService.auth.auth.displayName}}</p>
-                <p class="text-left small">{{authService.auth.auth.email}}</p>
+                <p class="text-left small">{{authService.userInfo.displayName}}</p>
+                <p class="text-left small">{{authService.userInfo.email}}</p>
               </div>
             </li>
             <li class="divider navbar-login-session-bg"></li>
@@ -39,7 +39,7 @@
             <li><a href="#" (click)="logout()">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
           </ul>
       </ul>
-      <button *ngIf="!authService.auth || authService.auth.anonymous" type="button" class="btn btn-default btn-sm navbar-btn navbar-right" (click)="login()">Sign in</button>
+      <button *ngIf="!authService.user || authService.user.isAnonymous" type="button" class="btn btn-default btn-sm navbar-btn navbar-right" (click)="login()">Sign in</button>
     </div>
   </div>
 </nav>
