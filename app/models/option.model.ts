@@ -1,5 +1,6 @@
 export class Option {
   id: number;
   name: string;
-  points: number;
+  majorityPoints = 0;
+  rankPoints = 0;  
 }

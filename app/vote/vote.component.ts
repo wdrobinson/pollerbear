@@ -7,7 +7,6 @@ import * as firebase from 'firebase';
 
 import { Poll } 					from '../models/poll.model';
 import { Option } 					from '../models/option.model';
-import { MajorityVote } 			from '../models/majority-vote.model';
 import { AuthService } 				from '../services/auth.service';
 
 @Component({
@@ -38,7 +37,6 @@ export class VoteComponent implements OnInit {
 	loadPoll(poll: Poll): void {		
 		this.poll = poll;
 		this.poll.options = this.shuffleArray(this.poll.options);
-		console.log(this.poll);
 	}
 
 	shuffleArray(array: Array<any>): Array<any> {
@@ -51,30 +49,50 @@ export class VoteComponent implements OnInit {
 		return array;
 	}
 
-	saveVote(): void {
+	prepareSaveVote(): void {
+		if (this.poll.type === 1) {
+			for (var i = 0; i < this.poll.options.length; i++) {
+				var option = this.poll.options[i];
+				option.majorityPoints = (i === 0) ? 1 : 0
+				option.rankPoints = this.poll.options.length - i;
+			}
+		}		
 		if (this.poll.type === 2) {
-			this.saveMajorityVote();			
+			for (var option of this.poll.options) {
+				if (option.id === this.winner) {
+					option.majorityPoints = 1;
+					option.rankPoints = 0;
+				} else {
+					option.majorityPoints = 0;
+					option.rankPoints = 0;
+				}
+			}
 		}
+		this.saveVote();
 	}
 
-	saveMajorityVote(): void {
+	saveVote(): void {
 		this.firebaseApp.database().ref(`/polls/${this.poll.$key}`).transaction((poll: Poll) => {
 			if (poll) {
 				poll.votes++;
+				for (var option of poll.options) {
+					for (var localOption of this.poll.options) {
+						if (localOption.id === option.id) {
+							option.majorityPoints += localOption.majorityPoints;
+							option.rankPoints += localOption.rankPoints;
+							break;
+						}
+					}
+				}
 			}
 			return poll;
 		}).then( () => {
-			console.log('finished');
+			this.updateVoteTable();
 		});
-		/*var vote = new MajorityVote();
-		vote.uid = this.authService.user.uid;
-		vote.winner = this.winner;
-		var votes = this.af.database.list(`/majorityVotes/${this.poll.$key}`);
-		votes.push(vote).then((obj) => {
-			console.log(obj);			
-		});	*/
+	}
 
-
+	updateVoteTable(): void {
+		var votes = this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).set(this.poll.options);
 	}
 
 }
