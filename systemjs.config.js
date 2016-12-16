@@ -25,13 +25,14 @@
       // other libraries
       'rxjs':                               'npm:rxjs',
       'angular-in-memory-web-api':          'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      'ng2-dnd':                            'npm:ng2-dnd',
       'firebase':                           'npm:firebase',
       'angularfire2':                       'npm:angularfire2',
       '@ng-bootstrap/ng-bootstrap':         'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js', 
       'clipboard':                          'npm:clipboard/dist/clipboard.js',
       'angular2-clipboard':                 'npm:angular2-clipboard',
-      'angular2-toaster':                   'npm:angular2-toaster'
+      'angular2-toaster':                   'npm:angular2-toaster',
+      'jquery':                             'npm:jquery',
+      'jquery-ui':                          'npm:jquery-ui'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -41,10 +42,6 @@
       },
       rxjs: {
         defaultExtension: 'js'
-      },
-      'ng2-dnd':  {
-        main: 'index.js',  
-        defaultExtension: 'js' 
       },
       angularfire2:  { 
         main: 'bundles/angularFire2.umd.js',  
@@ -63,7 +60,15 @@
       },
       'angular2-toaster': {
         defaultExtension: 'js'
-      }      
+      },
+      'jquery': {
+        main: 'dist/jquery.min.js',  
+        defaultExtension: 'js'
+      },
+      'jquery-ui': {
+        main: 'ui/core.js',
+        defaultExtension: 'js'
+      }    
     }
   });
 })(this);

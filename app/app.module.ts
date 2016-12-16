@@ -3,7 +3,6 @@ import { BrowserModule } 			from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule }   			from '@angular/router';
 import { HttpModule, JsonpModule } 	from '@angular/http';
-import { DndModule } 				from 'ng2-dnd';
 import { NgbModule } 				from '@ng-bootstrap/ng-bootstrap';
 import { ClipboardModule }  		from 'angular2-clipboard';
 import { ToasterModule } 			from 'angular2-toaster/angular2-toaster';
@@ -17,6 +16,7 @@ import { AboutComponent }   		from './about/about.component';
 import { PrivacyComponent }   		from './privacy/privacy.component';
 import { VoteComponent }   			from './vote/vote.component';
 import { AuthService } 				from './services/auth.service';
+import { SortableDirective } 		from './vote/sortable.directive';
 
 @NgModule({
   imports: [ 
@@ -26,13 +26,12 @@ import { AuthService } 				from './services/auth.service';
   	AppRoutingModule,
   	HttpModule,
   	JsonpModule,
-  	DndModule.forRoot(),
   	NgbModule.forRoot(),
   	ClipboardModule,
   	ToasterModule,
   	CoreModule
   ],  
-  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent ],
+  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective ],
   providers: [ AuthService ],
   bootstrap:    [ PollComponent, NavBarComponent ]
 })

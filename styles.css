@@ -113,7 +113,6 @@ h3 {
 	margin-top: 20px;
 }
 
-
 .top-buffer {
 	margin-top: 10px;
 }
@@ -124,4 +123,8 @@ h3 {
 
 .left-buffer-small {
 	margin-left: 5px;
+}
+
+.small-buffer {
+	margin-bottom: 10px;
 }

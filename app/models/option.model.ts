@@ -1,5 +1,5 @@
 export class Option {
-  optionId: number;
+  id: number;
   name: string;
   points: number;
 }

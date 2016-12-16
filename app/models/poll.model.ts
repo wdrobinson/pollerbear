@@ -1,9 +1,9 @@
 import { Option } from './option.model';
 
 export class Poll {
-  id: string;
+  $key: string;
   topic: string;
-  votes: number;
+  votes = 0;
   type = 1;
   uid: string;
   options: Array<Option>;
