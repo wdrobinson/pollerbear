@@ -15,6 +15,7 @@ import { Option } 					from '../models/option.model';
 
 export class ResultsComponent implements OnInit {
 	poll = new Poll();
+	loading = true;
 
 	constructor(
 	  private af: AngularFire,
@@ -55,7 +56,7 @@ export class ResultsComponent implements OnInit {
 		this.poll.options.sort((a: Option, b: Option) => {
 			return b.points - a.points ||  a.name.localeCompare(b.name);
 		});
-
+		this.loading = false;
 	}
 
 }

@@ -24,11 +24,18 @@
 	</div>
 
 	<div class=text-center *ngIf="!voted">
-		<button *ngIf="!saving" type="button" class="btn btn-default" (click)="prepareSaveVote()">save vote</button>
-		<button *ngIf="saving" type="button" class="btn btn-default" disabled><i class="fa fa-circle-o-notch fa-spin"></i></button>	
+		<button type="button" class="btn btn-default" (click)="prepareSaveVote()">save vote</button>
 	</div>
 
 	<div class=text-center *ngIf="voted">
 		<p>You've already cast your vote. Do you want to <a routerLink="/results/{{poll.$key}}">view results</a>?
 	</div>
+</div>
+
+<div class="spinner" *ngIf="loading">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
 </div>

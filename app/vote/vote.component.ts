@@ -20,7 +20,6 @@ export class VoteComponent implements OnInit {
 	winner: number;
 	votes = new Array<Vote>();
 	loading = true;
-	saving = false;
 	voted = false;
 
 	constructor(
@@ -56,7 +55,7 @@ export class VoteComponent implements OnInit {
 	}
 
 	prepareSaveVote(): void {
-		this.saving = true;
+		this.loading = true;
 		if (this.poll.type === 1) {
 			for (var i = 0; i < this.poll.options.length; i++) {
 				var option = this.poll.options[i];
@@ -102,7 +101,7 @@ export class VoteComponent implements OnInit {
 		}).then( () => {
 			this.updateVoteTable();
 		}).catch((error: Error) => {
-			this.saving = false;
+			this.loading = false;
 			if (error.message === 'permission_denied') {
 				this.voted = true;
 			} else {
@@ -113,7 +112,7 @@ export class VoteComponent implements OnInit {
 
 	updateVoteTable(): void {
 		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).set(this.votes).then(() => {
-			this.saving = false;
+			this.loading = false;
 			this.router.navigate([`/results/${this.poll.$key}`]);
 		});
 	}
