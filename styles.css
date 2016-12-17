@@ -128,3 +128,14 @@ h3 {
 .small-buffer {
 	margin-bottom: 10px;
 }
+
+table.results-table th {
+    vertical-align: middle !important;
+    background-color: #848484;
+    text-align: center;
+}
+
+table.results-table td {
+    vertical-align: middle !important;
+    text-align: center;
+}

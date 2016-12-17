@@ -15,6 +15,7 @@ import { CreatePollComponent }   	from './create-poll/create-poll.component';
 import { AboutComponent }   		from './about/about.component';
 import { PrivacyComponent }   		from './privacy/privacy.component';
 import { VoteComponent }   			from './vote/vote.component';
+import { ResultsComponent }   		from './results/results.component';
 import { AuthService } 				from './services/auth.service';
 import { SortableDirective } 		from './vote/sortable.directive';
 
@@ -31,7 +32,7 @@ import { SortableDirective } 		from './vote/sortable.directive';
   	ToasterModule,
   	CoreModule
   ],  
-  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective ],
+  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective, ResultsComponent ],
   providers: [ AuthService ],
   bootstrap:    [ PollComponent, NavBarComponent ]
 })

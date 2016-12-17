@@ -1,0 +1,26 @@
+<div class="text-center">
+	<h1>{{poll.topic}}</h1>
+	<p>{{poll.votes}} votes</p>
+
+    <table class="table table-bordered table-condensed results-table">
+        <thead>
+            <tr>
+                <th>option</th>
+                <th>
+                    <span *ngIf="poll.type==1">points</span>
+                    <span *ngIf="poll.type==2">votes</span>
+                </th>
+            </tr>
+        </thead>
+        <tr *ngFor="let option of poll.options">
+            <td *ngIf="option.winner"><i *ngIf="poll.votes > 0" class="fa fa-star" style="color: gold;"></i> {{ option.name }}</td>
+            <td *ngIf="!option.winner">{{ option.name }}</td>
+            <td>
+                {{option.points | number : '1.0-0'}} 
+                <span *ngIf="poll.type==2 && poll.votes > 0">
+                    ({{option.percentVotes | number : '1.0-0'}}%)
+                </span>
+            </td>
+        </tr>
+    </table>	
+</div>

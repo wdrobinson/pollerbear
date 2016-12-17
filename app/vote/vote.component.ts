@@ -7,6 +7,7 @@ import * as firebase from 'firebase';
 
 import { Poll } 					from '../models/poll.model';
 import { Option } 					from '../models/option.model';
+import { Vote } 					from '../models/vote.model';
 import { AuthService } 				from '../services/auth.service';
 
 @Component({
@@ -17,6 +18,10 @@ import { AuthService } 				from '../services/auth.service';
 export class VoteComponent implements OnInit {
 	poll = new Poll();
 	winner: number;
+	votes = new Array<Vote>();
+	loading = true;
+	saving = false;
+	voted = false;
 
 	constructor(
 	  private af: AngularFire,
@@ -37,6 +42,7 @@ export class VoteComponent implements OnInit {
 	loadPoll(poll: Poll): void {		
 		this.poll = poll;
 		this.poll.options = this.shuffleArray(this.poll.options);
+		this.checkVoted();
 	}
 
 	shuffleArray(array: Array<any>): Array<any> {
@@ -50,22 +56,29 @@ export class VoteComponent implements OnInit {
 	}
 
 	prepareSaveVote(): void {
+		this.saving = true;
 		if (this.poll.type === 1) {
 			for (var i = 0; i < this.poll.options.length; i++) {
 				var option = this.poll.options[i];
-				option.majorityPoints = (i === 0) ? 1 : 0
-				option.rankPoints = this.poll.options.length - i;
+				var vote = new Vote();
+				vote.id = option.id;
+				vote.majorityPoints = (i === 0) ? 1 : 0
+				vote.rankPoints = this.poll.options.length - i;
+				this.votes.push(vote);
 			}
 		}		
 		if (this.poll.type === 2) {
 			for (var option of this.poll.options) {
-				if (option.id === this.winner) {
-					option.majorityPoints = 1;
-					option.rankPoints = 0;
+				var vote = new Vote();
+				vote.id = option.id;
+				if (vote.id === this.winner) {
+					vote.majorityPoints = 1;
+					vote.rankPoints = 0;
 				} else {
-					option.majorityPoints = 0;
-					option.rankPoints = 0;
+					vote.majorityPoints = 0;
+					vote.rankPoints = 0;
 				}
+				this.votes.push(vote);
 			}
 		}
 		this.saveVote();
@@ -76,10 +89,10 @@ export class VoteComponent implements OnInit {
 			if (poll) {
 				poll.votes++;
 				for (var option of poll.options) {
-					for (var localOption of this.poll.options) {
-						if (localOption.id === option.id) {
-							option.majorityPoints += localOption.majorityPoints;
-							option.rankPoints += localOption.rankPoints;
+					for (var vote of this.votes) {
+						if (vote.id === option.id) {
+							option.majorityPoints += vote.majorityPoints;
+							option.rankPoints += vote.rankPoints;
 							break;
 						}
 					}
@@ -88,12 +101,30 @@ export class VoteComponent implements OnInit {
 			return poll;
 		}).then( () => {
 			this.updateVoteTable();
+		}).catch((error: Error) => {
+			this.saving = false;
+			if (error.message === 'permission_denied') {
+				this.voted = true;
+			} else {
+				console.log(error);
+			}
 		});
 	}
 
 	updateVoteTable(): void {
-		var votes = this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).set(this.poll.options);
+		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).set(this.votes).then(() => {
+			this.saving = false;
+			this.router.navigate([`/results/${this.poll.$key}`]);
+		});
 	}
 
+	checkVoted(): void {
+		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).take(1).subscribe((obj: any) => {			
+			if (obj.$exists()) {
+				this.voted = true;	
+			}
+		}, null, () => {
+			this.loading = false;
+		});
+	}
 }
-

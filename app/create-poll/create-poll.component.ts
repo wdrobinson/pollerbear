@@ -23,7 +23,6 @@ export class CreatePollComponent {
 	poll = new Poll();
 	polls: FirebaseListObservable<any>;
 	urlControl = new FormControl();
-	pollSubscription: Subscription;
 	customUrl: string;
 	customUrlClean: string;
 	customUrlValid: boolean;
@@ -103,10 +102,8 @@ export class CreatePollComponent {
 			this.resetCustomUrl();
 			return;	
 		}	
-		this.pollSubscription = 
-		this.af.database.object(`/polls/${this.customUrlClean}`)
+		this.af.database.object(`/polls/${this.customUrlClean}`).take(1)
 	    .subscribe((result: any) => {
-	    	this.pollSubscription.unsubscribe();
 	    	this.customUrlValid = !result.$exists();
 	    	this.customUrlLoading = false;
 	    	if (!this.customUrlValid) {
