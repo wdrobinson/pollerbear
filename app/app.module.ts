@@ -6,6 +6,7 @@ import { HttpModule, JsonpModule } 	from '@angular/http';
 import { NgbModule } 				from '@ng-bootstrap/ng-bootstrap';
 import { ClipboardModule }  		from 'angular2-clipboard';
 import { ToasterModule } 			from 'angular2-toaster/angular2-toaster';
+import { ChartsModule } 			from 'ng2-charts';
 
 import { CoreModule}				from './core.module'
 import { AppRoutingModule } 		from './app-routing.module';
@@ -30,7 +31,8 @@ import { SortableDirective } 		from './vote/sortable.directive';
   	NgbModule.forRoot(),
   	ClipboardModule,
   	ToasterModule,
-  	CoreModule
+  	CoreModule,
+  	ChartsModule
   ],  
   declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective, ResultsComponent ],
   providers: [ AuthService ],

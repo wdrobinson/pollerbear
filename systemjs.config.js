@@ -32,7 +32,9 @@
       'angular2-clipboard':                 'npm:angular2-clipboard',
       'angular2-toaster':                   'npm:angular2-toaster',
       'jquery':                             'npm:jquery',
-      'jquery-ui':                          'npm:jquery-ui'
+      'jquery-ui':                          'npm:jquery-ui',
+      'ng2-charts':                         'npm:ng2-charts',
+      'chart.js':                           'npm:chart.js/dist'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -68,7 +70,15 @@
       'jquery-ui': {
         main: 'ui/core.js',
         defaultExtension: 'js'
-      }    
+      },
+      'ng2-charts': {
+        main: 'ng2-charts.js',
+        defaultExtension: 'js' 
+      },
+      'chart.js': {
+        main: 'Chart.js',
+        defaultExtension: 'js' 
+      }      
     }
   });
 })(this);

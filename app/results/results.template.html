@@ -23,6 +23,17 @@
             </td>
         </tr>
     </table>	
+
+	<div style="display: block;">
+		<canvas baseChart width="400" height="400"
+		            [datasets]="chartData"
+		            [labels]="chartLabels"
+		            [chartType]="chartType"
+		            [colors]="chartColors"
+		            [legend]="chartLegend"
+		            ></canvas>
+	</div>
+
 </div>
 
 <div class="spinner" *ngIf="loading">
@@ -32,3 +43,7 @@
     <div class="rect4"></div>
     <div class="rect5"></div>
 </div>
+
+
+
+
