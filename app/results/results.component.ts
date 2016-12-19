@@ -22,6 +22,31 @@ export class ResultsComponent implements OnInit {
 	chartData = new Array<any>(); 
 	chartColors: Array<any> = [{}];
 	chartLegend = false;
+	chartOptions: any = {
+    	responsive: true,
+        scales:
+        {
+            xAxes: [{
+                gridLines: {
+                    drawOnChartArea: false,
+		            color: "#fff",
+                }, 
+                ticks: {
+                    display: false
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    min: 0,
+                    fontColor: "#fff"                    
+                },
+                gridLines: {
+                    drawOnChartArea: false,
+		            color: "#fff"
+                }
+            }],
+        },
+  	};
 	colors = ['#7293CB', '#E1974C', '#84BA5B', '#D35E60', '#808585', '#9067A7', '#AB6857', '#CCC210'];	
 
 	constructor(
@@ -68,26 +93,32 @@ export class ResultsComponent implements OnInit {
 	}
 
 	loadChart(): void {
-		this.chartLabels.length = 0;
-		this.chartData.length = 0;
+		var newLabels = new Array<string>();
+		var newData = new Array<any>();
 		if (this.poll.type === 1) {
 			this.chartType = 'bar';
+			this.chartOptions.scales.xAxes[0].display = true;
+			this.chartOptions.scales.yAxes[0].display = true;
 		} else {
 			this.chartType = 'pie';
+			this.chartOptions.scales.xAxes[0].display = false;
+			this.chartOptions.scales.yAxes[0].display = false;
 		}
-		this.chartData.push({
+		newData.push({
 			data: new Array<number>(),
 			backgroundColor: new Array<string>(),
 			hoverBackgroundColor: new Array<string>()
 		});
 		var colorCounter = 0;
 		for (var option of this.poll.options) {
-			this.chartLabels.push(option.name);
-			this.chartData[0].data.push(option.points);
-			this.chartData[0].backgroundColor.push(this.colors[colorCounter]);
-			this.chartData[0].hoverBackgroundColor.push(this.colors[colorCounter]);
+			newLabels.push(option.name);
+			newData[0].data.push(option.points);
+			newData[0].backgroundColor.push(this.colors[colorCounter]);
+			newData[0].hoverBackgroundColor.push(this.colors[colorCounter]);
 			colorCounter = colorCounter < this.colors.length ? colorCounter+1 : 0;
 		}			
+		this.chartLabels = newLabels;
+		this.chartData = newData;
 	}
 
 }

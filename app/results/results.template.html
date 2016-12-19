@@ -17,22 +17,20 @@
             <td *ngIf="!option.winner">{{ option.name }}</td>
             <td>
                 {{option.points | number : '1.0-0'}} 
-                <span *ngIf="poll.type==2 && poll.votes > 0">
+                <span *ngIf="poll.votes > 0">
                     ({{option.percentVotes | number : '1.0-0'}}%)
                 </span>
             </td>
         </tr>
     </table>	
 
-	<div style="display: block;">
-		<canvas baseChart width="400" height="400"
-		            [datasets]="chartData"
-		            [labels]="chartLabels"
-		            [chartType]="chartType"
-		            [colors]="chartColors"
-		            [legend]="chartLegend"
-		            ></canvas>
-	</div>
+	<canvas baseChart 
+	            [datasets]="chartData"
+	            [labels]="chartLabels"
+	            [chartType]="chartType"
+	            [colors]="chartColors"
+	            [legend]="chartLegend"
+	            [options]="chartOptions"></canvas>
 
 </div>
 
