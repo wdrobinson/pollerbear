@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Subscription } from 'rxjs';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/throttleTime';
-import 'rxjs/add/observable/fromEvent';
-import { FormControl } from '@angular/forms';
-import { Subscription } from 'rxjs';
-import { ToasterService } from 'angular2-toaster/angular2-toaster';
+import 'rxjs/add/operator/take';
+import { ToasterService } from 'angular2-toaster';
 
 import { Poll } from '../models/poll.model';
 import { Option } from '../models/option.model';
@@ -33,6 +33,18 @@ export class CreatePollComponent {
 
 	constructor(private af: AngularFire, private authService: AuthService, private toasterService: ToasterService) {
 		this.polls = af.database.list('/polls');
+	}
+
+	resetData() {
+		this.errorMessage = null;
+		this.poll = new Poll();
+		this.customUrl = null;
+		this.customUrlClean = null;
+		this.customUrlValid = null;
+		this.customUrlLoading = false;
+		this.settingsCollapsed = true;
+		this.saving = false;
+		this.finalUrl = null;
 	}
 
 	ngOnInit() {
@@ -80,13 +92,13 @@ export class CreatePollComponent {
 		if (this.customUrlValid && this.customUrlClean) {
 			var newPoll = this.af.database.object(`/polls/${this.customUrlClean}`);
 			newPoll.set(this.poll).then(() => {
-				this.poll.id = this.customUrlClean;
+				this.poll.$key = this.customUrlClean;
 				this.saving = false;			
 			});
 		} else {
 			this.polls.push(this.poll).then((item) => {
-				this.poll.id = item.key;
-				this.finalUrl = `${this.appUrl}/${this.poll.id}`;
+				this.poll.$key = item.key;
+				this.finalUrl = `${this.appUrl}/${this.poll.$key}`;
 				this.saving = false;
 			})
 		}
@@ -102,8 +114,9 @@ export class CreatePollComponent {
 			this.resetCustomUrl();
 			return;	
 		}	
-		this.af.database.object(`/polls/${this.customUrlClean}`).take(1)
-	    .subscribe((result: any) => {
+		//hack to fix typescript compilation error: Property 'take' does not exist on type 'FirebaseListObservable'
+		var fbObservable: any = this.af.database.object(`/polls/${this.customUrlClean}`);
+		fbObservable.take(1).subscribe((result: any) => {
 	    	this.customUrlValid = !result.$exists();
 	    	this.customUrlLoading = false;
 	    	if (!this.customUrlValid) {

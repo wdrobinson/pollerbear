@@ -18,7 +18,7 @@
 	        </div>
 	        <div *ngIf="poll.options.length < maxOptions" class="text-center">
 	            <span class="clickable" (click)="addOption()">
-	                <i class="glyphicon glyphicon-plus"></i> option
+	                <i class="fa fa-plus"></i> option
 	            </span>
 	        </div>
 	    </div>
@@ -72,17 +72,20 @@
 			</div>
 		</div>
 	</div>
-
 </div>
 
 <div *ngIf="poll.id" class="text-center">
-    <h2>your poll is ready and is available at</h2>
-    <div style="word-wrap:break-word;">
-    	<span>
-    		<a routerLink="/{{poll.id}}">{{finalUrl}}</a>
-    	</span>
-    	<span class="left-buffer-small">
-    		<button type="button" class="btn btn-sm btn-default" ngIIclipboard [cbContent]="finalUrl" (click)="urlCopy()"><i class="fa fa-files-o"></i></button>
-    	</span>
-	</div>
+    <h2>your poll is ready</h2>
+    <p>
+		<a class="poll-url" routerLink="/{{poll.id}}">{{finalUrl}}</a>
+    	<!--<span class="left-buffer-small">
+    		<button type="button" class="btn btn-sm btn-default" ngxClipboard [cbContent]="finalUrl" (cbOnSuccess)="urlCopy()"><i class="fa fa-files-o"></i></button>
+    	</span>-->
+	</p>
+	<p>
+		login to edit your poll and access it later
+	</p>
+	<p class="top-buffer">
+		want to <a class="clickable" (click)="resetData()">create another poll</a>?
+	</p>
 </div>

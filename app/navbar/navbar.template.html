@@ -17,26 +17,17 @@
       </ul>
       <ul *ngIf="authService.user && !authService.user.isAnonymous" class="nav navbar-nav navbar-right">
         <li ngbDropdown ngbDropdownToggle>
-          <a href="#">
-            <img class="user-image img-circle" [src]="authService.userInfo.photoURL">
+          <a>
+            <img *ngIf="authService.userInfo.photoURL" class="user-image img-circle clickable" [src]="authService.userInfo.photoURL">
+            <i *ngIf="!authService.userInfo.photoURL" class="fa fa-user fa-2x"></i>
           </a>
           <ul class="dropdown-menu">
-            <li>
-              <div class="navbar-login">
-                <p class="text-left small">{{authService.userInfo.displayName}}</p>
-                <p class="text-left small">{{authService.userInfo.email}}</p>
-              </div>
+            <li class="clickable">
+              <a><i class="fa fa-server fa-fw"></i> Polls</a>
             </li>
-            <li class="divider navbar-login-session-bg"></li>
-            <li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-            <li class="divider"></li>
-            <li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
-            <li class="divider"></li>
-            <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
-            <li class="divider"></li>
-            <li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
-            <li class="divider"></li>
-            <li><a href="#" (click)="logout()">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+            <li class="clickable">
+              <a (click)="logout()"><i class="fa fa-sign-out fa-fw"></i> Sign Out</a>
+            </li>
           </ul>
       </ul>
       <button *ngIf="!authService.user || authService.user.isAnonymous" type="button" class="btn btn-default btn-sm navbar-btn navbar-right" (click)="login()">Sign in</button>

@@ -1,4 +1,4 @@
-<div *ngIf="!loading">
+<div *ngIf="!loading && !invalid">
 	<h1 class="text-center">{{poll.topic}}</h1>
 
 	<div *ngIf="poll.type===1">
@@ -6,7 +6,9 @@
 		<div class="row">
 		    <div class="col-md-10 col-md-offset-1">    
 			    <ul class="list-group" sortable [(pollOptions)]="poll.options">
-			        <li *ngFor="let option of poll.options; let i = index;" class="list-group-item item-sort">{{option.name}}</li>
+			        <li *ngFor="let option of poll.options; let i = index;" class="list-group-item item-sort">
+			        	<i class="fa fa-ellipsis-v sortable-icon"></i> {{option.name}}
+			        </li>
 			    </ul>	    
 		    </div>
 		</div>
@@ -28,7 +30,7 @@
 	</div>
 
 	<div class=text-center *ngIf="voted">
-		<p>You've already cast your vote. Do you want to <a routerLink="/results/{{poll.$key}}">view results</a>?
+		<p>You've already cast your vote. Do you want to <a routerLink="/results/{{poll.$key}}">view the results</a>?
 	</div>
 </div>
 
@@ -38,4 +40,8 @@
     <div class="rect3"></div>
     <div class="rect4"></div>
     <div class="rect5"></div>
+</div>
+
+<div class="text-center" *ngIf="invalid">
+	Uh oh! This poll doesn't exist. Want to <a routerLink="/">create one</a>?
 </div>

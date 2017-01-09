@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"chart",
+				"chartColors\tproperty"
+			],
+			[
+				"char",
+				"chartData\tproperty"
+			],
+			[
+				"cha",
+				"chartLabels\tproperty"
+			],
+			[
+				"fire",
+				"firebaseApp\tparameter"
+			],
+			[
+				"A",
+				"AuthMethods\talias"
+			],
+			[
+				"ur",
+				"appUrl\tproperty"
+			],
+			[
 				"angul",
 				"angular2-clipboard\tdirectory"
 			],
@@ -72,7 +96,7 @@
 			"file": "app/navbar/navbar.template.html",
 			"settings":
 			{
-				"buffer_size": 2452,
+				"buffer_size": 1781,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -81,7 +105,7 @@
 			"file": "app/services/auth.service.ts",
 			"settings":
 			{
-				"buffer_size": 947,
+				"buffer_size": 1978,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -90,8 +114,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 924,
+				"buffer_size": 1138,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/results/results.component.js",
+			"settings":
+			{
+				"buffer_size": 5884,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +131,7 @@
 			"file": "app/poll/poll.component.ts",
 			"settings":
 			{
-				"buffer_size": 169,
+				"buffer_size": 328,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -108,7 +140,7 @@
 			"file": "app/poll/poll.template.html",
 			"settings":
 			{
-				"buffer_size": 203,
+				"buffer_size": 276,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "poll.template.html"
@@ -118,7 +150,16 @@
 			"file": "app/create-poll/create-poll.component.ts",
 			"settings":
 			{
-				"buffer_size": 3550,
+				"buffer_size": 4245,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/option.model.ts",
+			"settings":
+			{
+				"buffer_size": 174,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -127,7 +168,7 @@
 			"file": "app/create-poll/create-poll.template.html",
 			"settings":
 			{
-				"buffer_size": 3794,
+				"buffer_size": 4113,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -136,7 +177,7 @@
 			"file": "app/models/poll.model.ts",
 			"settings":
 			{
-				"buffer_size": 286,
+				"buffer_size": 306,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -145,10 +186,18 @@
 			"file": "app/app.module.ts",
 			"settings":
 			{
-				"buffer_size": 1466,
+				"buffer_size": 1705,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "import { NgModule }      from '@angular/core';"
+			}
+		},
+		{
+			"file": "app/poll/poll.component.js",
+			"settings":
+			{
+				"buffer_size": 1363,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -183,7 +232,41 @@
 			"file": "app/vote/vote.component.ts",
 			"settings":
 			{
-				"buffer_size": 1543,
+				"buffer_size": 3549,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/vote.model.ts",
+			"settings":
+			{
+				"buffer_size": 77,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/option.model.js",
+			"settings":
+			{
+				"buffer_size": 224,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/vote/vote.component.js",
+			"settings":
+			{
+				"buffer_size": 6212,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/vote/sortable.directive.ts",
+			"settings":
+			{
+				"buffer_size": 983,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -192,7 +275,7 @@
 			"file": "app/vote/vote.template.html",
 			"settings":
 			{
-				"buffer_size": 1021,
+				"buffer_size": 1607,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -201,19 +284,64 @@
 			"file": "app/app-routing.module.ts",
 			"settings":
 			{
-				"buffer_size": 715,
+				"buffer_size": 848,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "app-routing.module.ts"
 			}
 		},
 		{
+			"file": "app/results/results.component.ts",
+			"settings":
+			{
+				"buffer_size": 3711,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app.module.js",
+			"settings":
+			{
+				"buffer_size": 3045,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/results/results.template.html",
+			"settings":
+			{
+				"buffer_size": 1656,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app-routing.module.js",
+			"settings":
+			{
+				"buffer_size": 2073,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 1293,
+				"buffer_size": 1439,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "0 info it worked if it ends with ok\n1 verbose cli [ 'C:\\\\Program Files\\\\nodejs\\\\node.exe',\n1 verbose cli   'C:\\\\Users\\\\Will\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js',\n1 verbose cli   'run',\n1 verbose cli   'tsc' ]\n2 info using npm@3.3.8\n3 info using node@v4.2.1\n4 verbose run-script [ 'pretsc', 'tsc', 'posttsc' ]\n5 info lifecycle pollerbear-ui@1.0.0~pretsc: pollerbear-ui@1.0.0\n6 silly lifecycle pollerbear-ui@1.0.0~pretsc: no script for pretsc, continuing\n7 info lifecycle pollerbear-ui@1.0.0~tsc: pollerbear-ui@1.0.0\n8 verbose lifecycle pollerbear-ui@1.0.0~tsc: unsafe-perm in lifecycle true\n9 verbose lifecycle pollerbear-ui@1.0.0~tsc: PATH: C:\\Users\\Will\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\.bin;C:\\Program Files\\cmder\\bin;C:\\Program Files\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\Program Files\\cmder\\vendor\\conemu-maximus5;C:\\Program Files\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\cygwin64\\bin;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\MinGW\\bin;C:\\Python32;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Will\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\share\\vim\\vim74;C:\\Program Files\\cmder\\\n10 verbose lifecycle pollerbear-ui@1.0.0~tsc: CWD: C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n11 silly lifecycle pollerbear-ui@1.0.0~tsc: Args: [ '/d /s /c', 'tsc' ]\n12 silly lifecycle pollerbear-ui@1.0.0~tsc: Returned: code: 2  signal: null\n13 info lifecycle pollerbear-ui@1.0.0~tsc: Failed to exec tsc script\n14 verbose stack Error: pollerbear-ui@1.0.0 tsc: `tsc`\n14 verbose stack Exit status 2\n14 verbose stack     at EventEmitter.<anonymous> (C:\\Users\\Will\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\utils\\lifecycle.js:233:16)\n14 verbose stack     at emitTwo (events.js:87:13)\n14 verbose stack     at EventEmitter.emit (events.js:172:7)\n14 verbose stack     at ChildProcess.<anonymous> (C:\\Users\\Will\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\utils\\spawn.js:24:14)\n14 verbose stack     at emitTwo (events.js:87:13)\n14 verbose stack     at ChildProcess.emit (events.js:172:7)\n14 verbose stack     at maybeClose (internal/child_process.js:818:16)\n14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)\n15 verbose pkgid pollerbear-ui@1.0.0\n16 verbose cwd C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n17 error Windows_NT 6.1.7601\n18 error argv \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" \"C:\\\\Users\\\\Will\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js\" \"run\" \"tsc\"\n19 error node v4.2.1\n20 error npm  v3.3.8\n21 error code ELIFECYCLE\n22 error pollerbear-ui@1.0.0 tsc: `tsc`\n22 error Exit status 2\n23 error Failed at the pollerbear-ui@1.0.0 tsc script 'tsc'.\n23 error This is most likely a problem with the pollerbear-ui package,\n23 error not with npm itself.\n23 error Tell the author that this fails on your system:\n23 error     tsc\n23 error You can get their info via:\n23 error     npm owner ls pollerbear-ui\n23 error There is likely additional logging output above.\n24 verbose exit [ 1, true ]\n",
+			"file": "npm-debug.log",
+			"file_size": 4005,
+			"file_write_time": 131283686017158849,
+			"settings":
+			{
+				"buffer_size": 3960,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -239,7 +367,7 @@
 			"file": "tsconfig.json",
 			"settings":
 			{
-				"buffer_size": 390,
+				"buffer_size": 475,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -248,7 +376,7 @@
 			"file": "systemjs.config.js",
 			"settings":
 			{
-				"buffer_size": 2580,
+				"buffer_size": 3187,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -274,10 +402,18 @@
 			"file": "styles.css",
 			"settings":
 			{
-				"buffer_size": 1833,
+				"buffer_size": 3176,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": ".logo-display {"
+			}
+		},
+		{
+			"file": "app/create-poll/create-poll.component.js",
+			"settings":
+			{
+				"buffer_size": 6582,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -357,16 +493,23 @@
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/create-poll",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/navbar",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/services",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/poll",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/vote"
 	],
 	"file_history":
 	[
+		"/C/Users/Will/Documents/Git/pollerbear-ui/node_modules/angularfire2/database/firebase_object_observable.d.ts",
+		"/C/Users/Will/AppData/Roaming/Sublime Text 3/Packages/TypeScript/TypeScript.sublime-settings",
+		"/C/Users/Will/AppData/Roaming/Sublime Text 3/Packages/TypeScript/Preferences.sublime-settings",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/node_modules/angular2-clipboard/node_modules/rxjs/operator/take.d.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/results/results.component.js",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models/majority-vote.model.ts",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/poll/poll.component.js",
+		"/C/Users/Will/Documents/Git/pollerbear-ui/node_modules/angularfire2/tokens.d.ts",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/create-poll/create-poll.component.js",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/node_modules/angularfire2/auth/auth.d.ts",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/services/auth.service.ts",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/npm-debug.log",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/poll/poll.component.js",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app/about/about.template.html",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/tsconfig.json",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/pollerbear.sublime-project",
@@ -448,6 +591,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"polls",
+			"tick",
 			"clipboard",
 			"settingsCollapsed",
 			"\n    ",
@@ -485,7 +630,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -501,8 +646,8 @@
 						"selection":
 						[
 							[
-								90,
-								148
+								244,
+								244
 							]
 						],
 						"settings":
@@ -521,7 +666,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
@@ -530,15 +675,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2452,
+						"buffer_size": 1781,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1197,
-								1197
+								1392,
+								1392
 							]
 						],
 						"settings":
@@ -557,7 +702,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -566,15 +711,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 947,
+						"buffer_size": 1978,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								402,
-								402
+								29,
+								35
 							]
 						],
 						"settings":
@@ -594,7 +739,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
@@ -603,15 +748,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 924,
+						"buffer_size": 1138,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								693,
-								693
+								238,
+								238
 							]
 						],
 						"settings":
@@ -630,24 +775,54 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/poll/poll.component.ts",
+					"file": "app/results/results.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 169,
+						"buffer_size": 5884,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								169,
-								169
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/poll/poll.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
 							]
 						],
 						"settings":
@@ -665,24 +840,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "app/poll/poll.template.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 203,
+						"buffer_size": 276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								203,
-								203
+								255,
+								255
 							]
 						],
 						"settings":
@@ -700,24 +875,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "app/create-poll/create-poll.component.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3550,
+						"buffer_size": 4245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1476,
-								1476
+								657,
+								657
 							]
 						],
 						"settings":
@@ -735,24 +910,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/create-poll/create-poll.template.html",
+					"buffer": 8,
+					"file": "app/models/option.model.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3794,
+						"buffer_size": 174,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3227,
-								3227
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/create-poll/create-poll.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3595,
+								3595
 							]
 						],
 						"settings":
@@ -766,27 +970,27 @@
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "app/models/poll.model.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 286,
+						"buffer_size": 306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								76,
-								76
+								64,
+								68
 							]
 						],
 						"settings":
@@ -800,24 +1004,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "app/app.module.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1466,
+						"buffer_size": 1705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								929,
-								929
+								978,
+								978
 							]
 						],
 						"settings":
@@ -836,11 +1040,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 12,
+					"file": "app/poll/poll.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "app/navbar/navbar.component.js",
 					"semi_transient": false,
 					"settings":
@@ -872,11 +1106,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "app/core.module.ts",
 					"semi_transient": false,
 					"settings":
@@ -904,11 +1138,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 15,
 					"file": "app/services/poll.service.ts",
 					"semi_transient": false,
 					"settings":
@@ -929,6 +1163,7 @@
 							"auto_name": "poll.service.ts",
 							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
 							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
 							"typescript_plugin_format_options":
 							{
 								"convertTabsToSpaces": false,
@@ -941,24 +1176,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "app/vote/vote.component.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1543,
+						"buffer_size": 3549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								665,
-								665
+								255,
+								255
 							]
 						],
 						"settings":
@@ -977,29 +1212,155 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "app/vote/vote.template.html",
+					"buffer": 17,
+					"file": "app/models/vote.model.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1021,
+						"buffer_size": 77,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								931,
-								931
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/models/option.model.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/vote/vote.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "app/vote/sortable.directive.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "app/vote/vote.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false,
 							"typescript_plugin_format_options":
 							{
 								"convertTabsToSpaces": false,
@@ -1011,71 +1372,221 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 22,
 					"file": "app/app-routing.module.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 715,
+						"buffer_size": 848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								318,
-								318
+								550,
+								550
 							]
 						],
 						"settings":
 						{
 							"auto_name": "app-routing.module.ts",
 							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "package.json",
+					"buffer": 23,
+					"file": "app/results/results.component.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1293,
+						"buffer_size": 3711,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								354,
-								354
+								2058,
+								2058
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Seti_UI/icons/Langs/npm JSON.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 416.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "app/app.module.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 25,
+					"file": "app/results/results.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "app/app-routing.module.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								677,
+								677
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "npm-debug.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
 					"file": "app/privacy/privacy.template.html",
 					"semi_transient": false,
 					"settings":
@@ -1100,11 +1611,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 36,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 30,
 					"file": "pollerbear.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -1129,24 +1640,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 31,
 					"file": "tsconfig.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 390,
+						"buffer_size": 475,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								256,
-								256
+								472,
+								472
 							]
 						],
 						"settings":
@@ -1159,24 +1670,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 32,
 					"file": "systemjs.config.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2580,
+						"buffer_size": 3187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1769,
-								1769
+								2489,
+								2489
 							]
 						],
 						"settings":
@@ -1186,14 +1697,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 113.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 33,
 					"file": "typings.json",
 					"semi_transient": false,
 					"settings":
@@ -1217,11 +1728,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 34,
 					"file": "app/about/about.component.ts",
 					"semi_transient": false,
 					"settings":
@@ -1246,40 +1757,72 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 35,
 					"file": "styles.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1833,
+						"buffer_size": 3176,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1811,
-								1811
+								3163,
+								3163
 							]
 						],
 						"settings":
 						{
 							"auto_name": ".logo-display {",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1117.0,
+						"translation.y": 2017.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 36,
+					"file": "app/create-poll/create-poll.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
 					"file": "app/services/poll.service.js",
 					"semi_transient": false,
 					"settings":
@@ -1311,7 +1854,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 26,
 					"type": "text"
 				}
 			]

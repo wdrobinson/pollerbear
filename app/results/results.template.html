@@ -1,4 +1,4 @@
-<div class="text-center" *ngIf="!loading">
+<div class="text-center" *ngIf="!loading && !invalid">
 	<h1>{{poll.topic}}</h1>
 	<p>{{poll.votes}} votes</p>
 
@@ -24,13 +24,17 @@
         </tr>
     </table>	
 
-	<canvas baseChart 
+	<canvas class="results-chart" baseChart 
 	            [datasets]="chartData"
 	            [labels]="chartLabels"
 	            [chartType]="chartType"
 	            [colors]="chartColors"
 	            [legend]="chartLegend"
 	            [options]="chartOptions"></canvas>
+
+    <p class="text-center top-buffer-large">
+    	<small>this page will update automatically</small>
+    </p>
 
 </div>
 
@@ -42,6 +46,9 @@
     <div class="rect5"></div>
 </div>
 
+<div class="text-center" *ngIf="invalid">
+	Uh oh! This poll doesn't exist. Want to <a routerLink="/">create one</a>?
+</div>
 
 
 

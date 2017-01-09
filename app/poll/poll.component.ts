@@ -1,5 +1,5 @@
 import { Component } 		from '@angular/core';
-import { ToasterConfig } from 'angular2-toaster/angular2-toaster';
+import { ToasterConfig } 	from 'angular2-toaster';
 
 @Component({
 	moduleId: module.id,	
@@ -9,7 +9,7 @@ import { ToasterConfig } from 'angular2-toaster/angular2-toaster';
 
 export class PollComponent {
     public toasterconfig : ToasterConfig = 
-	    new ToasterConfig({
+	    new ToasterConfig({	    	
 	        timeout: 3000
 	    });
 }

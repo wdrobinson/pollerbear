@@ -1,7 +1,7 @@
 import { Component, OnInit, Directive, Inject } 		from '@angular/core';
 import { Router, ActivatedRoute, Params }   from '@angular/router';
 import { AngularFire, FirebaseObjectObservable, FirebaseApp } from 'angularfire2';
-import 'rxjs/add/operator/take'
+import 'rxjs/add/operator/take';
 import { Subscription } from 'rxjs';
 import * as firebase from 'firebase';
 
@@ -20,6 +20,7 @@ export class VoteComponent implements OnInit {
 	winner: number;
 	votes = new Array<Vote>();
 	loading = true;
+	invalid = false;
 	voted = false;
 
 	constructor(
@@ -35,10 +36,17 @@ export class VoteComponent implements OnInit {
 	}
 
 	urlChange(params: Params): void {
-		this.af.database.object(`/polls/${params['url']}`).take(1).subscribe((poll: Poll) => this.loadPoll(poll));
+		//hack to fix typescript compilation error: Property 'take' does not exist on type 'FirebaseListObservable'
+		var fbObservable: any = this.af.database.object(`/polls/${params['url']}`);
+		fbObservable.take(1).subscribe((poll: Poll) => this.loadPoll(poll));
 	}
 
-	loadPoll(poll: Poll): void {		
+	loadPoll(poll: Poll): void {
+		if (!poll.$exists()) {
+			this.loading = false;
+			this.invalid = true;
+			return;
+		}
 		this.poll = poll;
 		this.poll.options = this.shuffleArray(this.poll.options);
 		this.checkVoted();
@@ -118,7 +126,9 @@ export class VoteComponent implements OnInit {
 	}
 
 	checkVoted(): void {
-		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).take(1).subscribe((obj: any) => {			
+		//hack to fix typescript compilation error: Property 'take' does not exist on type 'FirebaseListObservable'
+		var fbObservable: any = this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`);
+		fbObservable.take(1).subscribe((obj: any) => {			
 			if (obj.$exists()) {
 				this.voted = true;	
 			}

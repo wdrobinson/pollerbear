@@ -29,7 +29,7 @@
       'angularfire2':                       'npm:angularfire2',
       '@ng-bootstrap/ng-bootstrap':         'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js', 
       'clipboard':                          'npm:clipboard/dist/clipboard.js',
-      'angular2-clipboard':                 'npm:angular2-clipboard',
+      //'ngx-clipboard':                      'npm:ngx-clipboard',
       'angular2-toaster':                   'npm:angular2-toaster',
       'jquery':                             'npm:jquery',
       'jquery-ui':                          'npm:jquery-ui',
@@ -56,11 +56,12 @@
       'clipboard': {
         defaultExtension: 'js'
       },
-      'angular2-clipboard': {
+      /*'ngx-clipboard': {
         main: 'index.js',
         defaultExtension: 'js'
-      },
+      },*/
       'angular2-toaster': {
+        main: 'bundles/angular2-toaster.umd.min.js',
         defaultExtension: 'js'
       },
       'jquery': {

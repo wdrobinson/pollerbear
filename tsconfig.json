@@ -9,8 +9,7 @@
         "removeComments": false,
         "noImplicitAny": false
     },
-    "include": [
-        "app/**/*",
-        "node_modules/angular2-clipboard/**/*"
-    ]   
+    "exclude": [
+        "node_modules/**/*"
+    ]    
 }

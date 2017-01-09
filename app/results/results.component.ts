@@ -17,6 +17,7 @@ import { Option } 					from '../models/option.model';
 export class ResultsComponent implements OnInit {
 	poll = new Poll();
 	loading = true;
+	invalid = false;
 	chartType: string;
 	chartLabels = new Array<string>();
 	chartData = new Array<any>(); 
@@ -24,6 +25,7 @@ export class ResultsComponent implements OnInit {
 	chartLegend = false;
 	chartOptions: any = {
     	responsive: true,
+    	maintainAspectRatio: false,
         scales:
         {
             xAxes: [{
@@ -64,7 +66,12 @@ export class ResultsComponent implements OnInit {
 		this.af.database.object(`/polls/${params['url']}`).subscribe((poll: Poll) => this.loadPoll(poll));
 	}
 
-	loadPoll(poll: Poll): void {		
+	loadPoll(poll: Poll): void {
+		if (!poll.$exists()) {
+			this.loading = false;
+			this.invalid = true;
+			return;
+		}		
 		this.poll = poll;
 		var maxPoints = 0;
 		var totalPoints = 0;

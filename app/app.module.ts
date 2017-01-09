@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule }   			from '@angular/router';
 import { HttpModule, JsonpModule } 	from '@angular/http';
 import { NgbModule } 				from '@ng-bootstrap/ng-bootstrap';
-import { ClipboardModule }  		from 'angular2-clipboard';
-import { ToasterModule } 			from 'angular2-toaster/angular2-toaster';
+//import { ClipboardModule }  		from 'ngx-clipboard';
+import { ToasterModule } 			from 'angular2-toaster';
 import { ChartsModule } 			from 'ng2-charts';
 
 import { CoreModule}				from './core.module'
@@ -29,7 +29,7 @@ import { SortableDirective } 		from './vote/sortable.directive';
   	HttpModule,
   	JsonpModule,
   	NgbModule.forRoot(),
-  	ClipboardModule,
+  	//ClipboardModule,
   	ToasterModule,
   	CoreModule,
   	ChartsModule
