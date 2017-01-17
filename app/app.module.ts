@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule }   			from '@angular/router';
 import { HttpModule, JsonpModule } 	from '@angular/http';
 import { NgbModule } 				from '@ng-bootstrap/ng-bootstrap';
-//import { ClipboardModule }  		from 'ngx-clipboard';
 import { ToasterModule } 			from 'angular2-toaster';
 import { ChartsModule } 			from 'ng2-charts';
 
@@ -17,8 +16,11 @@ import { AboutComponent }   		from './about/about.component';
 import { PrivacyComponent }   		from './privacy/privacy.component';
 import { VoteComponent }   			from './vote/vote.component';
 import { ResultsComponent }   		from './results/results.component';
+
 import { AuthService } 				from './services/auth.service';
-import { SortableDirective } 		from './vote/sortable.directive';
+
+import { SortableDirective } 		from './directives/sortable.directive';
+import { ClipboardDirective } 		from './directives/clipboard.directive';
 
 @NgModule({
   imports: [ 
@@ -29,12 +31,11 @@ import { SortableDirective } 		from './vote/sortable.directive';
   	HttpModule,
   	JsonpModule,
   	NgbModule.forRoot(),
-  	//ClipboardModule,
   	ToasterModule,
   	CoreModule,
   	ChartsModule
   ],  
-  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective, ResultsComponent ],
+  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective, ResultsComponent, ClipboardDirective ],
   providers: [ AuthService ],
   bootstrap:    [ PollComponent, NavBarComponent ]
 })

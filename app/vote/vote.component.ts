@@ -36,9 +36,7 @@ export class VoteComponent implements OnInit {
 	}
 
 	urlChange(params: Params): void {
-		//hack to fix typescript compilation error: Property 'take' does not exist on type 'FirebaseListObservable'
-		var fbObservable: any = this.af.database.object(`/polls/${params['url']}`);
-		fbObservable.take(1).subscribe((poll: Poll) => this.loadPoll(poll));
+		this.af.database.object(`/polls/${params['url']}`).take(1).subscribe((poll: Poll) => this.loadPoll(poll));
 	}
 
 	loadPoll(poll: Poll): void {

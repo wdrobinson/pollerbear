@@ -29,7 +29,6 @@
       'angularfire2':                       'npm:angularfire2',
       '@ng-bootstrap/ng-bootstrap':         'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js', 
       'clipboard':                          'npm:clipboard/dist/clipboard.js',
-      //'ngx-clipboard':                      'npm:ngx-clipboard',
       'angular2-toaster':                   'npm:angular2-toaster',
       'jquery':                             'npm:jquery',
       'jquery-ui':                          'npm:jquery-ui',
@@ -53,13 +52,6 @@
         main: './firebase-browser.js',
         defaultExtension: 'js'
       },
-      'clipboard': {
-        defaultExtension: 'js'
-      },
-      /*'ngx-clipboard': {
-        main: 'index.js',
-        defaultExtension: 'js'
-      },*/
       'angular2-toaster': {
         main: 'bundles/angular2-toaster.umd.min.js',
         defaultExtension: 'js'

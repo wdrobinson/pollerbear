@@ -87,7 +87,7 @@ export class CreatePollComponent {
 		}		
 		for (var i = this.poll.options.length - 1; i >= 0; i--) {
 			this.poll.options[i].id = i;
-		}
+		}		
 		this.saving = true;
 		if (this.customUrlValid && this.customUrlClean) {
 			var newPoll = this.af.database.object(`/polls/${this.customUrlClean}`);
@@ -114,9 +114,7 @@ export class CreatePollComponent {
 			this.resetCustomUrl();
 			return;	
 		}	
-		//hack to fix typescript compilation error: Property 'take' does not exist on type 'FirebaseListObservable'
-		var fbObservable: any = this.af.database.object(`/polls/${this.customUrlClean}`);
-		fbObservable.take(1).subscribe((result: any) => {
+		this.af.database.object(`/polls/${this.customUrlClean}`).take(1).subscribe((result: any) => {
 	    	this.customUrlValid = !result.$exists();
 	    	this.customUrlLoading = false;
 	    	if (!this.customUrlValid) {

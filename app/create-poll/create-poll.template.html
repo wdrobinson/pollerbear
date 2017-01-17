@@ -1,4 +1,4 @@
-<div *ngIf="!poll.id">
+<div *ngIf="!poll.$key">
 	<div class="text-center">
 	    <h1>create a poll</h1>
 	</div>
@@ -74,13 +74,13 @@
 	</div>
 </div>
 
-<div *ngIf="poll.id" class="text-center">
+<div *ngIf="poll.$key" class="text-center">
     <h2>your poll is ready</h2>
     <p>
-		<a class="poll-url" routerLink="/{{poll.id}}">{{finalUrl}}</a>
-    	<!--<span class="left-buffer-small">
-    		<button type="button" class="btn btn-sm btn-default" ngxClipboard [cbContent]="finalUrl" (cbOnSuccess)="urlCopy()"><i class="fa fa-files-o"></i></button>
-    	</span>-->
+		<a class="poll-url" routerLink="/{{poll.$key}}">{{finalUrl}}</a>
+    	<span class="left-buffer-small">
+    		<button type="button" class="btn btn-sm btn-default" clipboard [cbContent]="finalUrl" (cbOnSuccess)="urlCopy()" ngxClipboard><i class="fa fa-files-o"></i></button>
+    	</span>
 	</p>
 	<p>
 		login to edit your poll and access it later
