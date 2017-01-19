@@ -11,11 +11,12 @@ import { CoreModule}				from './core.module'
 import { AppRoutingModule } 		from './app-routing.module';
 import { NavBarComponent }   		from './navbar/navbar.component';
 import { PollComponent }   			from './poll/poll.component';
-import { CreatePollComponent }   	from './create-poll/create-poll.component';
+import { CreateComponent }   	from './create/create.component';
 import { AboutComponent }   		from './about/about.component';
 import { PrivacyComponent }   		from './privacy/privacy.component';
 import { VoteComponent }   			from './vote/vote.component';
 import { ResultsComponent }   		from './results/results.component';
+import { ManageComponent }   		from './manage/manage.component';
 
 import { AuthService } 				from './services/auth.service';
 
@@ -35,7 +36,7 @@ import { ClipboardDirective } 		from './directives/clipboard.directive';
   	CoreModule,
   	ChartsModule
   ],  
-  declarations: [ PollComponent, CreatePollComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective, ResultsComponent, ClipboardDirective ],
+  declarations: [ PollComponent, CreateComponent, AboutComponent, PrivacyComponent, VoteComponent, NavBarComponent, SortableDirective, ResultsComponent, ClipboardDirective, ManageComponent ],
   providers: [ AuthService ],
   bootstrap:    [ PollComponent, NavBarComponent ]
 })

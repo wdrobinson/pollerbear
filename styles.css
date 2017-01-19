@@ -51,7 +51,7 @@ h3 {
 	cursor: move;
 }
 
-.list-group-item {
+.sort-list .list-group-item {
 	background-color: #375a7f;
 	color: white;
     margin: 3px 0;
@@ -193,4 +193,19 @@ table.results-table td {
 
 .poll-url {
 	word-wrap: break-word;
+}
+
+.show>.dropdown-menu {
+    display: block;
+}
+
+.navbar ul.dropdown-menu {
+  padding: 0;
+  border: 1px;
+  border-radius: 4px;
+}
+
+.navbar .dropdown-menu a {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

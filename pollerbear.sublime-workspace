@@ -114,7 +114,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1138,
+				"buffer_size": 1065,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -150,7 +150,7 @@
 			"file": "app/create-poll/create-poll.component.ts",
 			"settings":
 			{
-				"buffer_size": 4245,
+				"buffer_size": 4097,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -168,8 +168,16 @@
 			"file": "app/create-poll/create-poll.template.html",
 			"settings":
 			{
-				"buffer_size": 4113,
+				"buffer_size": 4133,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/directives/sortable.directive.ts",
+			"settings":
+			{
+				"buffer_size": 983,
 				"line_ending": "Windows"
 			}
 		},
@@ -183,20 +191,40 @@
 			}
 		},
 		{
+			"contents": "Package Control Messages\n========================\n\nMaterial Theme\n--------------\n\n  ## Material Theme for Sublime Text 3\n  \n  For more information on the Material Theme: https://github.com/equinusocio/material-theme\n  \n  **********************************************************************************************\n  \n  # Activate the theme\n  \n  You can active this theme from:\n  - Command palette `Tools > Command Palette` (or <kbd>cmd/ctrl</kbd>+ <kbd>↑</kbd>+<kbd>p</\n  kbd>) by typing `Material Theme: Activate theme`. \n  - Context menu (Right click on the editor) and choose `Material Theme > Activate Material Theme`\n  - `Preferences > Packages Settings` and choose `Material Theme > Activate Material Theme`\n  \n  You can also manually activate this theme by adding these lines to your user settings (**Preferences > Settings - User**):\n  \n  ```json\n  \"color_scheme\": \"Packages/Material Theme/schemes/Material-Theme.tmTheme\",\n  \"theme\": \"Material-Theme.sublime-theme\",\n  ```\n  ```\n  \n  ## File icons\n  To enable file type icons you have to install an additional package, search for `zz File Icons` on Package Control, after install restart Sublime Text.\n  \n  **********************************************************************************************\n  \n  ### Other available theme options:\n  \n  ```json\n  \"material_theme_accent_acid-lime\"         : true , // Set acid-lime accent color\n  \"material_theme_accent_blue\"              : true , // Set blue accent color\n  \"material_theme_accent_brba\"              : true , // Set Breaking Bad green accent color\n  \"material_theme_accent_bright-teal\"       : true , // Set bright-teal accent color\n  \"material_theme_accent_cyan\"              : true , // Set cyan accent color\n  \"material_theme_accent_graphite\"          : true , // Set graphite accent color\n  \"material_theme_accent_indigo\"            : true , // Set indigo accent color\n  \"material_theme_accent_lime\"              : true , // Set lime green accent color\n  \"material_theme_accent_orange\"            : true , // Set orange accent color\n  \"material_theme_accent_pink\"              : true , // Set pink accent color\n  \"material_theme_accent_purple\"            : true , // Set purple accent color\n  \"material_theme_accent_red\"               : true , // Set pale red accent color\n  \"material_theme_accent_sky\"               : true , // Set bright-cyan accent color\n  \"material_theme_accent_tomato\"            : true , // Set tomato red accent color\n  \"material_theme_accent_yellow\"            : true , // Set yellow accent color\n  \"material_theme_bold_tab\"                 : true , // Make the tab labels bolder\n  \"material_theme_compact_panel\"            : true , // Set minimal padding for the search panel\n  \"material_theme_compact_sidebar\"          : true , // Set compact side bar\n  \"material_theme_contrast_mode\"            : true , // Enable sidebar and panels contrast mode\n  \"material_theme_disable_fileicons\"        : true , // Hide sidebar file type icons\n  \"material_theme_arrow_folders\"            : true , // Replace folder icons with arrows\n  \"material_theme_big_fileicons\"            : true , // Show bigger file type icons\n  \"material_theme_disable_folder_animation\" : true , // Disable folder animation\n  \"material_theme_disable_tree_indicator\"   : true , // Disable sidebar file indicator\n  \"material_theme_bullet_tree_indicator\"    : true , // Set a bullet as active tree indicator\n  \"material_theme_panel_separator\"          : true , // Show bottom panel separator\n  \"material_theme_small_statusbar\"          : true , // Set small status bar\n  \"material_theme_small_tab\"                : true , // Set small tabs\n  \"material_theme_bright_scrollbars\"        : true , // Bright scrollbars puck color\n  \"material_theme_accent_scrollbars\"        : true , // Enable accent color for scrollbars\n  \"material_theme_tabs_autowidth\"           : true , // Enable autowidth for tabs\n  \"material_theme_tabs_separator\"           : true , // Show tabs separator, this disables tab hover \n  \n  // If you use Material Theme - Appbar addon you can use additional settings:\n  \"material_theme_tree_headings\"            : true , // Show sidebar headings\n  ```\n  \n  **********************************************************************************************\n  \n  ### Recommended UI and font settings for a better experience:\n  \n  ```json\n  {\n    \"overlay_scroll_bars\": \"enabled\",\n    \"line_padding_top\": 3,\n    \"line_padding_bottom\": 3,\n    \"always_show_minimap_viewport\": true,\n    \"bold_folder_labels\": true,\n    \"indent_guide_options\": [ \"draw_normal\", \"draw_active\" ],   // Highlight active indent\n    \"font_options\": [ \"gray_antialias\" ],                       // For retina Mac\n  }\n  ```\n",
+			"settings":
+			{
+				"buffer_size": 4712,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
 			"file": "app/app.module.ts",
 			"settings":
 			{
-				"buffer_size": 1705,
+				"buffer_size": 1729,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "import { NgModule }      from '@angular/core';"
 			}
 		},
 		{
+			"file": "app/directives/clipboard.directive.ts",
+			"settings":
+			{
+				"buffer_size": 1076,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/poll/poll.component.js",
 			"settings":
 			{
-				"buffer_size": 1363,
+				"buffer_size": 1145,
 				"line_ending": "Windows"
 			}
 		},
@@ -219,6 +247,14 @@
 			}
 		},
 		{
+			"file": "app/main.js",
+			"settings":
+			{
+				"buffer_size": 287,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/services/poll.service.ts",
 			"settings":
 			{
@@ -232,7 +268,7 @@
 			"file": "app/vote/vote.component.ts",
 			"settings":
 			{
-				"buffer_size": 3549,
+				"buffer_size": 3699,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -258,16 +294,18 @@
 			"file": "app/vote/vote.component.js",
 			"settings":
 			{
-				"buffer_size": 6212,
+				"buffer_size": 6369,
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"contents": "import { Component, Directive, ElementRef, Input, Output, EventEmitter, Inject, NgZone } from '@angular/core';\nimport 'jquery-ui/ui/core';\nimport 'jquery-ui/ui/widgets/sortable';\n\nimport { Option } \t\t\t\t\tfrom '../models/option.model';\n\n@Directive({\n  selector: \"[sortable]\"\n})\n\nexport class SortableDirective {\n\n\tstartIndex: number;\n\n\tconstructor(private el: ElementRef, @Inject(NgZone) private zone: NgZone) {}\n\n  @Input() pollOptions: Array<Option>;\n  @Output() optionsChange = new EventEmitter();\n\n  ngAfterViewInit() {\n      jQuery(this.el.nativeElement).sortable( {\n        start: (event, ui) => {\n          this.startIndex = ui.item.index();\n        },\n        stop: (event, ui) => {\n        \tvar option = this.pollOptions[this.startIndex];\n        \tthis.pollOptions.splice(this.startIndex, 1);\n        \tthis.pollOptions.splice(ui.item.index(), 0, option);\n        \tthis.zone.run( () => {\n\t        \tthis.optionsChange.emit(this.pollOptions);\n\t\t\t\t  });\n        }\n      });\n  }\n}\n",
 			"file": "app/vote/sortable.directive.ts",
+			"file_size": 1018,
+			"file_write_time": 131263184930107284,
 			"settings":
 			{
 				"buffer_size": 983,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -303,7 +341,7 @@
 			"file": "app/app.module.js",
 			"settings":
 			{
-				"buffer_size": 3045,
+				"buffer_size": 2840,
 				"line_ending": "Windows"
 			}
 		},
@@ -320,7 +358,7 @@
 			"file": "app/app-routing.module.js",
 			"settings":
 			{
-				"buffer_size": 2073,
+				"buffer_size": 1855,
 				"line_ending": "Windows"
 			}
 		},
@@ -328,19 +366,19 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 1439,
+				"buffer_size": 1297,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "0 info it worked if it ends with ok\n1 verbose cli [ 'C:\\\\Program Files\\\\nodejs\\\\node.exe',\n1 verbose cli   'C:\\\\Users\\\\Will\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js',\n1 verbose cli   'run',\n1 verbose cli   'tsc' ]\n2 info using npm@3.3.8\n3 info using node@v4.2.1\n4 verbose run-script [ 'pretsc', 'tsc', 'posttsc' ]\n5 info lifecycle pollerbear-ui@1.0.0~pretsc: pollerbear-ui@1.0.0\n6 silly lifecycle pollerbear-ui@1.0.0~pretsc: no script for pretsc, continuing\n7 info lifecycle pollerbear-ui@1.0.0~tsc: pollerbear-ui@1.0.0\n8 verbose lifecycle pollerbear-ui@1.0.0~tsc: unsafe-perm in lifecycle true\n9 verbose lifecycle pollerbear-ui@1.0.0~tsc: PATH: C:\\Users\\Will\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\.bin;C:\\Program Files\\cmder\\bin;C:\\Program Files\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\Program Files\\cmder\\vendor\\conemu-maximus5;C:\\Program Files\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\cygwin64\\bin;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;c:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\MinGW\\bin;C:\\Python32;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Will\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\share\\vim\\vim74;C:\\Program Files\\cmder\\\n10 verbose lifecycle pollerbear-ui@1.0.0~tsc: CWD: C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n11 silly lifecycle pollerbear-ui@1.0.0~tsc: Args: [ '/d /s /c', 'tsc' ]\n12 silly lifecycle pollerbear-ui@1.0.0~tsc: Returned: code: 2  signal: null\n13 info lifecycle pollerbear-ui@1.0.0~tsc: Failed to exec tsc script\n14 verbose stack Error: pollerbear-ui@1.0.0 tsc: `tsc`\n14 verbose stack Exit status 2\n14 verbose stack     at EventEmitter.<anonymous> (C:\\Users\\Will\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\utils\\lifecycle.js:233:16)\n14 verbose stack     at emitTwo (events.js:87:13)\n14 verbose stack     at EventEmitter.emit (events.js:172:7)\n14 verbose stack     at ChildProcess.<anonymous> (C:\\Users\\Will\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\utils\\spawn.js:24:14)\n14 verbose stack     at emitTwo (events.js:87:13)\n14 verbose stack     at ChildProcess.emit (events.js:172:7)\n14 verbose stack     at maybeClose (internal/child_process.js:818:16)\n14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)\n15 verbose pkgid pollerbear-ui@1.0.0\n16 verbose cwd C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n17 error Windows_NT 6.1.7601\n18 error argv \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" \"C:\\\\Users\\\\Will\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js\" \"run\" \"tsc\"\n19 error node v4.2.1\n20 error npm  v3.3.8\n21 error code ELIFECYCLE\n22 error pollerbear-ui@1.0.0 tsc: `tsc`\n22 error Exit status 2\n23 error Failed at the pollerbear-ui@1.0.0 tsc script 'tsc'.\n23 error This is most likely a problem with the pollerbear-ui package,\n23 error not with npm itself.\n23 error Tell the author that this fails on your system:\n23 error     tsc\n23 error You can get their info via:\n23 error     npm owner ls pollerbear-ui\n23 error There is likely additional logging output above.\n24 verbose exit [ 1, true ]\n",
+			"contents": "0 info it worked if it ends with ok\n1 verbose cli [ 'C:\\\\Program Files\\\\nodejs\\\\node.exe',\n1 verbose cli   'C:\\\\Users\\\\Will\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js',\n1 verbose cli   'uninstall',\n1 verbose cli   'ngx-clipboard',\n1 verbose cli   '-save' ]\n2 info using npm@3.3.8\n3 info using node@v4.2.1\n4 silly loadCurrentTree Starting\n5 silly install loadCurrentTree\n6 silly install readLocalPackageData\n7 silly install normalizeTree\n8 silly loadCurrentTree Finishing\n9 silly loadIdealTree Starting\n10 silly install loadIdealTree\n11 silly cloneCurrentTree Starting\n12 silly install cloneCurrentTreeToIdealTree\n13 silly cloneCurrentTree Finishing\n14 silly loadShrinkwrap Starting\n15 silly install loadShrinkwrap\n16 silly loadShrinkwrap Finishing\n17 silly loadAllDepsIntoIdealTree Starting\n18 silly uninstall loadAllDepsIntoIdealtree\n19 silly loadAllDepsIntoIdealTree Finishing\n20 silly idealTree:prePrune pollerbear-ui@1.0.0\n20 silly idealTree:prePrune ├── @angular/common@2.4.3\n20 silly idealTree:prePrune ├── @angular/compiler@2.4.3\n20 silly idealTree:prePrune ├── @angular/core@2.4.3\n20 silly idealTree:prePrune ├── @angular/forms@2.4.3\n20 silly idealTree:prePrune ├── @angular/http@2.4.3\n20 silly idealTree:prePrune ├── @angular/platform-browser-dynamic@2.4.3\n20 silly idealTree:prePrune ├── @angular/platform-browser@2.4.3\n20 silly idealTree:prePrune ├── @angular/router@3.4.3\n20 silly idealTree:prePrune ├── @ng-bootstrap/ng-bootstrap@1.0.0-alpha.18\n20 silly idealTree:prePrune ├── @types/clipboard@1.5.30\n20 silly idealTree:prePrune ├── @types/core-js@0.9.35\n20 silly idealTree:prePrune ├── @types/jquery@2.0.39\n20 silly idealTree:prePrune ├── @types/jqueryui@1.11.32\n20 silly idealTree:prePrune ├── @types/node@6.0.60\n20 silly idealTree:prePrune ├── abbrev@1.0.9\n20 silly idealTree:prePrune ├── accepts@1.3.3\n20 silly idealTree:prePrune ├── acorn-jsx@3.0.1\n20 silly idealTree:prePrune ├── acorn-object-spread@1.0.0\n20 silly idealTree:prePrune ├── acorn@3.3.0\n20 silly idealTree:prePrune ├── after@0.8.1\n20 silly idealTree:prePrune ├── angular-in-memory-web-api@0.2.4\n20 silly idealTree:prePrune ├── angular2-toaster@2.0.0\n20 silly idealTree:prePrune ├── angularfire2@2.0.0-beta.7-pre\n20 silly idealTree:prePrune ├── ansi-regex@0.2.1\n20 silly idealTree:prePrune ├── ansi-styles@1.1.0\n20 silly idealTree:prePrune ├── anymatch@1.3.0\n20 silly idealTree:prePrune ├── arr-diff@2.0.0\n20 silly idealTree:prePrune ├── arr-flatten@1.0.1\n20 silly idealTree:prePrune ├── array-unique@0.2.1\n20 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6\n20 silly idealTree:prePrune ├── arrify@1.0.1\n20 silly idealTree:prePrune ├── asn1@0.2.3\n20 silly idealTree:prePrune ├── assert-plus@0.2.0\n20 silly idealTree:prePrune ├── async-each-series@0.1.1\n20 silly idealTree:prePrune ├── async-each@1.0.1\n20 silly idealTree:prePrune ├── async@1.5.2\n20 silly idealTree:prePrune ├── asynckit@0.4.0\n20 silly idealTree:prePrune ├── aws-sign2@0.6.0\n20 silly idealTree:prePrune ├── aws4@1.5.0\n20 silly idealTree:prePrune ├── backo2@1.0.2\n20 silly idealTree:prePrune ├── balanced-match@0.4.2\n20 silly idealTree:prePrune ├── base64-arraybuffer@0.1.5\n20 silly idealTree:prePrune ├── base64id@0.1.0\n20 silly idealTree:prePrune ├── batch@0.5.3\n20 silly idealTree:prePrune ├── bcrypt-pbkdf@1.0.0\n20 silly idealTree:prePrune ├── better-assert@1.0.2\n20 silly idealTree:prePrune ├── binary-extensions@1.8.0\n20 silly idealTree:prePrune ├── blob@0.0.4\n20 silly idealTree:prePrune ├── bluebird@2.9.6\n20 silly idealTree:prePrune ├── boom@2.10.1\n20 silly idealTree:prePrune ├── bootswatch@3.3.7\n20 silly idealTree:prePrune ├── brace-expansion@1.1.6\n20 silly idealTree:prePrune ├── braces@1.8.5\n20 silly idealTree:prePrune ├── browser-sync-client@2.4.4\n20 silly idealTree:prePrune ├── browser-sync-ui@0.6.2\n20 silly idealTree:prePrune ├─┬ browser-sync@2.18.6\n20 silly idealTree:prePrune │ └── rx@4.1.0\n20 silly idealTree:prePrune ├── bs-recipes@1.3.4\n20 silly idealTree:prePrune ├─┬ buble@0.12.5\n20 silly idealTree:prePrune │ ├── ansi-regex@2.1.1\n20 silly idealTree:prePrune │ ├── ansi-styles@2.2.1\n20 silly idealTree:prePrune │ ├── chalk@1.1.3\n20 silly idealTree:prePrune │ ├── has-ansi@2.0.0\n20 silly idealTree:prePrune │ ├── strip-ansi@3.0.1\n20 silly idealTree:prePrune │ └── supports-color@2.0.0\n20 silly idealTree:prePrune ├── bubleify@0.5.1\n20 silly idealTree:prePrune ├── buffer-shims@1.0.0\n20 silly idealTree:prePrune ├── builtin-modules@1.1.1\n20 silly idealTree:prePrune ├── callsite@1.0.0\n20 silly idealTree:prePrune ├── camelcase@1.2.1\n20 silly idealTree:prePrune ├── caseless@0.11.0\n20 silly idealTree:prePrune ├── chalk@0.5.1\n20 silly idealTree:prePrune ├── chart.js@2.4.0\n20 silly idealTree:prePrune ├── chartjs-color-string@0.4.0\n20 silly idealTree:prePrune ├── chartjs-color@2.0.0\n20 silly idealTree:prePrune ├── chokidar@1.6.1\n20 silly idealTree:prePrune ├── clipboard@1.5.16\n20 silly idealTree:prePrune ├─┬ cliui@3.2.0\n20 silly idealTree:prePrune │ ├── ansi-regex@2.1.1\n20 silly idealTree:prePrune │ └── strip-ansi@3.0.1\n20 silly idealTree:prePrune ├── code-point-at@1.1.0\n20 silly idealTree:prePrune ├── color-convert@0.5.3\n20 silly idealTree:prePrune ├── color-name@1.1.1\n20 silly idealTree:prePrune ├── combined-stream@1.0.5\n20 silly idealTree:prePrune ├── commander@2.6.0\n20 silly idealTree:prePrune ├── component-bind@1.0.0\n20 silly idealTree:prePrune ├── component-emitter@1.1.2\n20 silly idealTree:prePrune ├── component-inherit@0.0.3\n20 silly idealTree:prePrune ├── concat-map@0.0.1\n20 silly idealTree:prePrune ├── concurrently@3.1.0\n20 silly idealTree:prePrune ├── connect-history-api-fallback@1.3.0\n20 silly idealTree:prePrune ├── connect-logger@0.0.1\n20 silly idealTree:prePrune ├── connect@3.5.0\n20 silly idealTree:prePrune ├── cookie@0.3.1\n20 silly idealTree:prePrune ├── core-js@2.4.1\n20 silly idealTree:prePrune ├── core-util-is@1.0.2\n20 silly idealTree:prePrune ├── cryptiles@2.0.5\n20 silly idealTree:prePrune ├─┬ dashdash@1.14.1\n20 silly idealTree:prePrune │ └── assert-plus@1.0.0\n20 silly idealTree:prePrune ├── debug@2.2.0\n20 silly idealTree:prePrune ├── decamelize@1.2.0\n20 silly idealTree:prePrune ├── delayed-stream@1.0.0\n20 silly idealTree:prePrune ├── delegate@3.1.1\n20 silly idealTree:prePrune ├── depd@1.1.0\n20 silly idealTree:prePrune ├── destroy@1.0.4\n20 silly idealTree:prePrune ├── dev-ip@1.0.1\n20 silly idealTree:prePrune ├─┬ easy-extender@2.3.2\n20 silly idealTree:prePrune │ └── lodash@3.10.1\n20 silly idealTree:prePrune ├── eazy-logger@3.0.2\n20 silly idealTree:prePrune ├── ecc-jsbn@0.1.1\n20 silly idealTree:prePrune ├── ee-first@1.1.1\n20 silly idealTree:prePrune ├── emitter-steward@1.0.0\n20 silly idealTree:prePrune ├── encodeurl@1.0.1\n20 silly idealTree:prePrune ├─┬ engine.io-client@1.8.0\n20 silly idealTree:prePrune │ ├── component-emitter@1.2.1\n20 silly idealTree:prePrune │ ├── debug@2.3.3\n20 silly idealTree:prePrune │ └── ms@0.7.2\n20 silly idealTree:prePrune ├─┬ engine.io-parser@1.3.1\n20 silly idealTree:prePrune │ ├── has-binary@0.1.6\n20 silly idealTree:prePrune │ └── isarray@0.0.1\n20 silly idealTree:prePrune ├─┬ engine.io@1.8.0\n20 silly idealTree:prePrune │ ├── debug@2.3.3\n20 silly idealTree:prePrune │ └── ms@0.7.2\n20 silly idealTree:prePrune ├── error-ex@1.3.0\n20 silly idealTree:prePrune ├── escape-html@1.0.3\n20 silly idealTree:prePrune ├── escape-string-regexp@1.0.5\n20 silly idealTree:prePrune ├── etag@1.7.0\n20 silly idealTree:prePrune ├── eventemitter3@1.2.0\n20 silly idealTree:prePrune ├── expand-brackets@0.1.5\n20 silly idealTree:prePrune ├── expand-range@1.8.2\n20 silly idealTree:prePrune ├─┬ express@2.5.11\n20 silly idealTree:prePrune │ ├── connect@1.9.2\n20 silly idealTree:prePrune │ └── qs@0.4.2\n20 silly idealTree:prePrune ├── extend@3.0.0\n20 silly idealTree:prePrune ├── extglob@0.3.2\n20 silly idealTree:prePrune ├── extsprintf@1.0.2\n20 silly idealTree:prePrune ├── filename-regex@2.0.0\n20 silly idealTree:prePrune ├── fill-range@2.2.3\n20 silly idealTree:prePrune ├── finalhandler@0.5.0\n20 silly idealTree:prePrune ├── find-up@1.1.2\n20 silly idealTree:prePrune ├─┬ firebase@3.6.5\n20 silly idealTree:prePrune │ ├── base64-url@1.3.3\n20 silly idealTree:prePrune │ ├── base64url@2.0.0\n20 silly idealTree:prePrune │ ├── buffer-equal-constant-time@1.0.1\n20 silly idealTree:prePrune │ ├── dom-storage@2.0.2\n20 silly idealTree:prePrune │ ├── ecdsa-sig-formatter@1.0.7\n20 silly idealTree:prePrune │ ├── faye-websocket@0.9.3\n20 silly idealTree:prePrune │ ├── hoek@2.16.3\n20 silly idealTree:prePrune │ ├── isemail@1.2.0\n20 silly idealTree:prePrune │ ├── joi@6.10.1\n20 silly idealTree:prePrune │ ├── jsonwebtoken@7.1.9\n20 silly idealTree:prePrune │ ├── jwa@1.1.4\n20 silly idealTree:prePrune │ ├── jws@3.1.4\n20 silly idealTree:prePrune │ ├── lodash.once@4.1.1\n20 silly idealTree:prePrune │ ├── moment@2.16.0\n20 silly idealTree:prePrune │ ├── ms@0.7.2\n20 silly idealTree:prePrune │ ├── rsvp@3.2.1\n20 silly idealTree:prePrune │ ├── safe-buffer@5.0.1\n20 silly idealTree:prePrune │ ├── topo@1.1.0\n20 silly idealTree:prePrune │ ├── websocket-driver@0.6.5\n20 silly idealTree:prePrune │ ├── websocket-extensions@0.1.1\n20 silly idealTree:prePrune │ ├── xmlhttprequest@1.8.0\n20 silly idealTree:prePrune │ └── xtend@4.0.1\n20 silly idealTree:prePrune ├── font-awesome@4.7.0\n20 silly idealTree:prePrune ├── for-in@0.1.6\n20 silly idealTree:prePrune ├── for-own@0.1.4\n20 silly idealTree:prePrune ├── forever-agent@0.6.1\n20 silly idealTree:prePrune ├── form-data@2.1.2\n20 silly idealTree:prePrune ├── formidable@1.0.17\n20 silly idealTree:prePrune ├── fresh@0.3.0\n20 silly idealTree:prePrune ├── fs-extra@1.0.0\n20 silly idealTree:prePrune ├── generate-function@2.0.0\n20 silly idealTree:prePrune ├── generate-object-property@1.2.0\n20 silly idealTree:prePrune ├── get-caller-file@1.0.2\n20 silly idealTree:prePrune ├─┬ getpass@0.1.6\n20 silly idealTree:prePrune │ └── assert-plus@1.0.0\n20 silly idealTree:prePrune ├── glob-base@0.3.0\n20 silly idealTree:prePrune ├── glob-parent@2.0.0\n20 silly idealTree:prePrune ├── good-listener@1.2.1\n20 silly idealTree:prePrune ├── graceful-fs@4.1.11\n20 silly idealTree:prePrune ├── graceful-readlink@1.0.1\n20 silly idealTree:prePrune ├─┬ har-validator@2.0.6\n20 silly idealTree:prePrune │ ├── ansi-regex@2.1.1\n20 silly idealTree:prePrune │ ├── ansi-styles@2.2.1\n20 silly idealTree:prePrune │ ├── chalk@1.1.3\n20 silly idealTree:prePrune │ ├── commander@2.9.0\n20 silly idealTree:prePrune │ ├── has-ansi@2.0.0\n20 silly idealTree:prePrune │ ├── strip-ansi@3.0.1\n20 silly idealTree:prePrune │ └── supports-color@2.0.0\n20 silly idealTree:prePrune ├── has-ansi@0.1.0\n20 silly idealTree:prePrune ├─┬ has-binary@0.1.7\n20 silly idealTree:prePrune │ └── isarray@0.0.1\n20 silly idealTree:prePrune ├── has-cors@1.1.0\n20 silly idealTree:prePrune ├── hawk@3.1.3\n20 silly idealTree:prePrune ├── hoek@2.16.3\n20 silly idealTree:prePrune ├── hosted-git-info@2.1.5\n20 silly idealTree:prePrune ├── http-errors@1.5.1\n20 silly idealTree:prePrune ├── http-proxy@1.15.2\n20 silly idealTree:prePrune ├── http-signature@1.1.1\n20 silly idealTree:prePrune ├── immutable@3.8.1\n20 silly idealTree:prePrune ├── indexof@0.0.1\n20 silly idealTree:prePrune ├── inherits@2.0.3\n20 silly idealTree:prePrune ├── invert-kv@1.0.0\n20 silly idealTree:prePrune ├── is-arrayish@0.2.1\n20 silly idealTree:prePrune ├── is-binary-path@1.0.1\n20 silly idealTree:prePrune ├── is-buffer@1.1.4\n20 silly idealTree:prePrune ├── is-builtin-module@1.0.0\n20 silly idealTree:prePrune ├── is-dotfile@1.0.2\n20 silly idealTree:prePrune ├── is-equal-shallow@0.1.3\n20 silly idealTree:prePrune ├── is-extendable@0.1.1\n20 silly idealTree:prePrune ├── is-extglob@1.0.0\n20 silly idealTree:prePrune ├── is-fullwidth-code-point@1.0.0\n20 silly idealTree:prePrune ├── is-glob@2.0.1\n20 silly idealTree:prePrune ├── is-my-json-valid@2.15.0\n20 silly idealTree:prePrune ├── is-number-like@1.0.7\n20 silly idealTree:prePrune ├── is-number@2.1.0\n20 silly idealTree:prePrune ├── is-posix-bracket@0.1.1\n20 silly idealTree:prePrune ├── is-primitive@2.0.0\n20 silly idealTree:prePrune ├── is-property@1.0.2\n20 silly idealTree:prePrune ├── is-typedarray@1.0.0\n20 silly idealTree:prePrune ├── is-utf8@0.2.1\n20 silly idealTree:prePrune ├── isarray@1.0.0\n20 silly idealTree:prePrune ├── isobject@2.1.0\n20 silly idealTree:prePrune ├── isstream@0.1.2\n20 silly idealTree:prePrune ├── jodid25519@1.0.2\n20 silly idealTree:prePrune ├── jquery-ui@1.12.1\n20 silly idealTree:prePrune ├── jquery@3.1.1\n20 silly idealTree:prePrune ├── jsbn@0.1.0\n20 silly idealTree:prePrune ├── json-schema@0.2.3\n20 silly idealTree:prePrune ├── json-stringify-safe@5.0.1\n20 silly idealTree:prePrune ├── json3@3.3.2\n20 silly idealTree:prePrune ├── jsonfile@2.4.0\n20 silly idealTree:prePrune ├── jsonpointer@4.0.1\n20 silly idealTree:prePrune ├── jsprim@1.3.1\n20 silly idealTree:prePrune ├── kind-of@3.1.0\n20 silly idealTree:prePrune ├── klaw@1.3.1\n20 silly idealTree:prePrune ├── lcid@1.0.0\n20 silly idealTree:prePrune ├── limiter@1.1.0\n20 silly idealTree:prePrune ├── lite-server@2.2.2\n20 silly idealTree:prePrune ├── load-json-file@1.1.0\n20 silly idealTree:prePrune ├─┬ localtunnel@1.8.2\n20 silly idealTree:prePrune │ └── yargs@3.29.0\n20 silly idealTree:prePrune ├── lodash.isfinite@3.3.2\n20 silly idealTree:prePrune ├── lodash@4.17.4\n20 silly idealTree:prePrune ├── magic-string@0.14.0\n20 silly idealTree:prePrune ├── micromatch@2.3.11\n20 silly idealTree:prePrune ├── mime-db@1.25.0\n20 silly idealTree:prePrune ├── mime-types@2.1.13\n20 silly idealTree:prePrune ├── mime@1.2.4\n20 silly idealTree:prePrune ├── minimatch@3.0.3\n20 silly idealTree:prePrune ├── minimist@1.2.0\n20 silly idealTree:prePrune ├── mkdirp@0.3.0\n20 silly idealTree:prePrune ├── moment@2.17.1\n20 silly idealTree:prePrune ├── ms@0.7.1\n20 silly idealTree:prePrune ├── negotiator@0.6.1\n20 silly idealTree:prePrune ├─┬ ng2-charts@1.4.4\n20 silly idealTree:prePrune │ └── chart.js@2.3.0\n20 silly idealTree:prePrune ├── node-uuid@1.4.7\n20 silly idealTree:prePrune ├── nopt@3.0.6\n20 silly idealTree:prePrune ├── normalize-package-data@2.3.5\n20 silly idealTree:prePrune ├── normalize-path@2.0.1\n20 silly idealTree:prePrune ├── number-is-nan@1.0.1\n20 silly idealTree:prePrune ├── oauth-sign@0.8.2\n20 silly idealTree:prePrune ├── object-assign@4.1.0\n20 silly idealTree:prePrune ├── object-component@0.0.3\n20 silly idealTree:prePrune ├── object-path@0.9.2\n20 silly idealTree:prePrune ├── object.omit@2.0.1\n20 silly idealTree:prePrune ├── on-finished@2.3.0\n20 silly idealTree:prePrune ├── openurl@1.1.0\n20 silly idealTree:prePrune ├── opn@4.0.2\n20 silly idealTree:prePrune ├── options@0.0.6\n20 silly idealTree:prePrune ├── os-homedir@1.0.2\n20 silly idealTree:prePrune ├── os-locale@1.4.0\n20 silly idealTree:prePrune ├── parse-glob@3.0.4\n20 silly idealTree:prePrune ├── parse-json@2.2.0\n20 silly idealTree:prePrune ├── parsejson@0.0.3\n20 silly idealTree:prePrune ├── parseqs@0.0.5\n20 silly idealTree:prePrune ├── parseuri@0.0.5\n20 silly idealTree:prePrune ├── parseurl@1.3.1\n20 silly idealTree:prePrune ├── path-exists@2.1.0\n20 silly idealTree:prePrune ├── path-is-absolute@1.0.1\n20 silly idealTree:prePrune ├── path-type@1.1.0\n20 silly idealTree:prePrune ├── pify@2.3.0\n20 silly idealTree:prePrune ├── pinkie-promise@2.0.1\n20 silly idealTree:prePrune ├── pinkie@2.0.4\n20 silly idealTree:prePrune ├── portscanner@2.1.1\n20 silly idealTree:prePrune ├── preserve@0.2.0\n20 silly idealTree:prePrune ├── process-nextick-args@1.0.7\n20 silly idealTree:prePrune ├── punycode@1.4.1\n20 silly idealTree:prePrune ├── qs@6.2.1\n20 silly idealTree:prePrune ├── randomatic@1.1.6\n20 silly idealTree:prePrune ├── range-parser@1.2.0\n20 silly idealTree:prePrune ├── read-pkg-up@1.0.1\n20 silly idealTree:prePrune ├── read-pkg@1.1.0\n20 silly idealTree:prePrune ├── readable-stream@2.2.2\n20 silly idealTree:prePrune ├── readdirp@2.1.0\n20 silly idealTree:prePrune ├── regex-cache@0.4.3\n20 silly idealTree:prePrune ├── repeat-element@1.1.2\n20 silly idealTree:prePrune ├── repeat-string@1.6.1\n20 silly idealTree:prePrune ├─┬ request@2.78.0\n20 silly idealTree:prePrune │ └── qs@6.3.0\n20 silly idealTree:prePrune ├── require-directory@2.1.1\n20 silly idealTree:prePrune ├── require-main-filename@1.0.1\n20 silly idealTree:prePrune ├── requires-port@1.0.0\n20 silly idealTree:prePrune ├── resp-modifier@6.0.2\n20 silly idealTree:prePrune ├── rx@2.3.24\n20 silly idealTree:prePrune ├── rxjs@5.0.1\n20 silly idealTree:prePrune ├── select@1.1.0\n20 silly idealTree:prePrune ├── semver@5.3.0\n20 silly idealTree:prePrune ├─┬ send@0.14.1\n20 silly idealTree:prePrune │ └── mime@1.3.4\n20 silly idealTree:prePrune ├── serve-index@1.8.0\n20 silly idealTree:prePrune ├── serve-static@1.11.1\n20 silly idealTree:prePrune ├── server-destroy@1.0.1\n20 silly idealTree:prePrune ├── set-blocking@2.0.0\n20 silly idealTree:prePrune ├── set-immediate-shim@1.0.1\n20 silly idealTree:prePrune ├── setprototypeof@1.0.2\n20 silly idealTree:prePrune ├── sntp@1.0.9\n20 silly idealTree:prePrune ├─┬ socket.io-adapter@0.5.0\n20 silly idealTree:prePrune │ ├── debug@2.3.3\n20 silly idealTree:prePrune │ └── ms@0.7.2\n20 silly idealTree:prePrune ├─┬ socket.io-client@1.6.0\n20 silly idealTree:prePrune │ ├── component-emitter@1.2.1\n20 silly idealTree:prePrune │ ├── debug@2.3.3\n20 silly idealTree:prePrune │ └── ms@0.7.2\n20 silly idealTree:prePrune ├─┬ socket.io-parser@2.3.1\n20 silly idealTree:prePrune │ └── isarray@0.0.1\n20 silly idealTree:prePrune ├─┬ socket.io@1.6.0\n20 silly idealTree:prePrune │ ├── debug@2.3.3\n20 silly idealTree:prePrune │ └── ms@0.7.2\n20 silly idealTree:prePrune ├── spawn-default-shell@1.1.0\n20 silly idealTree:prePrune ├── spdx-correct@1.0.2\n20 silly idealTree:prePrune ├── spdx-expression-parse@1.0.4\n20 silly idealTree:prePrune ├── spdx-license-ids@1.2.2\n20 silly idealTree:prePrune ├─┬ sshpk@1.10.2\n20 silly idealTree:prePrune │ └── assert-plus@1.0.0\n20 silly idealTree:prePrune ├── statuses@1.3.1\n20 silly idealTree:prePrune ├── stream-throttle@0.1.3\n20 silly idealTree:prePrune ├── string_decoder@0.10.31\n20 silly idealTree:prePrune ├─┬ string-width@1.0.2\n20 silly idealTree:prePrune │ ├── ansi-regex@2.1.1\n20 silly idealTree:prePrune │ └── strip-ansi@3.0.1\n20 silly idealTree:prePrune ├── stringstream@0.0.5\n20 silly idealTree:prePrune ├── strip-ansi@0.3.0\n20 silly idealTree:prePrune ├── strip-bom@2.0.0\n20 silly idealTree:prePrune ├── supports-color@0.2.0\n20 silly idealTree:prePrune ├── symbol-observable@1.0.4\n20 silly idealTree:prePrune ├── systemjs@0.19.40\n20 silly idealTree:prePrune ├─┬ tfunk@3.1.0\n20 silly idealTree:prePrune │ ├── ansi-regex@2.1.1\n20 silly idealTree:prePrune │ ├── ansi-styles@2.2.1\n20 silly idealTree:prePrune │ ├── chalk@1.1.3\n20 silly idealTree:prePrune │ ├── has-ansi@2.0.0\n20 silly idealTree:prePrune │ ├── strip-ansi@3.0.1\n20 silly idealTree:prePrune │ └── supports-color@2.0.0\n20 silly idealTree:prePrune ├── tiny-emitter@1.1.0\n20 silly idealTree:prePrune ├── to-array@0.1.4\n20 silly idealTree:prePrune ├── tough-cookie@2.3.2\n20 silly idealTree:prePrune ├── tree-kill@1.1.0\n20 silly idealTree:prePrune ├── tunnel-agent@0.4.3\n20 silly idealTree:prePrune ├── tweetnacl@0.14.5\n20 silly idealTree:prePrune ├── typescript@2.1.5\n20 silly idealTree:prePrune ├── ua-parser-js@0.7.12\n20 silly idealTree:prePrune ├── ultron@1.0.2\n20 silly idealTree:prePrune ├── underscore@1.7.0\n20 silly idealTree:prePrune ├── unpipe@1.0.0\n20 silly idealTree:prePrune ├── util-deprecate@1.0.2\n20 silly idealTree:prePrune ├── utils-merge@1.0.0\n20 silly idealTree:prePrune ├── validate-npm-package-license@3.0.1\n20 silly idealTree:prePrune ├── verror@1.3.6\n20 silly idealTree:prePrune ├── vlq@0.2.1\n20 silly idealTree:prePrune ├── weinre@2.0.0-pre-I0Z7U9OV\n20 silly idealTree:prePrune ├── when@3.7.7\n20 silly idealTree:prePrune ├── which-module@1.0.0\n20 silly idealTree:prePrune ├── window-size@0.1.4\n20 silly idealTree:prePrune ├─┬ wrap-ansi@2.1.0\n20 silly idealTree:prePrune │ ├── ansi-regex@2.1.1\n20 silly idealTree:prePrune │ └── strip-ansi@3.0.1\n20 silly idealTree:prePrune ├── ws@1.1.1\n20 silly idealTree:prePrune ├── wtf-8@1.0.0\n20 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.3\n20 silly idealTree:prePrune ├── xtend@4.0.1\n20 silly idealTree:prePrune ├── y18n@3.2.1\n20 silly idealTree:prePrune ├─┬ yargs-parser@4.2.1\n20 silly idealTree:prePrune │ └── camelcase@3.0.0\n20 silly idealTree:prePrune ├─┬ yargs@6.4.0\n20 silly idealTree:prePrune │ ├── camelcase@3.0.0\n20 silly idealTree:prePrune │ └── window-size@0.2.0\n20 silly idealTree:prePrune ├── yeast@0.1.2\n20 silly idealTree:prePrune └── zone.js@0.7.5\n21 silly loadIdealTree Finishing\n22 silly currentTree pollerbear-ui@1.0.0\n22 silly currentTree ├── @angular/common@2.4.3\n22 silly currentTree ├── @angular/compiler@2.4.3\n22 silly currentTree ├── @angular/core@2.4.3\n22 silly currentTree ├── @angular/forms@2.4.3\n22 silly currentTree ├── @angular/http@2.4.3\n22 silly currentTree ├── @angular/platform-browser-dynamic@2.4.3\n22 silly currentTree ├── @angular/platform-browser@2.4.3\n22 silly currentTree ├── @angular/router@3.4.3\n22 silly currentTree ├── @ng-bootstrap/ng-bootstrap@1.0.0-alpha.18\n22 silly currentTree ├── @types/clipboard@1.5.30\n22 silly currentTree ├── @types/core-js@0.9.35\n22 silly currentTree ├── @types/jquery@2.0.39\n22 silly currentTree ├── @types/jqueryui@1.11.32\n22 silly currentTree ├── @types/node@6.0.60\n22 silly currentTree ├── abbrev@1.0.9\n22 silly currentTree ├── accepts@1.3.3\n22 silly currentTree ├── acorn-jsx@3.0.1\n22 silly currentTree ├── acorn-object-spread@1.0.0\n22 silly currentTree ├── acorn@3.3.0\n22 silly currentTree ├── after@0.8.1\n22 silly currentTree ├── angular-in-memory-web-api@0.2.4\n22 silly currentTree ├── angular2-toaster@2.0.0\n22 silly currentTree ├── angularfire2@2.0.0-beta.7-pre\n22 silly currentTree ├── ansi-regex@0.2.1\n22 silly currentTree ├── ansi-styles@1.1.0\n22 silly currentTree ├── anymatch@1.3.0\n22 silly currentTree ├── arr-diff@2.0.0\n22 silly currentTree ├── arr-flatten@1.0.1\n22 silly currentTree ├── array-unique@0.2.1\n22 silly currentTree ├── arraybuffer.slice@0.0.6\n22 silly currentTree ├── arrify@1.0.1\n22 silly currentTree ├── asn1@0.2.3\n22 silly currentTree ├── assert-plus@0.2.0\n22 silly currentTree ├── async-each-series@0.1.1\n22 silly currentTree ├── async-each@1.0.1\n22 silly currentTree ├── async@1.5.2\n22 silly currentTree ├── asynckit@0.4.0\n22 silly currentTree ├── aws-sign2@0.6.0\n22 silly currentTree ├── aws4@1.5.0\n22 silly currentTree ├── backo2@1.0.2\n22 silly currentTree ├── balanced-match@0.4.2\n22 silly currentTree ├── base64-arraybuffer@0.1.5\n22 silly currentTree ├── base64id@0.1.0\n22 silly currentTree ├── batch@0.5.3\n22 silly currentTree ├── bcrypt-pbkdf@1.0.0\n22 silly currentTree ├── better-assert@1.0.2\n22 silly currentTree ├── binary-extensions@1.8.0\n22 silly currentTree ├── blob@0.0.4\n22 silly currentTree ├── bluebird@2.9.6\n22 silly currentTree ├── boom@2.10.1\n22 silly currentTree ├── bootswatch@3.3.7\n22 silly currentTree ├── brace-expansion@1.1.6\n22 silly currentTree ├── braces@1.8.5\n22 silly currentTree ├── browser-sync-client@2.4.4\n22 silly currentTree ├── browser-sync-ui@0.6.2\n22 silly currentTree ├─┬ browser-sync@2.18.6\n22 silly currentTree │ └── rx@4.1.0\n22 silly currentTree ├── bs-recipes@1.3.4\n22 silly currentTree ├─┬ buble@0.12.5\n22 silly currentTree │ ├── ansi-regex@2.1.1\n22 silly currentTree │ ├── ansi-styles@2.2.1\n22 silly currentTree │ ├── chalk@1.1.3\n22 silly currentTree │ ├── has-ansi@2.0.0\n22 silly currentTree │ ├── strip-ansi@3.0.1\n22 silly currentTree │ └── supports-color@2.0.0\n22 silly currentTree ├── bubleify@0.5.1\n22 silly currentTree ├── buffer-shims@1.0.0\n22 silly currentTree ├── builtin-modules@1.1.1\n22 silly currentTree ├── callsite@1.0.0\n22 silly currentTree ├── camelcase@1.2.1\n22 silly currentTree ├── caseless@0.11.0\n22 silly currentTree ├── chalk@0.5.1\n22 silly currentTree ├── chart.js@2.4.0\n22 silly currentTree ├── chartjs-color-string@0.4.0\n22 silly currentTree ├── chartjs-color@2.0.0\n22 silly currentTree ├── chokidar@1.6.1\n22 silly currentTree ├── clipboard@1.5.16\n22 silly currentTree ├─┬ cliui@3.2.0\n22 silly currentTree │ ├── ansi-regex@2.1.1\n22 silly currentTree │ └── strip-ansi@3.0.1\n22 silly currentTree ├── code-point-at@1.1.0\n22 silly currentTree ├── color-convert@0.5.3\n22 silly currentTree ├── color-name@1.1.1\n22 silly currentTree ├── combined-stream@1.0.5\n22 silly currentTree ├── commander@2.6.0\n22 silly currentTree ├── component-bind@1.0.0\n22 silly currentTree ├── component-emitter@1.1.2\n22 silly currentTree ├── component-inherit@0.0.3\n22 silly currentTree ├── concat-map@0.0.1\n22 silly currentTree ├── concurrently@3.1.0\n22 silly currentTree ├── connect-history-api-fallback@1.3.0\n22 silly currentTree ├── connect-logger@0.0.1\n22 silly currentTree ├── connect@3.5.0\n22 silly currentTree ├── cookie@0.3.1\n22 silly currentTree ├── core-js@2.4.1\n22 silly currentTree ├── core-util-is@1.0.2\n22 silly currentTree ├── cryptiles@2.0.5\n22 silly currentTree ├─┬ dashdash@1.14.1\n22 silly currentTree │ └── assert-plus@1.0.0\n22 silly currentTree ├── debug@2.2.0\n22 silly currentTree ├── decamelize@1.2.0\n22 silly currentTree ├── delayed-stream@1.0.0\n22 silly currentTree ├── delegate@3.1.1\n22 silly currentTree ├── depd@1.1.0\n22 silly currentTree ├── destroy@1.0.4\n22 silly currentTree ├── dev-ip@1.0.1\n22 silly currentTree ├─┬ easy-extender@2.3.2\n22 silly currentTree │ └── lodash@3.10.1\n22 silly currentTree ├── eazy-logger@3.0.2\n22 silly currentTree ├── ecc-jsbn@0.1.1\n22 silly currentTree ├── ee-first@1.1.1\n22 silly currentTree ├── emitter-steward@1.0.0\n22 silly currentTree ├── encodeurl@1.0.1\n22 silly currentTree ├─┬ engine.io-client@1.8.0\n22 silly currentTree │ ├── component-emitter@1.2.1\n22 silly currentTree │ ├── debug@2.3.3\n22 silly currentTree │ └── ms@0.7.2\n22 silly currentTree ├─┬ engine.io-parser@1.3.1\n22 silly currentTree │ ├── has-binary@0.1.6\n22 silly currentTree │ └── isarray@0.0.1\n22 silly currentTree ├─┬ engine.io@1.8.0\n22 silly currentTree │ ├── debug@2.3.3\n22 silly currentTree │ └── ms@0.7.2\n22 silly currentTree ├── error-ex@1.3.0\n22 silly currentTree ├── escape-html@1.0.3\n22 silly currentTree ├── escape-string-regexp@1.0.5\n22 silly currentTree ├── etag@1.7.0\n22 silly currentTree ├── eventemitter3@1.2.0\n22 silly currentTree ├── expand-brackets@0.1.5\n22 silly currentTree ├── expand-range@1.8.2\n22 silly currentTree ├─┬ express@2.5.11\n22 silly currentTree │ ├── connect@1.9.2\n22 silly currentTree │ └── qs@0.4.2\n22 silly currentTree ├── extend@3.0.0\n22 silly currentTree ├── extglob@0.3.2\n22 silly currentTree ├── extsprintf@1.0.2\n22 silly currentTree ├── filename-regex@2.0.0\n22 silly currentTree ├── fill-range@2.2.3\n22 silly currentTree ├── finalhandler@0.5.0\n22 silly currentTree ├── find-up@1.1.2\n22 silly currentTree ├─┬ firebase@3.6.5\n22 silly currentTree │ ├── base64-url@1.3.3\n22 silly currentTree │ ├── base64url@2.0.0\n22 silly currentTree │ ├── buffer-equal-constant-time@1.0.1\n22 silly currentTree │ ├── dom-storage@2.0.2\n22 silly currentTree │ ├── ecdsa-sig-formatter@1.0.7\n22 silly currentTree │ ├── faye-websocket@0.9.3\n22 silly currentTree │ ├── hoek@2.16.3\n22 silly currentTree │ ├── isemail@1.2.0\n22 silly currentTree │ ├── joi@6.10.1\n22 silly currentTree │ ├── jsonwebtoken@7.1.9\n22 silly currentTree │ ├── jwa@1.1.4\n22 silly currentTree │ ├── jws@3.1.4\n22 silly currentTree │ ├── lodash.once@4.1.1\n22 silly currentTree │ ├── moment@2.16.0\n22 silly currentTree │ ├── ms@0.7.2\n22 silly currentTree │ ├── rsvp@3.2.1\n22 silly currentTree │ ├── safe-buffer@5.0.1\n22 silly currentTree │ ├── topo@1.1.0\n22 silly currentTree │ ├── websocket-driver@0.6.5\n22 silly currentTree │ ├── websocket-extensions@0.1.1\n22 silly currentTree │ ├── xmlhttprequest@1.8.0\n22 silly currentTree │ └── xtend@4.0.1\n22 silly currentTree ├── font-awesome@4.7.0\n22 silly currentTree ├── for-in@0.1.6\n22 silly currentTree ├── for-own@0.1.4\n22 silly currentTree ├── forever-agent@0.6.1\n22 silly currentTree ├── form-data@2.1.2\n22 silly currentTree ├── formidable@1.0.17\n22 silly currentTree ├── fresh@0.3.0\n22 silly currentTree ├── fs-extra@1.0.0\n22 silly currentTree ├── generate-function@2.0.0\n22 silly currentTree ├── generate-object-property@1.2.0\n22 silly currentTree ├── get-caller-file@1.0.2\n22 silly currentTree ├─┬ getpass@0.1.6\n22 silly currentTree │ └── assert-plus@1.0.0\n22 silly currentTree ├── glob-base@0.3.0\n22 silly currentTree ├── glob-parent@2.0.0\n22 silly currentTree ├── good-listener@1.2.1\n22 silly currentTree ├── graceful-fs@4.1.11\n22 silly currentTree ├── graceful-readlink@1.0.1\n22 silly currentTree ├─┬ har-validator@2.0.6\n22 silly currentTree │ ├── ansi-regex@2.1.1\n22 silly currentTree │ ├── ansi-styles@2.2.1\n22 silly currentTree │ ├── chalk@1.1.3\n22 silly currentTree │ ├── commander@2.9.0\n22 silly currentTree │ ├── has-ansi@2.0.0\n22 silly currentTree │ ├── strip-ansi@3.0.1\n22 silly currentTree │ └── supports-color@2.0.0\n22 silly currentTree ├── has-ansi@0.1.0\n22 silly currentTree ├─┬ has-binary@0.1.7\n22 silly currentTree │ └── isarray@0.0.1\n22 silly currentTree ├── has-cors@1.1.0\n22 silly currentTree ├── hawk@3.1.3\n22 silly currentTree ├── hoek@2.16.3\n22 silly currentTree ├── hosted-git-info@2.1.5\n22 silly currentTree ├── http-errors@1.5.1\n22 silly currentTree ├── http-proxy@1.15.2\n22 silly currentTree ├── http-signature@1.1.1\n22 silly currentTree ├── immutable@3.8.1\n22 silly currentTree ├── indexof@0.0.1\n22 silly currentTree ├── inherits@2.0.3\n22 silly currentTree ├── invert-kv@1.0.0\n22 silly currentTree ├── is-arrayish@0.2.1\n22 silly currentTree ├── is-binary-path@1.0.1\n22 silly currentTree ├── is-buffer@1.1.4\n22 silly currentTree ├── is-builtin-module@1.0.0\n22 silly currentTree ├── is-dotfile@1.0.2\n22 silly currentTree ├── is-equal-shallow@0.1.3\n22 silly currentTree ├── is-extendable@0.1.1\n22 silly currentTree ├── is-extglob@1.0.0\n22 silly currentTree ├── is-fullwidth-code-point@1.0.0\n22 silly currentTree ├── is-glob@2.0.1\n22 silly currentTree ├── is-my-json-valid@2.15.0\n22 silly currentTree ├── is-number-like@1.0.7\n22 silly currentTree ├── is-number@2.1.0\n22 silly currentTree ├── is-posix-bracket@0.1.1\n22 silly currentTree ├── is-primitive@2.0.0\n22 silly currentTree ├── is-property@1.0.2\n22 silly currentTree ├── is-typedarray@1.0.0\n22 silly currentTree ├── is-utf8@0.2.1\n22 silly currentTree ├── isarray@1.0.0\n22 silly currentTree ├── isobject@2.1.0\n22 silly currentTree ├── isstream@0.1.2\n22 silly currentTree ├── jodid25519@1.0.2\n22 silly currentTree ├── jquery-ui@1.12.1\n22 silly currentTree ├── jquery@3.1.1\n22 silly currentTree ├── jsbn@0.1.0\n22 silly currentTree ├── json-schema@0.2.3\n22 silly currentTree ├── json-stringify-safe@5.0.1\n22 silly currentTree ├── json3@3.3.2\n22 silly currentTree ├── jsonfile@2.4.0\n22 silly currentTree ├── jsonpointer@4.0.1\n22 silly currentTree ├── jsprim@1.3.1\n22 silly currentTree ├── kind-of@3.1.0\n22 silly currentTree ├── klaw@1.3.1\n22 silly currentTree ├── lcid@1.0.0\n22 silly currentTree ├── limiter@1.1.0\n22 silly currentTree ├── lite-server@2.2.2\n22 silly currentTree ├── load-json-file@1.1.0\n22 silly currentTree ├─┬ localtunnel@1.8.2\n22 silly currentTree │ └── yargs@3.29.0\n22 silly currentTree ├── lodash.isfinite@3.3.2\n22 silly currentTree ├── lodash@4.17.4\n22 silly currentTree ├── magic-string@0.14.0\n22 silly currentTree ├── micromatch@2.3.11\n22 silly currentTree ├── mime-db@1.25.0\n22 silly currentTree ├── mime-types@2.1.13\n22 silly currentTree ├── mime@1.2.4\n22 silly currentTree ├── minimatch@3.0.3\n22 silly currentTree ├── minimist@1.2.0\n22 silly currentTree ├── mkdirp@0.3.0\n22 silly currentTree ├── moment@2.17.1\n22 silly currentTree ├── ms@0.7.1\n22 silly currentTree ├── negotiator@0.6.1\n22 silly currentTree ├─┬ ng2-charts@1.4.4\n22 silly currentTree │ └── chart.js@2.3.0\n22 silly currentTree ├── ngx-clipboard@3.0.5\n22 silly currentTree ├── node-uuid@1.4.7\n22 silly currentTree ├── nopt@3.0.6\n22 silly currentTree ├── normalize-package-data@2.3.5\n22 silly currentTree ├── normalize-path@2.0.1\n22 silly currentTree ├── number-is-nan@1.0.1\n22 silly currentTree ├── oauth-sign@0.8.2\n22 silly currentTree ├── object-assign@4.1.0\n22 silly currentTree ├── object-component@0.0.3\n22 silly currentTree ├── object-path@0.9.2\n22 silly currentTree ├── object.omit@2.0.1\n22 silly currentTree ├── on-finished@2.3.0\n22 silly currentTree ├── openurl@1.1.0\n22 silly currentTree ├── opn@4.0.2\n22 silly currentTree ├── options@0.0.6\n22 silly currentTree ├── os-homedir@1.0.2\n22 silly currentTree ├── os-locale@1.4.0\n22 silly currentTree ├── parse-glob@3.0.4\n22 silly currentTree ├── parse-json@2.2.0\n22 silly currentTree ├── parsejson@0.0.3\n22 silly currentTree ├── parseqs@0.0.5\n22 silly currentTree ├── parseuri@0.0.5\n22 silly currentTree ├── parseurl@1.3.1\n22 silly currentTree ├── path-exists@2.1.0\n22 silly currentTree ├── path-is-absolute@1.0.1\n22 silly currentTree ├── path-type@1.1.0\n22 silly currentTree ├── pify@2.3.0\n22 silly currentTree ├── pinkie-promise@2.0.1\n22 silly currentTree ├── pinkie@2.0.4\n22 silly currentTree ├── portscanner@2.1.1\n22 silly currentTree ├── preserve@0.2.0\n22 silly currentTree ├── process-nextick-args@1.0.7\n22 silly currentTree ├── punycode@1.4.1\n22 silly currentTree ├── qs@6.2.1\n22 silly currentTree ├── randomatic@1.1.6\n22 silly currentTree ├── range-parser@1.2.0\n22 silly currentTree ├── read-pkg-up@1.0.1\n22 silly currentTree ├── read-pkg@1.1.0\n22 silly currentTree ├── readable-stream@2.2.2\n22 silly currentTree ├── readdirp@2.1.0\n22 silly currentTree ├── regex-cache@0.4.3\n22 silly currentTree ├── repeat-element@1.1.2\n22 silly currentTree ├── repeat-string@1.6.1\n22 silly currentTree ├─┬ request@2.78.0\n22 silly currentTree │ └── qs@6.3.0\n22 silly currentTree ├── require-directory@2.1.1\n22 silly currentTree ├── require-main-filename@1.0.1\n22 silly currentTree ├── requires-port@1.0.0\n22 silly currentTree ├── resp-modifier@6.0.2\n22 silly currentTree ├── rx@2.3.24\n22 silly currentTree ├── rxjs@5.0.1\n22 silly currentTree ├── select@1.1.0\n22 silly currentTree ├── semver@5.3.0\n22 silly currentTree ├─┬ send@0.14.1\n22 silly currentTree │ └── mime@1.3.4\n22 silly currentTree ├── serve-index@1.8.0\n22 silly currentTree ├── serve-static@1.11.1\n22 silly currentTree ├── server-destroy@1.0.1\n22 silly currentTree ├── set-blocking@2.0.0\n22 silly currentTree ├── set-immediate-shim@1.0.1\n22 silly currentTree ├── setprototypeof@1.0.2\n22 silly currentTree ├── sntp@1.0.9\n22 silly currentTree ├─┬ socket.io-adapter@0.5.0\n22 silly currentTree │ ├── debug@2.3.3\n22 silly currentTree │ └── ms@0.7.2\n22 silly currentTree ├─┬ socket.io-client@1.6.0\n22 silly currentTree │ ├── component-emitter@1.2.1\n22 silly currentTree │ ├── debug@2.3.3\n22 silly currentTree │ └── ms@0.7.2\n22 silly currentTree ├─┬ socket.io-parser@2.3.1\n22 silly currentTree │ └── isarray@0.0.1\n22 silly currentTree ├─┬ socket.io@1.6.0\n22 silly currentTree │ ├── debug@2.3.3\n22 silly currentTree │ └── ms@0.7.2\n22 silly currentTree ├── spawn-default-shell@1.1.0\n22 silly currentTree ├── spdx-correct@1.0.2\n22 silly currentTree ├── spdx-expression-parse@1.0.4\n22 silly currentTree ├── spdx-license-ids@1.2.2\n22 silly currentTree ├─┬ sshpk@1.10.2\n22 silly currentTree │ └── assert-plus@1.0.0\n22 silly currentTree ├── statuses@1.3.1\n22 silly currentTree ├── stream-throttle@0.1.3\n22 silly currentTree ├── string_decoder@0.10.31\n22 silly currentTree ├─┬ string-width@1.0.2\n22 silly currentTree │ ├── ansi-regex@2.1.1\n22 silly currentTree │ └── strip-ansi@3.0.1\n22 silly currentTree ├── stringstream@0.0.5\n22 silly currentTree ├── strip-ansi@0.3.0\n22 silly currentTree ├── strip-bom@2.0.0\n22 silly currentTree ├── supports-color@0.2.0\n22 silly currentTree ├── symbol-observable@1.0.4\n22 silly currentTree ├── systemjs@0.19.40\n22 silly currentTree ├─┬ tfunk@3.1.0\n22 silly currentTree │ ├── ansi-regex@2.1.1\n22 silly currentTree │ ├── ansi-styles@2.2.1\n22 silly currentTree │ ├── chalk@1.1.3\n22 silly currentTree │ ├── has-ansi@2.0.0\n22 silly currentTree │ ├── strip-ansi@3.0.1\n22 silly currentTree │ └── supports-color@2.0.0\n22 silly currentTree ├── tiny-emitter@1.1.0\n22 silly currentTree ├── to-array@0.1.4\n22 silly currentTree ├── tough-cookie@2.3.2\n22 silly currentTree ├── tree-kill@1.1.0\n22 silly currentTree ├── tunnel-agent@0.4.3\n22 silly currentTree ├── tweetnacl@0.14.5\n22 silly currentTree ├── typescript@2.1.5\n22 silly currentTree ├── ua-parser-js@0.7.12\n22 silly currentTree ├── ultron@1.0.2\n22 silly currentTree ├── underscore@1.7.0\n22 silly currentTree ├── unpipe@1.0.0\n22 silly currentTree ├── util-deprecate@1.0.2\n22 silly currentTree ├── utils-merge@1.0.0\n22 silly currentTree ├── validate-npm-package-license@3.0.1\n22 silly currentTree ├── verror@1.3.6\n22 silly currentTree ├── vlq@0.2.1\n22 silly currentTree ├── weinre@2.0.0-pre-I0Z7U9OV\n22 silly currentTree ├── when@3.7.7\n22 silly currentTree ├── which-module@1.0.0\n22 silly currentTree ├── window-size@0.1.4\n22 silly currentTree ├─┬ wrap-ansi@2.1.0\n22 silly currentTree │ ├── ansi-regex@2.1.1\n22 silly currentTree │ └── strip-ansi@3.0.1\n22 silly currentTree ├── ws@1.1.1\n22 silly currentTree ├── wtf-8@1.0.0\n22 silly currentTree ├── xmlhttprequest-ssl@1.5.3\n22 silly currentTree ├── xtend@4.0.1\n22 silly currentTree ├── y18n@3.2.1\n22 silly currentTree ├─┬ yargs-parser@4.2.1\n22 silly currentTree │ └── camelcase@3.0.0\n22 silly currentTree ├─┬ yargs@6.4.0\n22 silly currentTree │ ├── camelcase@3.0.0\n22 silly currentTree │ └── window-size@0.2.0\n22 silly currentTree ├── yeast@0.1.2\n22 silly currentTree └── zone.js@0.7.5\n23 silly idealTree pollerbear-ui@1.0.0\n23 silly idealTree ├── @angular/common@2.4.3\n23 silly idealTree ├── @angular/compiler@2.4.3\n23 silly idealTree ├── @angular/core@2.4.3\n23 silly idealTree ├── @angular/forms@2.4.3\n23 silly idealTree ├── @angular/http@2.4.3\n23 silly idealTree ├── @angular/platform-browser-dynamic@2.4.3\n23 silly idealTree ├── @angular/platform-browser@2.4.3\n23 silly idealTree ├── @angular/router@3.4.3\n23 silly idealTree ├── @ng-bootstrap/ng-bootstrap@1.0.0-alpha.18\n23 silly idealTree ├── @types/core-js@0.9.35\n23 silly idealTree ├── @types/jquery@2.0.39\n23 silly idealTree ├── @types/jqueryui@1.11.32\n23 silly idealTree ├── @types/node@6.0.60\n23 silly idealTree ├── abbrev@1.0.9\n23 silly idealTree ├── accepts@1.3.3\n23 silly idealTree ├── acorn-jsx@3.0.1\n23 silly idealTree ├── acorn-object-spread@1.0.0\n23 silly idealTree ├── acorn@3.3.0\n23 silly idealTree ├── after@0.8.1\n23 silly idealTree ├── angular-in-memory-web-api@0.2.4\n23 silly idealTree ├── angular2-toaster@2.0.0\n23 silly idealTree ├── angularfire2@2.0.0-beta.7-pre\n23 silly idealTree ├── ansi-regex@0.2.1\n23 silly idealTree ├── ansi-styles@1.1.0\n23 silly idealTree ├── anymatch@1.3.0\n23 silly idealTree ├── arr-diff@2.0.0\n23 silly idealTree ├── arr-flatten@1.0.1\n23 silly idealTree ├── array-unique@0.2.1\n23 silly idealTree ├── arraybuffer.slice@0.0.6\n23 silly idealTree ├── arrify@1.0.1\n23 silly idealTree ├── asn1@0.2.3\n23 silly idealTree ├── assert-plus@0.2.0\n23 silly idealTree ├── async-each-series@0.1.1\n23 silly idealTree ├── async-each@1.0.1\n23 silly idealTree ├── async@1.5.2\n23 silly idealTree ├── asynckit@0.4.0\n23 silly idealTree ├── aws-sign2@0.6.0\n23 silly idealTree ├── aws4@1.5.0\n23 silly idealTree ├── backo2@1.0.2\n23 silly idealTree ├── balanced-match@0.4.2\n23 silly idealTree ├── base64-arraybuffer@0.1.5\n23 silly idealTree ├── base64id@0.1.0\n23 silly idealTree ├── batch@0.5.3\n23 silly idealTree ├── bcrypt-pbkdf@1.0.0\n23 silly idealTree ├── better-assert@1.0.2\n23 silly idealTree ├── binary-extensions@1.8.0\n23 silly idealTree ├── blob@0.0.4\n23 silly idealTree ├── bluebird@2.9.6\n23 silly idealTree ├── boom@2.10.1\n23 silly idealTree ├── bootswatch@3.3.7\n23 silly idealTree ├── brace-expansion@1.1.6\n23 silly idealTree ├── braces@1.8.5\n23 silly idealTree ├── browser-sync-client@2.4.4\n23 silly idealTree ├── browser-sync-ui@0.6.2\n23 silly idealTree ├─┬ browser-sync@2.18.6\n23 silly idealTree │ └── rx@4.1.0\n23 silly idealTree ├── bs-recipes@1.3.4\n23 silly idealTree ├─┬ buble@0.12.5\n23 silly idealTree │ ├── ansi-regex@2.1.1\n23 silly idealTree │ ├── ansi-styles@2.2.1\n23 silly idealTree │ ├── chalk@1.1.3\n23 silly idealTree │ ├── has-ansi@2.0.0\n23 silly idealTree │ ├── strip-ansi@3.0.1\n23 silly idealTree │ └── supports-color@2.0.0\n23 silly idealTree ├── bubleify@0.5.1\n23 silly idealTree ├── buffer-shims@1.0.0\n23 silly idealTree ├── builtin-modules@1.1.1\n23 silly idealTree ├── callsite@1.0.0\n23 silly idealTree ├── camelcase@1.2.1\n23 silly idealTree ├── caseless@0.11.0\n23 silly idealTree ├── chalk@0.5.1\n23 silly idealTree ├── chart.js@2.4.0\n23 silly idealTree ├── chartjs-color-string@0.4.0\n23 silly idealTree ├── chartjs-color@2.0.0\n23 silly idealTree ├── chokidar@1.6.1\n23 silly idealTree ├── clipboard@1.5.16\n23 silly idealTree ├─┬ cliui@3.2.0\n23 silly idealTree │ ├── ansi-regex@2.1.1\n23 silly idealTree │ └── strip-ansi@3.0.1\n23 silly idealTree ├── code-point-at@1.1.0\n23 silly idealTree ├── color-convert@0.5.3\n23 silly idealTree ├── color-name@1.1.1\n23 silly idealTree ├── combined-stream@1.0.5\n23 silly idealTree ├── commander@2.6.0\n23 silly idealTree ├── component-bind@1.0.0\n23 silly idealTree ├── component-emitter@1.1.2\n23 silly idealTree ├── component-inherit@0.0.3\n23 silly idealTree ├── concat-map@0.0.1\n23 silly idealTree ├── concurrently@3.1.0\n23 silly idealTree ├── connect-history-api-fallback@1.3.0\n23 silly idealTree ├── connect-logger@0.0.1\n23 silly idealTree ├── connect@3.5.0\n23 silly idealTree ├── cookie@0.3.1\n23 silly idealTree ├── core-js@2.4.1\n23 silly idealTree ├── core-util-is@1.0.2\n23 silly idealTree ├── cryptiles@2.0.5\n23 silly idealTree ├─┬ dashdash@1.14.1\n23 silly idealTree │ └── assert-plus@1.0.0\n23 silly idealTree ├── debug@2.2.0\n23 silly idealTree ├── decamelize@1.2.0\n23 silly idealTree ├── delayed-stream@1.0.0\n23 silly idealTree ├── delegate@3.1.1\n23 silly idealTree ├── depd@1.1.0\n23 silly idealTree ├── destroy@1.0.4\n23 silly idealTree ├── dev-ip@1.0.1\n23 silly idealTree ├─┬ easy-extender@2.3.2\n23 silly idealTree │ └── lodash@3.10.1\n23 silly idealTree ├── eazy-logger@3.0.2\n23 silly idealTree ├── ecc-jsbn@0.1.1\n23 silly idealTree ├── ee-first@1.1.1\n23 silly idealTree ├── emitter-steward@1.0.0\n23 silly idealTree ├── encodeurl@1.0.1\n23 silly idealTree ├─┬ engine.io-client@1.8.0\n23 silly idealTree │ ├── component-emitter@1.2.1\n23 silly idealTree │ ├── debug@2.3.3\n23 silly idealTree │ └── ms@0.7.2\n23 silly idealTree ├─┬ engine.io-parser@1.3.1\n23 silly idealTree │ ├── has-binary@0.1.6\n23 silly idealTree │ └── isarray@0.0.1\n23 silly idealTree ├─┬ engine.io@1.8.0\n23 silly idealTree │ ├── debug@2.3.3\n23 silly idealTree │ └── ms@0.7.2\n23 silly idealTree ├── error-ex@1.3.0\n23 silly idealTree ├── escape-html@1.0.3\n23 silly idealTree ├── escape-string-regexp@1.0.5\n23 silly idealTree ├── etag@1.7.0\n23 silly idealTree ├── eventemitter3@1.2.0\n23 silly idealTree ├── expand-brackets@0.1.5\n23 silly idealTree ├── expand-range@1.8.2\n23 silly idealTree ├─┬ express@2.5.11\n23 silly idealTree │ ├── connect@1.9.2\n23 silly idealTree │ └── qs@0.4.2\n23 silly idealTree ├── extend@3.0.0\n23 silly idealTree ├── extglob@0.3.2\n23 silly idealTree ├── extsprintf@1.0.2\n23 silly idealTree ├── filename-regex@2.0.0\n23 silly idealTree ├── fill-range@2.2.3\n23 silly idealTree ├── finalhandler@0.5.0\n23 silly idealTree ├── find-up@1.1.2\n23 silly idealTree ├─┬ firebase@3.6.5\n23 silly idealTree │ ├── base64-url@1.3.3\n23 silly idealTree │ ├── base64url@2.0.0\n23 silly idealTree │ ├── buffer-equal-constant-time@1.0.1\n23 silly idealTree │ ├── dom-storage@2.0.2\n23 silly idealTree │ ├── ecdsa-sig-formatter@1.0.7\n23 silly idealTree │ ├── faye-websocket@0.9.3\n23 silly idealTree │ ├── hoek@2.16.3\n23 silly idealTree │ ├── isemail@1.2.0\n23 silly idealTree │ ├── joi@6.10.1\n23 silly idealTree │ ├── jsonwebtoken@7.1.9\n23 silly idealTree │ ├── jwa@1.1.4\n23 silly idealTree │ ├── jws@3.1.4\n23 silly idealTree │ ├── lodash.once@4.1.1\n23 silly idealTree │ ├── moment@2.16.0\n23 silly idealTree │ ├── ms@0.7.2\n23 silly idealTree │ ├── rsvp@3.2.1\n23 silly idealTree │ ├── safe-buffer@5.0.1\n23 silly idealTree │ ├── topo@1.1.0\n23 silly idealTree │ ├── websocket-driver@0.6.5\n23 silly idealTree │ ├── websocket-extensions@0.1.1\n23 silly idealTree │ ├── xmlhttprequest@1.8.0\n23 silly idealTree │ └── xtend@4.0.1\n23 silly idealTree ├── font-awesome@4.7.0\n23 silly idealTree ├── for-in@0.1.6\n23 silly idealTree ├── for-own@0.1.4\n23 silly idealTree ├── forever-agent@0.6.1\n23 silly idealTree ├── form-data@2.1.2\n23 silly idealTree ├── formidable@1.0.17\n23 silly idealTree ├── fresh@0.3.0\n23 silly idealTree ├── fs-extra@1.0.0\n23 silly idealTree ├── generate-function@2.0.0\n23 silly idealTree ├── generate-object-property@1.2.0\n23 silly idealTree ├── get-caller-file@1.0.2\n23 silly idealTree ├─┬ getpass@0.1.6\n23 silly idealTree │ └── assert-plus@1.0.0\n23 silly idealTree ├── glob-base@0.3.0\n23 silly idealTree ├── glob-parent@2.0.0\n23 silly idealTree ├── good-listener@1.2.1\n23 silly idealTree ├── graceful-fs@4.1.11\n23 silly idealTree ├── graceful-readlink@1.0.1\n23 silly idealTree ├─┬ har-validator@2.0.6\n23 silly idealTree │ ├── ansi-regex@2.1.1\n23 silly idealTree │ ├── ansi-styles@2.2.1\n23 silly idealTree │ ├── chalk@1.1.3\n23 silly idealTree │ ├── commander@2.9.0\n23 silly idealTree │ ├── has-ansi@2.0.0\n23 silly idealTree │ ├── strip-ansi@3.0.1\n23 silly idealTree │ └── supports-color@2.0.0\n23 silly idealTree ├── has-ansi@0.1.0\n23 silly idealTree ├─┬ has-binary@0.1.7\n23 silly idealTree │ └── isarray@0.0.1\n23 silly idealTree ├── has-cors@1.1.0\n23 silly idealTree ├── hawk@3.1.3\n23 silly idealTree ├── hoek@2.16.3\n23 silly idealTree ├── hosted-git-info@2.1.5\n23 silly idealTree ├── http-errors@1.5.1\n23 silly idealTree ├── http-proxy@1.15.2\n23 silly idealTree ├── http-signature@1.1.1\n23 silly idealTree ├── immutable@3.8.1\n23 silly idealTree ├── indexof@0.0.1\n23 silly idealTree ├── inherits@2.0.3\n23 silly idealTree ├── invert-kv@1.0.0\n23 silly idealTree ├── is-arrayish@0.2.1\n23 silly idealTree ├── is-binary-path@1.0.1\n23 silly idealTree ├── is-buffer@1.1.4\n23 silly idealTree ├── is-builtin-module@1.0.0\n23 silly idealTree ├── is-dotfile@1.0.2\n23 silly idealTree ├── is-equal-shallow@0.1.3\n23 silly idealTree ├── is-extendable@0.1.1\n23 silly idealTree ├── is-extglob@1.0.0\n23 silly idealTree ├── is-fullwidth-code-point@1.0.0\n23 silly idealTree ├── is-glob@2.0.1\n23 silly idealTree ├── is-my-json-valid@2.15.0\n23 silly idealTree ├── is-number-like@1.0.7\n23 silly idealTree ├── is-number@2.1.0\n23 silly idealTree ├── is-posix-bracket@0.1.1\n23 silly idealTree ├── is-primitive@2.0.0\n23 silly idealTree ├── is-property@1.0.2\n23 silly idealTree ├── is-typedarray@1.0.0\n23 silly idealTree ├── is-utf8@0.2.1\n23 silly idealTree ├── isarray@1.0.0\n23 silly idealTree ├── isobject@2.1.0\n23 silly idealTree ├── isstream@0.1.2\n23 silly idealTree ├── jodid25519@1.0.2\n23 silly idealTree ├── jquery-ui@1.12.1\n23 silly idealTree ├── jquery@3.1.1\n23 silly idealTree ├── jsbn@0.1.0\n23 silly idealTree ├── json-schema@0.2.3\n23 silly idealTree ├── json-stringify-safe@5.0.1\n23 silly idealTree ├── json3@3.3.2\n23 silly idealTree ├── jsonfile@2.4.0\n23 silly idealTree ├── jsonpointer@4.0.1\n23 silly idealTree ├── jsprim@1.3.1\n23 silly idealTree ├── kind-of@3.1.0\n23 silly idealTree ├── klaw@1.3.1\n23 silly idealTree ├── lcid@1.0.0\n23 silly idealTree ├── limiter@1.1.0\n23 silly idealTree ├── lite-server@2.2.2\n23 silly idealTree ├── load-json-file@1.1.0\n23 silly idealTree ├─┬ localtunnel@1.8.2\n23 silly idealTree │ └── yargs@3.29.0\n23 silly idealTree ├── lodash.isfinite@3.3.2\n23 silly idealTree ├── lodash@4.17.4\n23 silly idealTree ├── magic-string@0.14.0\n23 silly idealTree ├── micromatch@2.3.11\n23 silly idealTree ├── mime-db@1.25.0\n23 silly idealTree ├── mime-types@2.1.13\n23 silly idealTree ├── mime@1.2.4\n23 silly idealTree ├── minimatch@3.0.3\n23 silly idealTree ├── minimist@1.2.0\n23 silly idealTree ├── mkdirp@0.3.0\n23 silly idealTree ├── moment@2.17.1\n23 silly idealTree ├── ms@0.7.1\n23 silly idealTree ├── negotiator@0.6.1\n23 silly idealTree ├─┬ ng2-charts@1.4.4\n23 silly idealTree │ └── chart.js@2.3.0\n23 silly idealTree ├── node-uuid@1.4.7\n23 silly idealTree ├── nopt@3.0.6\n23 silly idealTree ├── normalize-package-data@2.3.5\n23 silly idealTree ├── normalize-path@2.0.1\n23 silly idealTree ├── number-is-nan@1.0.1\n23 silly idealTree ├── oauth-sign@0.8.2\n23 silly idealTree ├── object-assign@4.1.0\n23 silly idealTree ├── object-component@0.0.3\n23 silly idealTree ├── object-path@0.9.2\n23 silly idealTree ├── object.omit@2.0.1\n23 silly idealTree ├── on-finished@2.3.0\n23 silly idealTree ├── openurl@1.1.0\n23 silly idealTree ├── opn@4.0.2\n23 silly idealTree ├── options@0.0.6\n23 silly idealTree ├── os-homedir@1.0.2\n23 silly idealTree ├── os-locale@1.4.0\n23 silly idealTree ├── parse-glob@3.0.4\n23 silly idealTree ├── parse-json@2.2.0\n23 silly idealTree ├── parsejson@0.0.3\n23 silly idealTree ├── parseqs@0.0.5\n23 silly idealTree ├── parseuri@0.0.5\n23 silly idealTree ├── parseurl@1.3.1\n23 silly idealTree ├── path-exists@2.1.0\n23 silly idealTree ├── path-is-absolute@1.0.1\n23 silly idealTree ├── path-type@1.1.0\n23 silly idealTree ├── pify@2.3.0\n23 silly idealTree ├── pinkie-promise@2.0.1\n23 silly idealTree ├── pinkie@2.0.4\n23 silly idealTree ├── portscanner@2.1.1\n23 silly idealTree ├── preserve@0.2.0\n23 silly idealTree ├── process-nextick-args@1.0.7\n23 silly idealTree ├── punycode@1.4.1\n23 silly idealTree ├── qs@6.2.1\n23 silly idealTree ├── randomatic@1.1.6\n23 silly idealTree ├── range-parser@1.2.0\n23 silly idealTree ├── read-pkg-up@1.0.1\n23 silly idealTree ├── read-pkg@1.1.0\n23 silly idealTree ├── readable-stream@2.2.2\n23 silly idealTree ├── readdirp@2.1.0\n23 silly idealTree ├── regex-cache@0.4.3\n23 silly idealTree ├── repeat-element@1.1.2\n23 silly idealTree ├── repeat-string@1.6.1\n23 silly idealTree ├─┬ request@2.78.0\n23 silly idealTree │ └── qs@6.3.0\n23 silly idealTree ├── require-directory@2.1.1\n23 silly idealTree ├── require-main-filename@1.0.1\n23 silly idealTree ├── requires-port@1.0.0\n23 silly idealTree ├── resp-modifier@6.0.2\n23 silly idealTree ├── rx@2.3.24\n23 silly idealTree ├── rxjs@5.0.1\n23 silly idealTree ├── select@1.1.0\n23 silly idealTree ├── semver@5.3.0\n23 silly idealTree ├─┬ send@0.14.1\n23 silly idealTree │ └── mime@1.3.4\n23 silly idealTree ├── serve-index@1.8.0\n23 silly idealTree ├── serve-static@1.11.1\n23 silly idealTree ├── server-destroy@1.0.1\n23 silly idealTree ├── set-blocking@2.0.0\n23 silly idealTree ├── set-immediate-shim@1.0.1\n23 silly idealTree ├── setprototypeof@1.0.2\n23 silly idealTree ├── sntp@1.0.9\n23 silly idealTree ├─┬ socket.io-adapter@0.5.0\n23 silly idealTree │ ├── debug@2.3.3\n23 silly idealTree │ └── ms@0.7.2\n23 silly idealTree ├─┬ socket.io-client@1.6.0\n23 silly idealTree │ ├── component-emitter@1.2.1\n23 silly idealTree │ ├── debug@2.3.3\n23 silly idealTree │ └── ms@0.7.2\n23 silly idealTree ├─┬ socket.io-parser@2.3.1\n23 silly idealTree │ └── isarray@0.0.1\n23 silly idealTree ├─┬ socket.io@1.6.0\n23 silly idealTree │ ├── debug@2.3.3\n23 silly idealTree │ └── ms@0.7.2\n23 silly idealTree ├── spawn-default-shell@1.1.0\n23 silly idealTree ├── spdx-correct@1.0.2\n23 silly idealTree ├── spdx-expression-parse@1.0.4\n23 silly idealTree ├── spdx-license-ids@1.2.2\n23 silly idealTree ├─┬ sshpk@1.10.2\n23 silly idealTree │ └── assert-plus@1.0.0\n23 silly idealTree ├── statuses@1.3.1\n23 silly idealTree ├── stream-throttle@0.1.3\n23 silly idealTree ├── string_decoder@0.10.31\n23 silly idealTree ├─┬ string-width@1.0.2\n23 silly idealTree │ ├── ansi-regex@2.1.1\n23 silly idealTree │ └── strip-ansi@3.0.1\n23 silly idealTree ├── stringstream@0.0.5\n23 silly idealTree ├── strip-ansi@0.3.0\n23 silly idealTree ├── strip-bom@2.0.0\n23 silly idealTree ├── supports-color@0.2.0\n23 silly idealTree ├── symbol-observable@1.0.4\n23 silly idealTree ├── systemjs@0.19.40\n23 silly idealTree ├─┬ tfunk@3.1.0\n23 silly idealTree │ ├── ansi-regex@2.1.1\n23 silly idealTree │ ├── ansi-styles@2.2.1\n23 silly idealTree │ ├── chalk@1.1.3\n23 silly idealTree │ ├── has-ansi@2.0.0\n23 silly idealTree │ ├── strip-ansi@3.0.1\n23 silly idealTree │ └── supports-color@2.0.0\n23 silly idealTree ├── tiny-emitter@1.1.0\n23 silly idealTree ├── to-array@0.1.4\n23 silly idealTree ├── tough-cookie@2.3.2\n23 silly idealTree ├── tree-kill@1.1.0\n23 silly idealTree ├── tunnel-agent@0.4.3\n23 silly idealTree ├── tweetnacl@0.14.5\n23 silly idealTree ├── typescript@2.1.5\n23 silly idealTree ├── ua-parser-js@0.7.12\n23 silly idealTree ├── ultron@1.0.2\n23 silly idealTree ├── underscore@1.7.0\n23 silly idealTree ├── unpipe@1.0.0\n23 silly idealTree ├── util-deprecate@1.0.2\n23 silly idealTree ├── utils-merge@1.0.0\n23 silly idealTree ├── validate-npm-package-license@3.0.1\n23 silly idealTree ├── verror@1.3.6\n23 silly idealTree ├── vlq@0.2.1\n23 silly idealTree ├── weinre@2.0.0-pre-I0Z7U9OV\n23 silly idealTree ├── when@3.7.7\n23 silly idealTree ├── which-module@1.0.0\n23 silly idealTree ├── window-size@0.1.4\n23 silly idealTree ├─┬ wrap-ansi@2.1.0\n23 silly idealTree │ ├── ansi-regex@2.1.1\n23 silly idealTree │ └── strip-ansi@3.0.1\n23 silly idealTree ├── ws@1.1.1\n23 silly idealTree ├── wtf-8@1.0.0\n23 silly idealTree ├── xmlhttprequest-ssl@1.5.3\n23 silly idealTree ├── xtend@4.0.1\n23 silly idealTree ├── y18n@3.2.1\n23 silly idealTree ├─┬ yargs-parser@4.2.1\n23 silly idealTree │ └── camelcase@3.0.0\n23 silly idealTree ├─┬ yargs@6.4.0\n23 silly idealTree │ ├── camelcase@3.0.0\n23 silly idealTree │ └── window-size@0.2.0\n23 silly idealTree ├── yeast@0.1.2\n23 silly idealTree └── zone.js@0.7.5\n24 silly generateActionsToTake Starting\n25 silly install generateActionsToTake\n26 silly generateActionsToTake Finishing\n27 silly diffTrees action count 2\n28 silly diffTrees remove @types/clipboard@1.5.30\n29 silly diffTrees remove ngx-clipboard@3.0.5\n30 silly decomposeActions action count 2\n31 silly decomposeActions remove @types/clipboard@1.5.30\n32 silly decomposeActions remove ngx-clipboard@3.0.5\n33 silly executeActions Starting\n34 silly install executeActions\n35 silly doSerial global-install 0\n36 silly doParallel fetch 0\n37 verbose lock using C:\\Users\\Will\\AppData\\Roaming\\npm-cache\\_locks\\staging-ed6fe9b46990e26c.lock for C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\.staging\n38 silly doParallel extract 0\n39 silly doParallel preinstall 0\n40 silly doReverseSerial remove 2\n41 silly remove C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard\n42 verbose unbuild node_modules\\ngx-clipboard\n43 info lifecycle ngx-clipboard@3.0.5~preuninstall: ngx-clipboard@3.0.5\n44 silly lifecycle ngx-clipboard@3.0.5~preuninstall: no script for preuninstall, continuing\n45 info lifecycle ngx-clipboard@3.0.5~uninstall: ngx-clipboard@3.0.5\n46 silly lifecycle ngx-clipboard@3.0.5~uninstall: no script for uninstall, continuing\n47 verbose unbuild rmStuff ngx-clipboard@3.0.5 from C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\n48 info lifecycle ngx-clipboard@3.0.5~postuninstall: ngx-clipboard@3.0.5\n49 silly lifecycle ngx-clipboard@3.0.5~postuninstall: no script for postuninstall, continuing\n50 silly gentlyRm C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard is being purged from base C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n51 verbose gentlyRm don't care about contents; nuking C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard\n52 silly vacuum-fs purging C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard\n53 silly vacuum-fs quitting because other entries in C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\n54 silly remove C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\@types\\clipboard\n55 verbose unbuild node_modules\\@types\\clipboard\n56 info lifecycle @types/clipboard@1.5.30~preuninstall: @types/clipboard@1.5.30\n57 silly lifecycle @types/clipboard@1.5.30~preuninstall: no script for preuninstall, continuing\n58 info lifecycle @types/clipboard@1.5.30~uninstall: @types/clipboard@1.5.30\n59 silly lifecycle @types/clipboard@1.5.30~uninstall: no script for uninstall, continuing\n60 verbose unbuild rmStuff @types/clipboard@1.5.30 from C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\n61 verbose unbuild rmStuff in C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\@types\n62 info lifecycle @types/clipboard@1.5.30~postuninstall: @types/clipboard@1.5.30\n63 silly lifecycle @types/clipboard@1.5.30~postuninstall: no script for postuninstall, continuing\n64 silly gentlyRm C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\@types\\clipboard is being purged from base C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n65 verbose gentlyRm don't care about contents; nuking C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\@types\\clipboard\n66 silly vacuum-fs purging C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\@types\\clipboard\n67 silly vacuum-fs quitting because other entries in C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\@types\n68 verbose unlock done using C:\\Users\\Will\\AppData\\Roaming\\npm-cache\\_locks\\staging-ed6fe9b46990e26c.lock for C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\.staging\n69 silly rollbackFailedOptional Starting\n70 silly rollbackFailedOptional Finishing\n71 silly runTopLevelLifecycles Starting\n72 silly runTopLevelLifecycles Finishing\n73 silly install printInstalled\n74 warn EPACKAGEJSON pollerbear-ui@1.0.0 No description\n75 warn EPACKAGEJSON pollerbear-ui@1.0.0 No repository field.\n76 warn EPACKAGEJSON pollerbear-ui@1.0.0 No license field.\n77 verbose stack Error: EPERM: operation not permitted, unlink 'C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard'\n77 verbose stack     at Error (native)\n78 verbose cwd C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\n79 error Windows_NT 6.1.7601\n80 error argv \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" \"C:\\\\Users\\\\Will\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js\" \"uninstall\" \"ngx-clipboard\" \"-save\"\n81 error node v4.2.1\n82 error npm  v3.3.8\n83 error path C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard\n84 error code EPERM\n85 error errno -4048\n86 error syscall unlink\n87 error Error: EPERM: operation not permitted, unlink 'C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard'\n87 error     at Error (native)\n87 error  { [Error: EPERM: operation not permitted, unlink 'C:\\Users\\Will\\Documents\\Git\\pollerbear-ui\\node_modules\\ngx-clipboard']\n87 error   errno: -4048,\n87 error   code: 'EPERM',\n87 error   syscall: 'unlink',\n87 error   path: 'C:\\\\Users\\\\Will\\\\Documents\\\\Git\\\\pollerbear-ui\\\\node_modules\\\\ngx-clipboard' }\n88 error Please try running this command again as root/Administrator.\n89 verbose exit [ -4048, true ]\n",
 			"file": "npm-debug.log",
-			"file_size": 4005,
-			"file_write_time": 131283686017158849,
+			"file_size": 66966,
+			"file_write_time": 131290842969694442,
 			"settings":
 			{
-				"buffer_size": 3960,
+				"buffer_size": 58213,
 				"line_ending": "Windows"
 			}
 		},
@@ -367,7 +405,7 @@
 			"file": "tsconfig.json",
 			"settings":
 			{
-				"buffer_size": 475,
+				"buffer_size": 352,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -376,7 +414,7 @@
 			"file": "systemjs.config.js",
 			"settings":
 			{
-				"buffer_size": 3187,
+				"buffer_size": 3012,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -412,7 +450,7 @@
 			"file": "app/create-poll/create-poll.component.js",
 			"settings":
 			{
-				"buffer_size": 6582,
+				"buffer_size": 6569,
 				"line_ending": "Windows"
 			}
 		},
@@ -432,10 +470,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 342.0,
-		"last_filter": "install",
+		"height": 104.0,
+		"last_filter": "Package Control: install",
 		"selected_items":
 		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -465,7 +515,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 382.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -488,13 +538,8 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Will/Documents/Git/pollerbear-ui",
 		"/C/Users/Will/Documents/Git/pollerbear-ui/app",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/create-poll",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/models",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/navbar",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/poll",
-		"/C/Users/Will/Documents/Git/pollerbear-ui/app/vote"
+		"/C/Users/Will/Documents/Git/pollerbear-ui/app/navbar"
 	],
 	"file_history":
 	[
@@ -591,6 +636,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"id",
 			"polls",
 			"tick",
 			"clipboard",
@@ -630,7 +676,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -666,7 +712,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -702,7 +748,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -739,7 +785,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
@@ -748,15 +794,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1138,
+						"buffer_size": 1065,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								238,
-								238
+								587,
+								587
 							]
 						],
 						"settings":
@@ -775,7 +821,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
@@ -805,7 +851,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
@@ -840,7 +886,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -875,7 +921,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 28,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -884,15 +930,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4245,
+						"buffer_size": 4097,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								657,
-								657
+								2728,
+								2732
 							]
 						],
 						"settings":
@@ -910,7 +956,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -939,7 +985,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
@@ -948,15 +994,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4113,
+						"buffer_size": 4133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3595,
-								3595
+								2065,
+								2065
 							]
 						],
 						"settings":
@@ -970,27 +1016,27 @@
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 630.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "app/models/poll.model.ts",
-					"semi_transient": false,
+					"file": "app/directives/sortable.directive.ts",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 306,
+						"buffer_size": 983,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64,
-								68
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1004,24 +1050,97 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 11,
-					"file": "app/app.module.ts",
+					"file": "app/models/poll.model.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1705,
+						"buffer_size": 306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								978,
-								978
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4712,
+								4712
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1232,
+								1232
 							]
 						],
 						"settings":
@@ -1040,16 +1159,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 14,
+					"file": "app/directives/clipboard.directive.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
 					"file": "app/poll/poll.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1363,
+						"buffer_size": 1145,
 						"regions":
 						{
 						},
@@ -1070,11 +1226,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "app/navbar/navbar.component.js",
 					"semi_transient": false,
 					"settings":
@@ -1106,11 +1262,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 34,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 17,
 					"file": "app/core.module.ts",
 					"semi_transient": false,
 					"settings":
@@ -1138,11 +1294,39 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 18,
+					"file": "app/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
 					"file": "app/services/poll.service.ts",
 					"semi_transient": false,
 					"settings":
@@ -1176,24 +1360,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 32,
+					"stack_index": 39,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 20,
 					"file": "app/vote/vote.component.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3549,
+						"buffer_size": 3699,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								255,
-								255
+								1091,
+								1091
 							]
 						],
 						"settings":
@@ -1212,11 +1396,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 21,
 					"file": "app/models/vote.model.ts",
 					"semi_transient": false,
 					"settings":
@@ -1242,11 +1426,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 29,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 22,
 					"file": "app/models/option.model.js",
 					"semi_transient": false,
 					"settings":
@@ -1270,16 +1454,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 30,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 23,
 					"file": "app/vote/vote.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6212,
+						"buffer_size": 6369,
 						"regions":
 						{
 						},
@@ -1300,11 +1484,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 31,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 24,
 					"file": "app/vote/sortable.directive.ts",
 					"semi_transient": false,
 					"settings":
@@ -1337,11 +1521,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 25,
 					"file": "app/vote/vote.template.html",
 					"semi_transient": false,
 					"settings":
@@ -1372,11 +1556,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 26,
 					"file": "app/app-routing.module.ts",
 					"semi_transient": false,
 					"settings":
@@ -1404,11 +1588,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 27,
 					"file": "app/results/results.component.ts",
 					"semi_transient": false,
 					"settings":
@@ -1420,8 +1604,8 @@
 						"selection":
 						[
 							[
-								2058,
-								2058
+								292,
+								330
 							]
 						],
 						"settings":
@@ -1431,19 +1615,19 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 416.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 28,
 					"file": "app/app.module.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3045,
+						"buffer_size": 2840,
 						"regions":
 						{
 						},
@@ -1464,11 +1648,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 29,
 					"file": "app/results/results.template.html",
 					"semi_transient": false,
 					"settings":
@@ -1494,16 +1678,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 30,
 					"file": "app/app-routing.module.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2073,
+						"buffer_size": 1855,
 						"regions":
 						{
 						},
@@ -1524,24 +1708,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
-					"buffer": 27,
+					"buffer": 31,
 					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1439,
+						"buffer_size": 1297,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								677,
-								677
+								336,
+								337
 							]
 						],
 						"settings":
@@ -1551,19 +1735,19 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 28,
+					"buffer": 32,
 					"file": "npm-debug.log",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3960,
+						"buffer_size": 58213,
 						"regions":
 						{
 						},
@@ -1582,11 +1766,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
-					"buffer": 29,
+					"buffer": 33,
 					"file": "app/privacy/privacy.template.html",
 					"semi_transient": false,
 					"settings":
@@ -1611,11 +1795,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 36,
+					"stack_index": 40,
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 34,
 					"file": "pollerbear.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -1640,24 +1824,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 35,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 35,
 					"file": "tsconfig.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 475,
+						"buffer_size": 352,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								472,
-								472
+								219,
+								219
 							]
 						],
 						"settings":
@@ -1670,24 +1854,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 32,
+					"buffer": 36,
 					"file": "systemjs.config.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3187,
+						"buffer_size": 3012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2489,
-								2489
+								1832,
+								1832
 							]
 						],
 						"settings":
@@ -1697,14 +1881,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 113.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 37,
 					"file": "typings.json",
 					"semi_transient": false,
 					"settings":
@@ -1728,11 +1912,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 34,
+					"buffer": 38,
 					"file": "app/about/about.component.ts",
 					"semi_transient": false,
 					"settings":
@@ -1757,11 +1941,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 37,
+					"stack_index": 41,
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 39,
 					"file": "styles.css",
 					"semi_transient": false,
 					"settings":
@@ -1785,19 +1969,19 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2017.0,
+						"translation.y": 1943.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 40,
 					"file": "app/create-poll/create-poll.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6582,
+						"buffer_size": 6569,
 						"regions":
 						{
 						},
@@ -1818,11 +2002,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 33,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 37,
+					"buffer": 41,
 					"file": "app/services/poll.service.js",
 					"semi_transient": false,
 					"settings":
@@ -1854,7 +2038,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 36,
 					"type": "text"
 				}
 			]

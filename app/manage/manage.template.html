@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let poll of polls;">
+    <span class="badge">{{poll.votes}}</span>
+    {{poll.topic}}
+  </li>
+</ul>

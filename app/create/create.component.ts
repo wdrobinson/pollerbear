@@ -13,10 +13,10 @@ import { AuthService } 		from '../services/auth.service';
 
 @Component({
 	moduleId: module.id,
-	templateUrl: 'create-poll.template.html'
+	templateUrl: 'create.template.html'
 })
 
-export class CreatePollComponent {
+export class CreateComponent {
 	appUrl = 'pollerbear.net';
 	maxOptions = 20; 
 	errorMessage: string;
