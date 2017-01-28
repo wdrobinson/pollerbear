@@ -18,7 +18,7 @@ export class SortableDirective {
   @Output() optionsChange = new EventEmitter();
 
   ngAfterViewInit() {
-      jQuery(this.el.nativeElement).sortable( {
+      $(this.el.nativeElement).sortable( {
         start: (event, ui) => {
           this.startIndex = ui.item.index();
         },
