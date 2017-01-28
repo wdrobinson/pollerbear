@@ -1,4 +1,5 @@
 import { Component, Directive, ElementRef, Input, Output, EventEmitter, Inject, NgZone } from '@angular/core';
+import * as $ from 'jquery';
 import 'jquery-ui/ui/core';
 import 'jquery-ui/ui/widgets/sortable';
 
@@ -18,7 +19,7 @@ export class SortableDirective {
   @Output() optionsChange = new EventEmitter();
 
   ngAfterViewInit() {
-      $(this.el.nativeElement).sortable( {
+      $(this.el.nativeElement).sortable( { 
         start: (event, ui) => {
           this.startIndex = ui.item.index();
         },
@@ -33,3 +34,4 @@ export class SortableDirective {
       });
   }
 }
+
