@@ -98,7 +98,7 @@ export class CreateComponent {
 			});
 		} else {
 			this.polls.push(this.poll).then((item) => {
-				this.finalUrl = `${this.appUrl}/${this.poll.$key}`;
+				this.finalUrl = `${this.appUrl}/${item.key}`;
 				this.savePollVotes(item.key);
 			})
 		}
