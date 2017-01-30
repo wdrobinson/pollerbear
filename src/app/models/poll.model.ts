@@ -3,7 +3,7 @@ import { Option } from './option.model';
 export class Poll {
   $key: string;
   topic: string;
-  votes = 0;
+  votes: number;
   type = 1;
   uid: string;
   options: Array<Option>;

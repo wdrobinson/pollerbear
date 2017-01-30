@@ -22,10 +22,12 @@ export class AuthService {
 				this.firebaseApp.auth().signInWithCredential(error.credential).then((user: firebase.User) => {
 				  var newUser = user;
 			   	zone.run( () => {
-				  	this.user = newUser;
+				  	this.user = newUser; 
 				  	this.userInfo = newUser.providerData[0];
 				  });
-				  this.mergeAccount(prevUser, newUser);
+          if(prevUser.isAnonymous) {
+            this.mergeAccount(prevUser, newUser);
+          }  				  
 				}, (error) => {
 				  console.log("Sign In Error", error);
 				});
@@ -64,6 +66,13 @@ export class AuthService {
 
   mergeAccount(prevUser: firebase.User, newUser: firebase.User) {
   		//TODO: map old UID to new UID anywhere it is used
+      //Votes 
+      console.log(newUser, prevUser);
+      this.af.database.object(`/users/${prevUser.uid}/votes`).take(1).subscribe((oldVotes: any) => {
+        this.af.database.object(`/users/${newUser.uid}/votes`).take(1).subscribe((newVotes: any) => {
+          console.log(oldVotes, newVotes);
+        });
+      });
   }
 
 

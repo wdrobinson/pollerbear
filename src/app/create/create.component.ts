@@ -9,6 +9,8 @@ import { ToasterService } from 'angular2-toaster';
 
 import { Poll } from '../models/poll.model';
 import { Option } from '../models/option.model';
+import { PollVotes } from '../models/poll-votes.model';
+import { OptionVotes } from '../models/option-votes.model';
 import { AuthService } 		from '../services/auth.service';
 
 @Component({
@@ -92,16 +94,29 @@ export class CreateComponent {
 		if (this.customUrlValid && this.customUrlClean) {
 			var newPoll = this.af.database.object(`/polls/${this.customUrlClean}`);
 			newPoll.set(this.poll).then(() => {
-				this.poll.$key = this.customUrlClean;
-				this.saving = false;			
+				this.savePollVotes(this.customUrlClean);		
 			});
 		} else {
 			this.polls.push(this.poll).then((item) => {
-				this.poll.$key = item.key;
 				this.finalUrl = `${this.appUrl}/${this.poll.$key}`;
-				this.saving = false;
+				this.savePollVotes(item.key);
 			})
 		}
+	}
+
+	savePollVotes(key: string): void {
+		var pollVotes = new PollVotes();
+		pollVotes.options = new Array<OptionVotes>();
+		for (let option of this.poll.options) {
+			let optionVotes = new OptionVotes();
+			optionVotes.id = option.id;
+			pollVotes.options.push(optionVotes);
+		}
+		var newPollVotes = this.af.database.object(`/poll-votes/${key}`);
+		newPollVotes.set(pollVotes).then(() => {
+			this.poll.$key = key;
+			this.saving = false;			
+		});		
 	}
 
 	urlChange(value: string): void {

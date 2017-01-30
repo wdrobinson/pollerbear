@@ -7,6 +7,8 @@ import * as firebase from 'firebase';
 
 import { Poll } 					from '../models/poll.model';
 import { Option } 					from '../models/option.model';
+import { PollVotes } 				from '../models/poll-votes.model';
+import { OptionVotes } 				from '../models/option-votes.model';
 import { Vote } 					from '../models/vote.model';
 import { AuthService } 				from '../services/auth.service';
 
@@ -90,7 +92,7 @@ export class VoteComponent implements OnInit {
 	}
 
 	saveVote(): void {
-		this.firebaseApp.database().ref(`/polls/${this.poll.$key}`).transaction((poll: Poll) => {
+		this.firebaseApp.database().ref(`/poll-votes/${this.poll.$key}`).transaction((poll: PollVotes) => {
 			if (poll) {
 				poll.votes++;
 				for (var option of poll.options) {
@@ -117,16 +119,14 @@ export class VoteComponent implements OnInit {
 	}
 
 	updateVoteTable(): void {
-		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).set(this.votes).then(() => {
+		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).set({voted: true}).then(() => {
 			this.loading = false;
 			this.router.navigate([`/results/${this.poll.$key}`]);
 		});
 	}
 
 	checkVoted(): void {
-		//hack to fix typescript compilation error: Property 'take' does not exist on type 'FirebaseListObservable'
-		var fbObservable: any = this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`);
-		fbObservable.take(1).subscribe((obj: any) => {			
+		this.af.database.object(`/users/${this.authService.user.uid}/votes/${this.poll.$key}`).take(1).subscribe((obj: any) => {			
 			if (obj.$exists()) {
 				this.voted = true;	
 			}

@@ -6,8 +6,10 @@ import { Subscription } from 'rxjs';
 import * as firebase from 'firebase';
 import 'chart.js';
 
-import { Poll } 					from '../models/poll.model';
-import { Option } 					from '../models/option.model';
+import { Poll } 		from '../models/poll.model';
+import { Option } 		from '../models/option.model';
+import { PollVotes } 	from '../models/poll-votes.model';
+import { OptionVotes } 	from '../models/option-votes.model';
 
 @Component({
 	moduleId: module.id,
@@ -63,7 +65,7 @@ export class ResultsComponent implements OnInit {
 	}
 
 	urlChange(params: Params): void {
-		this.af.database.object(`/polls/${params['url']}`).subscribe((poll: Poll) => this.loadPoll(poll));
+		this.af.database.object(`/polls/${params['url']}`).take(1).subscribe((poll: Poll) => this.loadPoll(poll));
 	}
 
 	loadPoll(poll: Poll): void {
@@ -73,9 +75,21 @@ export class ResultsComponent implements OnInit {
 			return;
 		}		
 		this.poll = poll;
+		this.af.database.object(`/poll-votes/${this.poll.$key}`).subscribe((pollVotes: PollVotes) => this.loadPollVotes(pollVotes));
+	}
+
+	loadPollVotes(pollVotes: PollVotes): void {
+		this.poll.votes = pollVotes.votes;
 		var maxPoints = 0;
 		var totalPoints = 0;
-		for (var option of this.poll.options) {
+		for (let option of this.poll.options) {
+			for (let optionVotes of pollVotes.options) {
+				if(optionVotes.id === option.id) {
+					option.rankPoints = optionVotes.rankPoints;
+					option.majorityPoints = optionVotes.majorityPoints;
+					break;
+				}
+			}
 			if (this.poll.type === 1) {
 				option.points = option.rankPoints;
 			} else {

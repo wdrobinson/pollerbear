@@ -1,8 +1,8 @@
 export class Option {
   id: number;
   name: string;  
-  majorityPoints = 0;
-  rankPoints = 0;  
+  majorityPoints: number;
+  rankPoints: number;  
 
   //Local only
   points: number;
