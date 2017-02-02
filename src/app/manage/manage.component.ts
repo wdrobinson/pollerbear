@@ -8,6 +8,7 @@ import 'rxjs/add/operator/take';
 import { ToasterService } from 'angular2-toaster';
 
 import { Poll } from '../models/poll.model';
+import { PollVotes } from '../models/poll-votes.model';
 import { Option } from '../models/option.model';
 import { AuthService } 		from '../services/auth.service';
 
@@ -34,9 +35,16 @@ export class ManageComponent {
 		    orderByChild: 'uid',
 		    equalTo: this.authService.user.uid
 		  }
-		}).subscribe((polls: Poll[]) => {
+		}).take(1).subscribe((polls: Poll[]) => {
 			this.polls = polls;
+			for (let poll of polls) {
+				this.af.database.object(`/poll-votes/${poll.$key}`).take(1).subscribe((pollVotes: PollVotes) => this.loadPollVotes(poll, pollVotes));
+			}
 		});		
+	}
+
+	loadPollVotes(poll: Poll, pollVotes: PollVotes): void {
+		poll.votes = pollVotes.votes;
 	}
 
 }

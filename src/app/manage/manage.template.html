@@ -1,6 +1,47 @@
+<!--<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-6 control-label">Sort By</label>
+		<div class="col-sm-6">
+			<select class="form-control">
+			  <option>Topic</option>
+			  <option>Votes</option>
+			</select>
+		</div>
+	</div>
+</div>
+
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let poll of polls;">
     <span class="badge">{{poll.votes}}</span>
     {{poll.topic}}
   </li>
 </ul>
+-->
+<p>The polls you've created are below. You can only delete or edit a poll if there are no votes.</p>
+
+<table class="table table-bordered results-table">
+	<thead>
+		<tr>
+			<th>Topic</th>
+			<th>Votes</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let poll of polls;">
+			<td>{{poll.topic}}</td>
+			<td class="text-center">{{poll.votes}}</td>
+			<td class="text-center">
+				<button *ngIf="poll.votes===0" class="btn btn-xs btn-success">
+					<i class="fa fa-pencil-square-o"></i>
+				</button>
+			</td>
+			<td class="text-center">
+				<button *ngIf="poll.votes===0" class="btn btn-xs btn-danger">
+					<i class="fa fa-trash"></i>
+				</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
