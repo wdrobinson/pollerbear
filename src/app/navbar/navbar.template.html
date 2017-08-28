@@ -15,7 +15,7 @@
         <li *ngIf="router.url !== '/about'"><a routerLink="/about">About</a></li>
         <li *ngIf="router.url !== '/privacy'"><a routerLink="/privacy">Privacy</a></li>
       </ul>
-      <ul *ngIf="authService.user && !authService.user.isAnonymous" class="nav navbar-nav navbar-right">
+      <!--<ul *ngIf="authService.user && !authService.user.isAnonymous" class="nav navbar-nav navbar-right">
         <li ngbDropdown ngbDropdownToggle>
           <a>
             <img *ngIf="authService.userInfo.photoURL" class="user-image img-circle clickable" [src]="authService.userInfo.photoURL">
@@ -30,7 +30,7 @@
             </li>
           </ul>
       </ul>
-      <button *ngIf="!authService.user || authService.user.isAnonymous" type="button" class="btn btn-default btn-sm navbar-btn navbar-right" (click)="login()">Sign in</button>
+      <button *ngIf="!authService.user || authService.user.isAnonymous" type="button" class="btn btn-default btn-sm navbar-btn navbar-right" (click)="login()">Sign in</button>-->
     </div>
   </div>
 </nav>

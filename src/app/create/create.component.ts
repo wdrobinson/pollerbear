@@ -94,6 +94,7 @@ export class CreateComponent {
 		if (this.customUrlValid && this.customUrlClean) {
 			var newPoll = this.af.database.object(`/polls/${this.customUrlClean}`);
 			newPoll.set(this.poll).then(() => {
+				this.finalUrl = `${this.appUrl}/${this.customUrlClean}`;
 				this.savePollVotes(this.customUrlClean);		
 			});
 		} else {
