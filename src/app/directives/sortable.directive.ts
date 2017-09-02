@@ -1,7 +1,10 @@
 import { Component, Directive, ElementRef, Input, Output, EventEmitter, Inject, NgZone } from '@angular/core';
+
 import * as $ from 'jquery';
-import 'jquery-ui/ui/core';
 import 'jquery-ui/ui/widgets/sortable';
+
+(window as any).jQuery = $;
+require('jquery-ui-touch-punch');
 
 import { Option } 					from '../models/option.model';
 
