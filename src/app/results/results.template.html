@@ -5,7 +5,7 @@
     <table class="table table-bordered table-condensed results-table">
         <thead>
             <tr>
-                <th>option</th>
+                <th colspan="2">option</th>
                 <th>
                     <span *ngIf="poll.type==1">points</span>
                     <span *ngIf="poll.type==2">votes</span>
@@ -13,6 +13,7 @@
             </tr>
         </thead>
         <tr *ngFor="let option of poll.options">
+            <td class="table-legend" [style.background]="option.color"></td>
             <td *ngIf="option.winner"><i *ngIf="poll.votes > 0" class="fa fa-star" style="color: gold;"></i> {{ option.name }}</td>
             <td *ngIf="!option.winner">{{ option.name }}</td>
             <td>
@@ -34,6 +35,19 @@
 
     <p class="text-center top-buffer-large">
     	<small>this page will update automatically</small>
+    </p>
+
+    <p *ngIf="canTogglePollType" class="text-center top-buffer-large">
+        <a class="clickable" (click)="togglePollType()">
+            view 
+            <span *ngIf="poll.type === 1">majority rules</span> 
+            <span *ngIf="poll.type === 2">rank</span> 
+            results
+        </a>
+    </p>
+
+    <p *ngIf="canViewRank" (click)="togglePollType()" class="text-center top-buffer-large">
+        view rank results
     </p>
 
 </div>

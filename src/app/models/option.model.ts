@@ -8,4 +8,5 @@ export class Option {
   points: number;
   percentVotes: number;
   winner: boolean;
+  color: string;
 }

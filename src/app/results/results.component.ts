@@ -18,8 +18,11 @@ import { OptionVotes } 	from '../models/option-votes.model';
 
 export class ResultsComponent implements OnInit {
 	poll = new Poll();
+	pollVotes: PollVotes;
+	pollTypePreserve: number;
 	loading = true;
 	invalid = false;
+	canTogglePollType = false;
 	chartType: string;
 	chartLabels = new Array<string>();
 	chartData = new Array<any>(); 
@@ -48,8 +51,8 @@ export class ResultsComponent implements OnInit {
                     drawOnChartArea: false,
 		            color: "#fff"
                 }
-            }],
-        },
+            }]
+        }
   	};
 	colors = ['#7293CB', '#E1974C', '#84BA5B', '#D35E60', '#808585', '#9067A7', '#AB6857', '#CCC210'];	
 
@@ -75,10 +78,12 @@ export class ResultsComponent implements OnInit {
 			return;
 		}		
 		this.poll = poll;
+		this.pollTypePreserve = this.poll.type;		
 		this.af.database.object(`/poll-votes/${this.poll.$key}`).subscribe((pollVotes: PollVotes) => this.loadPollVotes(pollVotes));
 	}
 
 	loadPollVotes(pollVotes: PollVotes): void {
+		this.pollVotes = pollVotes;
 		this.poll.votes = pollVotes.votes;
 		var maxPoints = 0;
 		var totalPoints = 0;
@@ -111,11 +116,32 @@ export class ResultsComponent implements OnInit {
 		});		
 		this.loading = false;
 		this.loadChart();
+		this.checkViewMajority();
 	}
 
 	loadChart(): void {
 		var newLabels = new Array<string>();
 		var newData = new Array<any>();
+		this.setChartType();
+		newData.push({
+			data: new Array<number>(),
+			backgroundColor: new Array<string>(),
+			hoverBackgroundColor: new Array<string>()
+		});
+		var colorCounter = 0;
+		for (var option of this.poll.options) {
+			option.color = this.colors[colorCounter];
+			newLabels.push(option.name);
+			newData[0].data.push(option.points);
+			newData[0].backgroundColor.push(option.color);
+			newData[0].hoverBackgroundColor.push(option.color);
+			colorCounter = colorCounter < this.colors.length ? colorCounter+1 : 0;
+		}			
+		this.chartLabels = newLabels;
+		this.chartData = newData;
+	}
+
+	setChartType(): void {
 		if (this.poll.type === 1) {
 			this.chartType = 'bar';
 			this.chartOptions.scales.xAxes[0].display = true;
@@ -125,21 +151,30 @@ export class ResultsComponent implements OnInit {
 			this.chartOptions.scales.xAxes[0].display = false;
 			this.chartOptions.scales.yAxes[0].display = false;
 		}
-		newData.push({
-			data: new Array<number>(),
-			backgroundColor: new Array<string>(),
-			hoverBackgroundColor: new Array<string>()
-		});
-		var colorCounter = 0;
+	}
+
+	checkViewMajority (): void {
+		this.canTogglePollType = false;
+		if (this.pollTypePreserve !== 1) {
+			return;
+		}
+		var hasMajorityPoints = false;
 		for (var option of this.poll.options) {
-			newLabels.push(option.name);
-			newData[0].data.push(option.points);
-			newData[0].backgroundColor.push(this.colors[colorCounter]);
-			newData[0].hoverBackgroundColor.push(this.colors[colorCounter]);
-			colorCounter = colorCounter < this.colors.length ? colorCounter+1 : 0;
-		}			
-		this.chartLabels = newLabels;
-		this.chartData = newData;
+			if (option.majorityPoints > 0) {
+				hasMajorityPoints = true;
+				break;
+			}
+		}
+		this.canTogglePollType = hasMajorityPoints;
+	}
+
+	togglePollType(): void {
+		this.poll.type = this.poll.type === 1 ? 2 : 1;
+		this.setChartType();
+		//hack to fix issues with updating chart.js type and data at the same time
+		setTimeout( ()=> {
+			this.loadPollVotes(this.pollVotes);
+	    }, 0);
 	}
 
 }
