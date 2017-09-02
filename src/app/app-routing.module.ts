@@ -15,6 +15,7 @@ import { ResultsComponent }   from './results/results.component';
       { path: 'privacy', component: PrivacyComponent },    	
       { path: 'manage', component: ManageComponent },      
       { path: 'results/:url', component: ResultsComponent },    	
+      { path: 'result/:url', component: ResultsComponent },      
       { path: ':url', component: VoteComponent },    	
       { path: '**', component: CreateComponent }
     ])
