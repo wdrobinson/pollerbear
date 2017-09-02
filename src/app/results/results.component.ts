@@ -158,14 +158,13 @@ export class ResultsComponent implements OnInit {
 		if (this.pollTypePreserve !== 1) {
 			return;
 		}
-		var hasMajorityPoints = false;
+		var majorityPoints = 0;
 		for (var option of this.poll.options) {
-			if (option.majorityPoints > 0) {
-				hasMajorityPoints = true;
-				break;
+			if (option.majorityPoints) {
+				majorityPoints += option.majorityPoints;
 			}
-		}
-		this.canTogglePollType = hasMajorityPoints;
+		}		
+		this.canTogglePollType = majorityPoints > 0 && majorityPoints === this.poll.votes;
 	}
 
 	togglePollType(): void {

@@ -1,6 +1,6 @@
 <div class="text-center" *ngIf="!loading && !invalid">
 	<h1>{{poll.topic}}</h1>
-	<p>{{poll.votes}} votes</p>
+	<p>{{poll.votes | number : 0}} votes</p>
 
     <table class="table table-bordered table-condensed results-table">
         <thead>
