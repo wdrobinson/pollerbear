@@ -106,6 +106,7 @@ export class ResultsComponent implements OnInit {
 			totalPoints += option.points;
 		}
 		for (var option of this.poll.options) {
+			option.winner = false;
 			if (option.points === maxPoints) {
 				option.winner = true;
 			}
